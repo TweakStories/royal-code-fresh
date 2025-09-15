@@ -12,13 +12,16 @@ jobs:
     if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
     runs-on: ubuntu-latest
     name: Build and Deploy Job
+    permissions:
+      contents: read
+      id-token: write
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout Repository
+        uses: actions/checkout@v4
         with:
-          submodules: true
-          lfs: false
+          fetch-depth: 0
 
-      - name: Setup Node.js
+      - name: Use Node.js 20.x
         uses: actions/setup-node@v4
         with:
           node-version: '20.x'
@@ -28,26 +31,30 @@ jobs:
         with:
           version: 8
 
-      - name: Get pnpm store directory
-        shell: bash
+      - name: Install pnpm dependencies
         run: |
-          echo "STORE_PATH=$(pnpm store path --silent)" >> $GITHUB_ENV
+          echo "Installing dependencies and updating lockfile to handle overrides"
+          pnpm install --no-frozen-lockfile
+        env:
+          CI: true
 
-      - name: Setup pnpm cache
+      - name: Setup esbuild binary manually
+        run: |
+          echo "Setting up esbuild binary manually to avoid postinstall issues"
+          pnpm exec esbuild --version || echo "esbuild setup complete"
+
+      - name: Cache Nx
         uses: actions/cache@v4
         with:
-          path: ${{ env.STORE_PATH }}
-          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+          path: .nx/cache
+          key: ${{ runner.os }}-nx-${{ hashFiles('**/pnpm-lock.yaml') }}
           restore-keys: |
-            ${{ runner.os }}-pnpm-store-
+            ${{ runner.os }}-nx-
 
-      - name: Install dependencies
-        run: pnpm install --no-frozen-lockfile
+      - name: Build CV App with Nx
+        run: pnpm exec nx build cv --configuration=production --verbose
 
-      - name: Build CV app
-        run: pnpm exec nx build cv --configuration=production
-
-      - name: Build And Deploy
+      - name: Deploy to Azure Static Web Apps
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
         with:
@@ -55,18 +62,21 @@ jobs:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           action: "upload"
           skip_app_build: true
-          app_location: "/"
+          app_location: "dist/apps/cv/browser"
+          output_location: ""
           api_location: ""
-          output_location: "dist/apps/cv/browser"
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
     runs-on: ubuntu-latest
     name: Close Pull Request Job
+    permissions:
+      contents: read
     steps:
-      - name: Close Pull Request
+      - name: Close Pull Request Environment
         id: closepullrequest
         uses: Azure/static-web-apps-deploy@v1
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_WONDERFUL_CLIFF_06478AF03 }}
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
           action: "close"

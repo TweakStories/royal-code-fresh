@@ -13,10 +13,11 @@ jobs:
     runs-on: ubuntu-latest
     name: Build and Deploy Job
     permissions:
-       id-token: write
-       contents: read
+      contents: read
+      id-token: write
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout Repository
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
@@ -30,7 +31,7 @@ jobs:
         with:
           version: 8
 
-      - name: Install dependencies
+      - name: Install pnpm dependencies
         run: |
           echo "Installing dependencies and updating lockfile to handle overrides"
           pnpm install --no-frozen-lockfile
@@ -50,10 +51,10 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-nx-
 
-      - name: Build droneshop app
+      - name: Build Droneshop App with Nx
         run: pnpm exec nx build droneshop --configuration=production --verbose
 
-      - name: Build And Deploy
+      - name: Deploy to Azure Static Web Apps
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
         with:
@@ -61,18 +62,21 @@ jobs:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           action: "upload"
           skip_app_build: true
-          app_location: "/"
+          app_location: "dist/apps/droneshop/browser"
+          output_location: ""
           api_location: ""
-          output_location: "dist/apps/droneshop/browser"
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
     runs-on: ubuntu-latest
     name: Close Pull Request Job
+    permissions:
+      contents: read
     steps:
-      - name: Close Pull Request
+      - name: Close Pull Request Environment
         id: closepullrequest
         uses: Azure/static-web-apps-deploy@v1
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_NICE_SMOKE_09CBCF703 }}
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
           action: "close"
