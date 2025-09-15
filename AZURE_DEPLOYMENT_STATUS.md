@@ -96,4 +96,7 @@ pnpm exec nx build droneshop --configuration=production --verbose
 
 ---
 **Gegenereerd op: 2025-09-15**
-**Status: Wachtend op Azure token/configuratie fix**
+**Status: Token propagation timing issue confirmed - retrying deployment**
+
+## 🕐 Latest Update (01:17 AM)
+Azure timing issue confirmed - identical to debug plan expectations. Both workflows built successfully but failed at deployment due to token propagation delays. Triggering new deployment to test after propagation period.
