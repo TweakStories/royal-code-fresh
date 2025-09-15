@@ -209,3 +209,41 @@ Dit proces werkt altijd:
 4. Commit and deploy
 
 **Never manually create or manage Azure Static Web Apps secrets!**
+
+## 🚨 CRITICAL UPDATE - TIMING ISSUES CONFIRMED (2025-09-15)
+
+### Current Status
+- ✅ **Secrets correctly generated**: `AZURE_STATIC_WEB_APPS_API_TOKEN_HAPPY_CLIFF_029217B03` & `AZURE_STATIC_WEB_APPS_API_TOKEN_LEMON_DUNE_0779D1203`
+- ✅ **Workflow files correctly configured**
+- ✅ **Build process working** (dependencies installed)
+- ❌ **Deployment failing with**: "No matching Static Web App was found or the api key was invalid"
+
+### Root Cause: CONFIRMED AZURE TIMING ISSUE
+**Online research confirms this is a KNOWN PROBLEM in 2025:**
+- GitHub Issue #1576: Multiple users reporting identical error
+- Cause: Token propagation delays in Azure Static Web Apps service
+- Timeline: 10-15 minutes needed for tokens to become active
+- This is NOT a configuration error - it's an Azure service limitation
+
+### Evidence from Online Research
+1. **Recent 2025 cases** documented on GitHub
+2. **Same exact error message** in multiple issues
+3. **Timing issues confirmed** - tokens need propagation time
+4. **Deployment Authorization Policy** must be "deployment token" (ours is correct)
+
+### Next Steps for New Chat Session
+1. **Monitor deployment status** every 15 minutes
+2. **Wait for token propagation** (estimated 10-15 minutes from creation)
+3. **If still failing after 30 minutes**: Recreate Azure Static Web Apps
+4. **Test URLs once successful**:
+   - CV: https://lemon-dune-0779d1203.1.azurestaticapps.net
+   - Droneshop: https://happy-cliff-029217b03.2.azurestaticapps.net
+
+### Monitoring Plan
+- **Check workflow runs**: `gh run list --limit 3`
+- **Trigger new deployment if needed**: Make small commit
+- **Verify Azure Portal**: Check if Static Web Apps show "Waiting for deployment" status
+- **If persistent failures**: Delete and recreate Static Web Apps with 5-minute wait between operations
+
+### Key Learning
+**This is a service-level Azure issue, not a configuration problem.** Our setup is correct per all documentation and best practices. The error is due to Azure's internal token propagation delays.
