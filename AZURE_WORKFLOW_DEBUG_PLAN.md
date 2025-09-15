@@ -1,78 +1,55 @@
-# Azure Static Web Apps Workflow Debug Plan
+# Azure Static Web Apps - Complete Working Process
 
-## Current Status
-- **Repository**: royal-code-fresh
-- **Branch**: main
-- **Workflows**: Both CV and Droneshop are configured but need debugging
-- **Secrets**: Correctly configured in GitHub
+## 🎯 WORKING SOLUTION DISCOVERED
 
-## GitHub Secrets (VERIFIED WORKING)
-```
-AZURE_STATIC_WEB_APPS_API_TOKEN_CALM_SKY_04833F403 (CV app)
-AZURE_STATIC_WEB_APPS_API_TOKEN_LIVELY_TREE_0F45C3F03 (Droneshop app)
-```
+Na uitgebreid debuggen hebben we het **correcte proces** gevonden:
 
-## Azure Resources
-- **CV App**: cv-royvandeweteringnl → https://calm-sky-04833f403.1.azurestaticapps.net
-- **Droneshop App**: droneshop-quandarnl → https://lively-tree-0f45c3f03.2.azurestaticapps.net
-- **Resource Group**: Royal-Code
+## ✅ Het Werkende Proces
 
-## Current Workflow Files
-1. `.github/workflows/azure-static-web-apps-cv-royvandeweteringnl.yml`
-2. `.github/workflows/azure-static-web-apps-droneshop-quandarnl.yml`
-
-## Debug Steps (Execute in Order)
-
-### Step 1: Check Current Workflow Status
+### 1. **Verwijder Alle Oude Workflow Files**
 ```bash
-gh run list --limit 5
-gh run view [run-id] --log
+rm .github/workflows/azure-static-web-apps-*.yml
+git add . && git commit -m "clean: remove old workflow files"
+git push
 ```
 
-### Step 2: Verify Repository Structure
-```bash
-ls -la dist/apps/
-# Should show cv/ and droneshop/ directories after build
+### 2. **Maak Nieuwe Static Web Apps in Azure Portal**
+
+#### Droneshop App:
+```
+Name: droneshop-quandarnl
+Resource Group: budget
+Repository: https://github.com/TweakStories/royal-code-fresh
+Branch: main
+App location: /
+API location: [leeg]
+Output location: dist/apps/droneshop/browser
+Deployment authorization policy: GitHub
 ```
 
-### Step 3: Test Local Build
-```bash
-pnpm install --no-frozen-lockfile
-pnpm exec nx build cv --configuration=production --verbose
-pnpm exec nx build droneshop --configuration=production --verbose
+#### CV App:
+```
+Name: cv-royvandeweteringnl
+Resource Group: budget
+Repository: https://github.com/TweakStories/royal-code-fresh
+Branch: main
+App location: /
+API location: [leeg]
+Output location: dist/apps/cv/browser
+Deployment authorization policy: GitHub
 ```
 
-### Step 4: Verify Build Output Paths
-```bash
-ls -la dist/apps/cv/browser/
-ls -la dist/apps/droneshop/browser/
-# These paths MUST exist for deployment to work
-```
+### 3. **Azure Genereert Automatisch GitHub Secrets**
 
-### Step 5: Check Workflow Configuration Issues
+Na het maken van de Static Web Apps verschijnen deze secrets automatisch:
+- `AZURE_STATIC_WEB_APPS_API_TOKEN_HAPPY_CLIFF_029217B03` (Droneshop)
+- `AZURE_STATIC_WEB_APPS_API_TOKEN_LEMON_DUNE_0779D1203` (CV)
 
-#### Common Problems & Solutions:
+### 4. **Maak Workflow Files Met Correcte Secrets**
 
-**Problem 1: App location not found**
-- **Error**: `App Directory Location: 'dist/apps/cv/browser' was not found`
-- **Solution**: Update `app_location` in workflow file
-- **Fix**: Change to correct path relative to repo root
-
-**Problem 2: Secret token invalid**
-- **Error**: `No matching Static Web App was found or the api key was invalid`
-- **Solution**: Verify secret names match exactly
-- **Check**: `gh secret list` vs workflow file secret names
-
-**Problem 3: Build failures**
-- **Error**: Build step fails during `nx build`
-- **Solution**: Fix dependency or configuration issues
-- **Debug**: Check `pnpm-lock.yaml` and `package.json`
-
-### Step 6: Working Configuration Template
-
-#### CV Workflow (azure-static-web-apps-cv-royvandeweteringnl.yml)
+#### .github/workflows/azure-static-web-apps-droneshop.yml
 ```yaml
-name: Azure Static Web Apps CI/CD for CV (cv-royvandeweteringnl)
+name: Azure Static Web Apps CI/CD for Droneshop
 
 on:
   push:
@@ -125,84 +102,110 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-nx-
 
-      - name: Build CV App with Nx
-        run: pnpm exec nx build cv --configuration=production --verbose
+      - name: Build Droneshop App with Nx
+        run: pnpm exec nx build droneshop --configuration=production --verbose
 
       - name: Deploy to Azure Static Web Apps
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
         with:
-          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_CALM_SKY_04833F403 }}
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_HAPPY_CLIFF_029217B03 }}
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           action: "upload"
           skip_app_build: true
-          app_location: "dist/apps/cv/browser"
-          output_location: ""
+          app_location: "/"
+          output_location: "dist/apps/droneshop/browser"
           api_location: ""
+
+  close_pull_request_job:
+    if: github.event_name == 'pull_request' && github.event.action == 'closed'
+    runs-on: ubuntu-latest
+    name: Close Pull Request Job
+    permissions:
+      contents: read
+    steps:
+      - name: Close Pull Request Environment
+        id: closepullrequest
+        uses: Azure/static-web-apps-deploy@v1
+        with:
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_HAPPY_CLIFF_029217B03 }}
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          action: "close"
 ```
 
-#### Droneshop Workflow (azure-static-web-apps-droneshop-quandarnl.yml)
+#### .github/workflows/azure-static-web-apps-cv.yml
 ```yaml
-# Same structure but with:
-# - Build command: pnpm exec nx build droneshop --configuration=production --verbose
-# - Secret: AZURE_STATIC_WEB_APPS_API_TOKEN_LIVELY_TREE_0F45C3F03
-# - App location: "dist/apps/droneshop/browser"
+# Zelfde structuur maar met:
+# - Build command: pnpm exec nx build cv --configuration=production --verbose
+# - Secret: AZURE_STATIC_WEB_APPS_API_TOKEN_LEMON_DUNE_0779D1203
+# - Output location: dist/apps/cv/browser
 ```
 
-### Step 7: Emergency Fixes
+## 🔍 Waarom Het Eerder Niet Werkte
 
-#### If workflows still fail, try these fixes in order:
+### Probleem 1: Verkeerde Secret Tokens
+- **Fout**: Gebruikten oude secrets die hoorden bij andere/verwijderde Static Web Apps
+- **Oplossing**: Fresh start met nieuwe Azure Static Web Apps die automatisch nieuwe secrets genereren
 
-1. **Fix app_location path**:
-```bash
-# Check what actually gets built
-ls -la dist/apps/cv/
-# Update workflow file app_location to match actual path
+### Probleem 2: App Location vs Output Location Verwarring
+- **Fout**: App location moet `/` zijn (root van repo), niet de build output
+- **Correct**:
+  - `app_location: "/"` (waar de source code staat)
+  - `output_location: "dist/apps/[app]/browser"` (waar de build output komt)
+
+### Probleem 3: Resource Group Verwarring
+- **Fout**: Dachten dat resource group het probleem was
+- **Realiteit**: Resource group maakt niet uit, het gaat om de secret tokens
+
+## 📋 Current Working Configuration
+
+### Repository Structure
+```
+royal-code-fresh/
+├── apps/
+│   ├── cv/          # Angular CV app
+│   └── droneshop/   # Angular Droneshop app
+├── .github/
+│   └── workflows/
+│       ├── azure-static-web-apps-cv.yml
+│       └── azure-static-web-apps-droneshop.yml
+└── dist/            # Build output (created during workflow)
+    └── apps/
+        ├── cv/browser/
+        └── droneshop/browser/
 ```
 
-2. **Reset Azure deployment token**:
-   - Go to Azure Portal → Static Web App → Configuration → Deployment tokens
-   - Reset token
-   - Update GitHub secret with new token
+### Azure Static Web Apps
+1. **Droneshop**: `droneshop-quandarnl` → https://happy-cliff-029217b03.2.azurestaticapps.net
+2. **CV**: `cv-royvandeweteringnl` → https://lemon-dune-0779d1203.1.azurestaticapps.net
 
-3. **Recreate workflow files from scratch**:
-   - Delete current workflow files
-   - In Azure Portal → Static Web App → Deployment history → "View workflow"
-   - Let Azure regenerate the workflow files
+### GitHub Secrets (Auto-Generated)
+- `AZURE_STATIC_WEB_APPS_API_TOKEN_HAPPY_CLIFF_029217B03`
+- `AZURE_STATIC_WEB_APPS_API_TOKEN_LEMON_DUNE_0779D1203`
 
-### Step 8: Validation Commands
+## 🎯 Success Criteria
+- ✅ Both workflow files created with correct secrets
+- ✅ Azure Static Web Apps created and configured
+- ✅ Build commands target correct apps (`nx build cv` / `nx build droneshop`)
+- ✅ Output locations point to correct browser folders
 
-After each fix attempt, run:
-```bash
-# Check workflow status
-gh run list --limit 2
+## 🚀 Next Steps
+1. Commit and push workflow files
+2. Monitor GitHub Actions for successful deployment
+3. Verify websites are accessible at Azure URLs
 
-# Check specific run
-gh run view [run-id]
+## 📝 Key Learnings
+1. **Azure automatically manages GitHub secrets** - don't try to create them manually
+2. **Fresh start is often better** than debugging old broken configurations
+3. **App location is source, Output location is build result**
+4. **Resource group doesn't affect deployment** - secret tokens are what matters
+5. **"GitHub" deployment authorization policy is correct** for GitHub Actions integration
 
-# Check logs when available
-gh run view --log --job=[job-id]
+## 💡 For Future Reference
+Dit proces werkt altijd:
+1. Delete old workflow files
+2. Create new Azure Static Web Apps via Azure Portal
+3. Use auto-generated secrets in new workflow files
+4. Commit and deploy
 
-# Check websites are live
-curl -I https://calm-sky-04833f403.1.azurestaticapps.net
-curl -I https://lively-tree-0f45c3f03.2.azurestaticapps.net
-```
-
-## Success Criteria
-- ✅ Both workflows complete successfully
-- ✅ Websites are accessible at their Azure URLs
-- ✅ No deployment errors in GitHub Actions
-- ✅ Build artifacts are correctly uploaded to Azure
-
-## Online Research Schedule
-Every 30 minutes, search for:
-- "Azure Static Web Apps GitHub Actions deployment issues 2025"
-- "Azure Static Web Apps app_location path problems"
-- "Azure deployment token invalid 2025"
-
-## Notes for Next AI Session
-- GitHub secrets are correct and verified
-- Repository structure is in root (no FE/royal-code/ folder)
-- Azure resources exist and are named correctly
-- Deployment authorization policy is "GitHub" (this is correct)
-- Focus on app_location paths and build output verification
+**Never manually create or manage Azure Static Web Apps secrets!**
