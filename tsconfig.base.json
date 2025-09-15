@@ -1,0 +1,442 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "bundler",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2023",
+    "module": "esnext",
+    "lib": ["es2023", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "strict": false,
+    "noImplicitAny": false,
+    "baseUrl": ".",
+    "paths": {
+      "@royal-code/auth/data-access": ["libs/auth/data-access/src/index.ts"],
+      "@royal-code/auth/domain": ["libs/auth/domain/src/index.ts"],
+      "@royal-code/core": ["libs/core/index.ts"],
+      "@royal-code/core/config": ["libs/core/config/src/index.ts"],
+      "@royal-code/core/core-logging": ["libs/core/core-logging/src/index.ts"],
+      "@royal-code/core/error-handling": [
+        "libs/core/error-handling/src/index.ts"
+      ],
+      "@royal-code/core/http": ["libs/core/http/src/index.ts"],
+      "@royal-code/core/navigations/data-access": [
+        "libs/core/navigation/data-access/src/index.ts"
+      ],
+      "@royal-code/core/navigations/state": [
+        "libs/core/navigation/state/src/index.ts"
+      ],
+      "@royal-code/core/routing": ["libs/core/routing/src/index.ts"],
+      "@royal-code/core/storage": ["libs/core/storage/src/index.ts"],
+      "@royal-code/crafting": ["libs/features/crafting/src/index.ts"],
+      "@royal-code/features/account/core": [
+        "libs/features/account/core/src/index.ts"
+      ],
+      "@royal-code/features/account/data-access-droneshop": [
+        "libs/features/account/data-access-droneshop/src/index.ts"
+      ],
+      "@royal-code/features/account/domain": [
+        "libs/features/account/domain/src/index.ts"
+      ],
+      "@royal-code/features/account/ui-droneshop": [
+        "libs/features/account/ui-droneshop/src/index.ts"
+      ],
+      "@royal-code/features/achievements": [
+        "libs/features/achievements/src/index.ts"
+      ],
+      "@royal-code/features/admin-dashboard/core": [
+        "libs/features/admin-dashboard/core/src/index.ts"
+      ],
+      "@royal-code/features/admin-dashboard/data-access": [
+        "libs/features/admin-dashboard/data-access/src/index.ts"
+      ],
+      "@royal-code/features/admin-dashboard/domain": [
+        "libs/features/admin-dashboard/domain/src/index.ts"
+      ],
+      "@royal-code/features/admin-orders/core": [
+        "libs/features/admin-orders/core/src/index.ts"
+      ],
+      "@royal-code/features/admin-orders/data-access": [
+        "libs/features/admin-orders/data-access/src/index.ts"
+      ],
+      "@royal-code/features/admin-orders/domain": [
+        "libs/features/admin-orders/domain/src/index.ts"
+      ],
+      "@royal-code/features/admin-orders/ui": [
+        "libs/features/admin-orders/ui/src/index.ts"
+      ],
+      "@royal-code/features/admin-products/core": [
+        "libs/features/admin-products/core/src/index.ts"
+      ],
+      "@royal-code/features/admin-products/data-access": [
+        "libs/features/admin-products/data-access/src/index.ts"
+      ],
+      "@royal-code/features/admin-products/domain": [
+        "libs/features/admin-products/domain/src/index.ts"
+      ],
+      "@royal-code/features/admin-products/ui": [
+        "libs/features/admin-products/ui/src/index.ts"
+      ],
+      "@royal-code/features/admin-reviews/core": [
+        "libs/features/admin-reviews/core/src/index.ts"
+      ],
+      "@royal-code/features/admin-reviews/data-access": [
+        "libs/features/admin-reviews/data-access/src/index.ts"
+      ],
+      "@royal-code/features/admin-reviews/domain": [
+        "libs/features/admin-reviews/domain/src/index.ts"
+      ],
+      "@royal-code/features/admin-reviews/ui": [
+        "libs/features/admin-reviews/ui/src/index.ts"
+      ],
+      "@royal-code/features/admin-users/core": [
+        "libs/features/admin-users/core/src/index.ts"
+      ],
+      "@royal-code/features/admin-users/data-access": [
+        "libs/features/admin-users/data-access/src/index.ts"
+      ],
+      "@royal-code/features/admin-users/domain": [
+        "libs/features/admin-users/domain/src/index.ts"
+      ],
+      "@royal-code/features/admin-users/ui": [
+        "libs/features/admin-users/ui/src/index.ts"
+      ],
+      "@royal-code/features/admin-variants/core": [
+        "libs/features/admin-variants/core/src/index.ts"
+      ],
+      "@royal-code/features/admin-variants/data-access": [
+        "libs/features/admin-variants/data-access/src/index.ts"
+      ],
+      "@royal-code/features/admin-variants/ui": [
+        "libs/features/admin-variants/ui/src/index.ts"
+      ],
+      "@royal-code/features/ai-companion": [
+        "libs/features/ai-companion/src/index.ts"
+      ],
+      "@royal-code/features/authentication": [
+        "libs/features/authentication/src/index.ts"
+      ],
+      "@royal-code/features/avatar": ["libs/features/avatar/src/index.ts"],
+      "@royal-code/features/avatar-customization": [
+        "libs/features/avatar-customization/src/index.ts"
+      ],
+      "@royal-code/features/cart/core": [
+        "libs/features/cart/core/src/index.ts"
+      ],
+      "@royal-code/features/cart/data-access-challenger": [
+        "libs/features/cart/data-access-challenger/src/index.ts"
+      ],
+      "@royal-code/features/cart/data-access-plushie": [
+        "libs/features/cart/data-access-plushie/src/index.ts"
+      ],
+      "@royal-code/features/cart/domain": [
+        "libs/features/cart/domain/src/index.ts"
+      ],
+      "@royal-code/features/cart/ui-challenger": [
+        "libs/features/cart/ui-challenger/src/index.ts"
+      ],
+      "@royal-code/features/cart/ui-plushie": [
+        "libs/features/cart/ui-plushie/src/index.ts"
+      ],
+      "@royal-code/features/challenges": [
+        "libs/features/challenges/src/index.ts"
+      ],
+      "@royal-code/features/character-progression": [
+        "libs/features/character-progression/src/index.ts"
+      ],
+      "@royal-code/features/chat/core": [
+        "libs/features/chat/core/src/index.ts"
+      ],
+      "@royal-code/features/chat/data-access-plushie": [
+        "libs/features/chat/data-access-plushie/src/index.ts"
+      ],
+      "@royal-code/features/chat/domain": [
+        "libs/features/chat/domain/src/index.ts"
+      ],
+      "@royal-code/features/chat/ui-challenger": [
+        "libs/features/chat/ui-challenger/src/index.ts"
+      ],
+      "@royal-code/features/chat/ui-plushie": [
+        "libs/features/chat/ui-plushie/src/index.ts"
+      ],
+      "@royal-code/features/checkout/core": [
+        "libs/features/checkout/core/src/index.ts"
+      ],
+      "@royal-code/features/checkout/data-access-challenger": [
+        "libs/features/checkout/data-access-challenger/src/index.ts"
+      ],
+      "@royal-code/features/checkout/data-access-plushie": [
+        "libs/features/checkout/data-access-plushie/src/index.ts"
+      ],
+      "@royal-code/features/checkout/domain": [
+        "libs/features/checkout/domain/src/index.ts"
+      ],
+      "@royal-code/features/checkout/ui-challenger": [
+        "libs/features/checkout/ui-challenger/src/index.ts"
+      ],
+      "@royal-code/features/checkout/ui-plushie": [
+        "libs/features/checkout/ui-plushie/src/index.ts"
+      ],
+      "@royal-code/features/guides/core": [
+        "libs/features/guides/core/src/index.ts"
+      ],
+      "@royal-code/features/guides/data-access-droneshop": [
+        "libs/features/guides/data-access-droneshop/src/index.ts"
+      ],
+      "@royal-code/features/guides/domain": [
+        "libs/features/guides/domain/src/index.ts"
+      ],
+      "@royal-code/features/guides/ui-droneshop": [
+        "libs/features/guides/ui-droneshop/src/index.ts"
+      ],
+      "@royal-code/features/guilds": ["libs/features/guilds/src/index.ts"],
+      "@royal-code/features/inventory-equipment": [
+        "libs/features/inventory-equipment/src/index.ts"
+      ],
+      "@royal-code/features/leaderboards": [
+        "libs/features/leaderboards/src/index.ts"
+      ],
+      "@royal-code/features/media/core": [
+        "libs/features/media/core/src/index.ts"
+      ],
+      "@royal-code/features/media/data-access-challenger": [
+        "libs/features/media/data-access-challenger/src/index.ts"
+      ],
+      "@royal-code/features/media/data-access-plushie": [
+        "libs/features/media/data-access-plushie/src/index.ts"
+      ],
+      "@royal-code/features/media/domain": [
+        "libs/features/media/domain/src/index.ts"
+      ],
+      "@royal-code/features/media/ui-challenger": [
+        "libs/features/media/ui-challenger/src/index.ts"
+      ],
+      "@royal-code/features/media/ui-plushie": [
+        "libs/features/media/ui-plushie/src/index.ts"
+      ],
+      "@royal-code/features/nodes": ["libs/features/nodes/src/index.ts"],
+      "@royal-code/features/orders/core": [
+        "libs/features/orders/core/src/index.ts"
+      ],
+      "@royal-code/features/orders/data-access-challenger": [
+        "libs/features/orders/data-access-challenger/src/index.ts"
+      ],
+      "@royal-code/features/orders/data-access-plushie": [
+        "libs/features/orders/data-access-plushie/src/index.ts"
+      ],
+      "@royal-code/features/orders/domain": [
+        "libs/features/orders/domain/src/index.ts"
+      ],
+      "@royal-code/features/orders/ui-challenger": [
+        "libs/features/orders/ui-challenger/src/index.ts"
+      ],
+      "@royal-code/features/orders/ui-plushie": [
+        "libs/features/orders/ui-plushie/src/index.ts"
+      ],
+      "@royal-code/features/party": ["libs/features/party/src/index.ts"],
+      "@royal-code/features/products/core": [
+        "libs/features/products/core/src/index.ts"
+      ],
+      "@royal-code/features/products/data-access-challenger": [
+        "libs/features/products/data-access-challenger/src/index.ts"
+      ],
+      "@royal-code/features/products/data-access-droneshop": [
+        "libs/features/products/data-access-droneshop/src/index.ts"
+      ],
+      "@royal-code/features/products/data-access-plushie": [
+        "libs/features/products/data-access-plushie/src/index.ts"
+      ],
+      "@royal-code/features/products/domain": [
+        "libs/features/products/domain/src/index.ts"
+      ],
+      "@royal-code/features/products/ui-challenger": [
+        "libs/features/products/ui-challenger/src/index.ts"
+      ],
+      "@royal-code/features/products/ui-droneshop": [
+        "libs/features/products/ui-droneshop/src/index.ts"
+      ],
+      "@royal-code/features/products/ui-plushie": [
+        "libs/features/products/ui-plushie/src/index.ts"
+      ],
+      "@royal-code/features/progression": [
+        "libs/features/progression/src/index.ts"
+      ],
+      "@royal-code/features/quests": ["libs/features/quests/src/index.ts"],
+      "@royal-code/features/reviews/core": [
+        "libs/features/reviews/core/src/index.ts"
+      ],
+      "@royal-code/features/reviews/data-access-challenger": [
+        "libs/features/reviews/data-access-challenger/src/index.ts"
+      ],
+      "@royal-code/features/reviews/data-access-plushie": [
+        "libs/features/reviews/data-access-plushie/src/index.ts"
+      ],
+      "@royal-code/features/reviews/domain": [
+        "libs/features/reviews/domain/src/index.ts"
+      ],
+      "@royal-code/features/reviews/ui-challenger": [
+        "libs/features/reviews/ui-challenger/src/index.ts"
+      ],
+      "@royal-code/features/reviews/ui-plushie": [
+        "libs/features/reviews/ui-plushie/src/index.ts"
+      ],
+      "@royal-code/features/rewards": ["libs/features/rewards/src/index.ts"],
+      "@royal-code/features/shared/node-challenge": [
+        "libs/features/shared/node-challenge/src/index.ts"
+      ],
+      "@royal-code/features/shop": ["libs/features/shop/src/index.ts"],
+      "@royal-code/features/social/core": [
+        "libs/features/social/core/src/index.ts"
+      ],
+      "@royal-code/features/social/data-access": [
+        "libs/features/social/data-access/src/index.ts"
+      ],
+      "@royal-code/features/social/domain": [
+        "libs/features/social/domain/src/index.ts"
+      ],
+      "@royal-code/features/social/ui": [
+        "libs/features/social/ui/src/index.ts"
+      ],
+      "@royal-code/features/social/ui-plushie": [
+        "libs/features/social/ui-plushie/src/index.ts"
+      ],
+      "@royal-code/features/stats": ["libs/features/stats/src/index.ts"],
+      "@royal-code/features/test": ["libs/features/test/src/index.ts"],
+      "@royal-code/features/test/json-output-viewer": [
+        "libs/features/test/json-output-viewer/src/index.ts"
+      ],
+      "@royal-code/features/themes": ["libs/features/themes/src/index.ts"],
+      "@royal-code/features/tracking": ["libs/features/tracking/src/index.ts"],
+      "@royal-code/features/users": ["libs/features/users/src/index.ts"],
+      "@royal-code/features/wishlist/core": [
+        "libs/features/wishlist/core/src/index.ts"
+      ],
+      "@royal-code/features/wishlist/data-access-droneshop": [
+        "libs/features/wishlist/data-access-droneshop/src/index.ts"
+      ],
+      "@royal-code/features/wishlist/domain": [
+        "libs/features/wishlist/domain/src/index.ts"
+      ],
+      "@royal-code/features/wishlist/ui-droneshop": [
+        "libs/features/wishlist/ui-droneshop/src/index.ts"
+      ],
+      "@royal-code/mappers": ["libs/mappers/src/index.ts"],
+      "@royal-code/mocks": ["libs/mocks/src/index.ts"],
+      "@royal-code/shared": ["libs/shared/src/index.ts"],
+      "@royal-code/shared/assets": ["libs/shared/assets/src/index.ts"],
+      "@royal-code/shared/base-models": [
+        "libs/shared/base-models/src/index.ts"
+      ],
+      "@royal-code/shared/domain": ["libs/shared/domain/src/index.ts"],
+      "@royal-code/shared/domain/models": ["libs/shared/domain/src/models.ts"],
+      "@royal-code/shared/initializers": [
+        "libs/shared/initializers/src/index.ts"
+      ],
+      "@royal-code/shared/styles": ["libs/shared/styles/src/index.ts"],
+      "@royal-code/shared/ui/layout": ["libs/shared/ui/layout/src/index.ts"],
+      "@royal-code/shared/utils": ["libs/shared/utils/src/index.ts"],
+      "@royal-code/store": ["libs/store/src/index.ts"],
+      "@royal-code/store-notifications": [
+        "libs/store/notifications/src/index.ts"
+      ],
+      "@royal-code/store/auth": ["libs/store/auth/src/index.ts"],
+      "@royal-code/store/error": ["libs/store/error/src/index.ts"],
+      "@royal-code/store/session": ["libs/store/session/src/index.ts"],
+      "@royal-code/store/theme": ["libs/store/theme/src/index.ts"],
+      "@royal-code/store/user": ["libs/store/user/src/index.ts"],
+      "@royal-code/ui/accordion": ["libs/ui/accordion/src/index.ts"],
+      "@royal-code/ui/avatar-renderer": [
+        "libs/ui/avatar-renderer/src/index.ts"
+      ],
+      "@royal-code/ui/backgrounds": ["libs/ui/backgrounds/src/index.ts"],
+      "@royal-code/ui/badge": ["libs/ui/badge/src/index.ts"],
+      "@royal-code/ui/breadcrumb": ["libs/ui/breadcrumb/src/index.ts"],
+      "@royal-code/ui/button": ["libs/ui/button/src/index.ts"],
+      "@royal-code/ui/cards/card": ["libs/ui/cards/card/src/index.ts"],
+      "@royal-code/ui/cards/feature-card": [
+        "libs/ui/cards/feature-card/src/index.ts"
+      ],
+      "@royal-code/ui/cards/full-width-image-card": [
+        "libs/ui/cards/full-width-image-card/src/index.ts"
+      ],
+      "@royal-code/ui/cards/icon-text-row": [
+        "libs/ui/cards/icon-text-row/src/index.ts"
+      ],
+      "@royal-code/ui/cards/item-carousel": [
+        "libs/ui/cards/item-carousel/src/index.ts"
+      ],
+      "@royal-code/ui/cards/product-accessory-card": [
+        "libs/ui/cards/product-accessory-card/src/index.ts"
+      ],
+      "@royal-code/ui/cards/profile-avatar-card": [
+        "libs/ui/cards/profile-avatar-card/src/index.ts"
+      ],
+      "@royal-code/ui/cards/settings-card": [
+        "libs/ui/cards/settings-card/src/index.ts"
+      ],
+      "@royal-code/ui/cards/stat-card": [
+        "libs/ui/cards/stat-card/src/index.ts"
+      ],
+      "@royal-code/ui/cards/story-card": [
+        "libs/ui/cards/story-card/src/index.ts"
+      ],
+      "@royal-code/ui/code-block": ["libs/ui/code-block/src/index.ts"],
+      "@royal-code/ui/dataflow-diagram": [
+        "libs/ui/dataflow-diagram/src/index.ts"
+      ],
+      "@royal-code/ui/dialogs": ["libs/ui/dialogs/src/index.ts"],
+      "@royal-code/ui/dropdown": ["libs/ui/dropdown/src/index.ts"],
+      "@royal-code/ui/faq": ["libs/ui/faq/src/index.ts"],
+      "@royal-code/ui/filters": ["libs/ui/filters/src/index.ts"],
+      "@royal-code/ui/folder-tree": ["libs/ui/folder-tree/src/index.ts"],
+      "@royal-code/ui/forms": ["libs/ui/forms/src/index.ts"],
+      "@royal-code/ui/generic-overview": [
+        "libs/ui/generic-overview/src/index.ts"
+      ],
+      "@royal-code/ui/gestures": ["libs/shared/ui/gestures/src/index.ts"],
+      "@royal-code/ui/grid": ["libs/ui/grid/src/index.ts"],
+      "@royal-code/ui/icon": ["libs/ui/icon/src/index.ts"],
+      "@royal-code/ui/image": ["libs/ui/media/src/index.ts"],
+      "@royal-code/ui/input": ["libs/ui/input/src/index.ts"],
+      "@royal-code/ui/language-selector": [
+        "libs/ui/language-selector/src/index.ts"
+      ],
+      "@royal-code/ui/list": ["libs/ui/list/src/index.ts"],
+      "@royal-code/ui/media": ["libs/ui/media/src/index.ts"],
+      "@royal-code/ui/menu": ["libs/ui/menu/src/index.ts"],
+      "@royal-code/ui/meters": ["libs/ui/meters/src/index.ts"],
+      "@royal-code/ui/navigation": ["libs/ui/navigation/src/index.ts"],
+      "@royal-code/ui/notifications": ["libs/ui/notifications/src/index.ts"],
+      "@royal-code/ui/overlay": ["libs/ui/overlay/src/index.ts"],
+      "@royal-code/ui/pagination": ["libs/ui/pagination/src/index.ts"],
+      "@royal-code/ui/paragraph": ["libs/ui/paragraph/src/index.ts"],
+      "@royal-code/ui/products": ["libs/ui/products/src/index.ts"],
+      "@royal-code/ui/progress": ["libs/ui/progress/src/index.ts"],
+      "@royal-code/ui/quantity-input": ["libs/ui/quantity-input/src/index.ts"],
+      "@royal-code/ui/rating": ["libs/ui/rating/src/index.ts"],
+      "@royal-code/ui/review-card": ["libs/ui/review-card/src/index.ts"],
+      "@royal-code/ui/sidebar": ["libs/ui/sidebar/src/index.ts"],
+      "@royal-code/ui/spinner": ["libs/ui/spinner/src/index.ts"],
+      "@royal-code/ui/sticky-cta-bar": ["libs/ui/sticky-cta-bar/src/index.ts"],
+      "@royal-code/ui/swipe-up-menu": ["libs/ui/swipe-up-menu/src/index.ts"],
+      "@royal-code/ui/tabs": ["libs/ui/tabs/src/index.ts"],
+      "@royal-code/ui/team": ["libs/ui/team/src/index.ts"],
+      "@royal-code/ui/testimonial": ["libs/ui/testimonial/src/index.ts"],
+      "@royal-code/ui/textarea": ["libs/ui/textarea/src/index.ts"],
+      "@royal-code/ui/theme-switcher": ["libs/ui/theme-switcher/src/index.ts"],
+      "@royal-code/ui/title": ["libs/ui/title/src/index.ts"],
+      "@royal-code/ui/variant-selector": [
+        "libs/ui/variant-selector/src/index.ts"
+      ],
+      "@royal-code/ui/wishlist": ["libs/ui/wishlist/src/index.ts"],
+      "@royal-code/users/data-access": ["libs/users/data-access/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}
