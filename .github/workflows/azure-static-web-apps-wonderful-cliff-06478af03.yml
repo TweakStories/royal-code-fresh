@@ -1,11 +1,13 @@
-name: Azure Static Web Apps CI/CD for CV
+name: Azure Static Web Apps CI/CD
 
 on:
   push:
-    branches: [main]
+    branches:
+      - main
   pull_request:
     types: [opened, synchronize, reopened, closed]
-    branches: [main]
+    branches:
+      - main
 
 jobs:
   build_and_deploy_job:
@@ -13,70 +15,42 @@ jobs:
     runs-on: ubuntu-latest
     name: Build and Deploy Job
     permissions:
-      contents: read
-      id-token: write
+       id-token: write
+       contents: read
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v3
         with:
-          fetch-depth: 0
-
-      - name: Use Node.js 20.x
-        uses: actions/setup-node@v4
+          submodules: true
+          lfs: false
+      - name: Install OIDC Client from Core Package
+        run: npm install @actions/core@1.6.0 @actions/http-client
+      - name: Get Id Token
+        uses: actions/github-script@v6
+        id: idtoken
         with:
-          node-version: '20.x'
-
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v4
-        with:
-          version: 8
-
-      - name: Install pnpm dependencies
-        run: |
-          echo "Installing dependencies and updating lockfile to handle overrides"
-          pnpm install --no-frozen-lockfile
-        env:
-          CI: true
-
-      - name: Setup esbuild binary manually
-        run: |
-          echo "Setting up esbuild binary manually to avoid postinstall issues"
-          pnpm exec esbuild --version || echo "esbuild setup complete"
-
-      - name: Cache Nx
-        uses: actions/cache@v4
-        with:
-          path: .nx/cache
-          key: ${{ runner.os }}-nx-${{ hashFiles('**/pnpm-lock.yaml') }}
-          restore-keys: |
-            ${{ runner.os }}-nx-
-
-      - name: Build CV App with Nx
-        run: pnpm exec nx build cv --configuration=production --verbose
-
-      - name: Deploy to Azure Static Web Apps
+           script: |
+               const coredemo = require('@actions/core')
+               return await coredemo.getIDToken()
+           result-encoding: string
+      - name: Build And Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_WONDERFUL_CLIFF_06478AF03 }}
-          repo_token: ${{ secrets.GITHUB_TOKEN }}
           action: "upload"
-          skip_app_build: true
           app_location: "/"
-          output_location: "dist/apps/cv/browser"
           api_location: ""
+          output_location: "dist/apps/cv/browser"
+          github_id_token: ${{ steps.idtoken.outputs.result }}
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
     runs-on: ubuntu-latest
     name: Close Pull Request Job
-    permissions:
-      contents: read
     steps:
-      - name: Close Pull Request Environment
+      - name: Close Pull Request
         id: closepullrequest
         uses: Azure/static-web-apps-deploy@v1
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_WONDERFUL_CLIFF_06478AF03 }}
-          repo_token: ${{ secrets.GITHUB_TOKEN }}
           action: "close"
