@@ -1,0 +1,21 @@
+{
+  "name": "admin-reviews-data-access",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/features/admin-reviews/data-access/src",
+  "prefix": "admin",
+  "projectType": "library",
+  "tags": ["scope:admin-panel", "type:data-access", "context:admin-reviews"],
+  "targets": {
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "libs/features/admin-reviews/data-access/jest.config.ts",
+        "tsConfig": "libs/features/admin-reviews/data-access/tsconfig.spec.json"
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    }
+  }
+}

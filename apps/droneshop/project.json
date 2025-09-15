@@ -1,0 +1,110 @@
+{
+  "name": "droneshop",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "prefix": "droneshop",
+  "sourceRoot": "apps/droneshop/src",
+  "tags": ["scope:droneshop", "type:app"],
+  "targets": {
+    "build": {
+      "executor": "@angular/build:application",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/apps/droneshop",
+        "browser": "apps/droneshop/src/main.ts",
+        "polyfills": ["zone.js"],
+        "tsConfig": "apps/droneshop/tsconfig.app.json",
+        "inlineStyleLanguage": "scss",
+        "assets": [
+          "apps/droneshop/src/favicon.ico",
+          {
+            "glob": "**/*",
+            "input": "libs/shared/assets/src/lib/i18n",
+            "output": "./assets/i18n/shared" 
+          },
+          {
+            "glob": "**/*",
+            "input": "apps/droneshop/src/app/shared/assets/i18n",
+            "output": "./assets/i18n/droneshop" 
+          },
+          {
+            "glob": "**/*",
+            "input": "libs/features/avatar/src/lib/assets",
+            "output": "/assets/features/avatar/"
+          },
+          {
+            "glob": "**/*",
+            "input": "apps/droneshop/public",
+            "output": "./"
+          }
+        ],
+        "styles": [
+          "apps/droneshop/src/styles.css",
+          "libs/shared/styles/src/lib/theme.css"
+        ]
+      },
+      "configurations": {
+        "production": {
+          "budgets": [
+            {
+              "type": "initial",
+              "maximumWarning": "2mb",
+              "maximumError": "3mb"
+            },
+            {
+              "type": "anyComponentStyle",
+              "maximumWarning": "20kb",
+              "maximumError": "40kb"
+            }
+          ],
+          "outputHashing": "all"
+        },
+        "development": {
+          "optimization": false,
+          "extractLicenses": false,
+          "sourceMap": true
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "serve": {
+      "continuous": true,
+      "executor": "@angular/build:dev-server",
+      "configurations": {
+        "production": {
+          "buildTarget": "droneshop:build:production"
+        },
+        "development": {
+          "buildTarget": "droneshop:build:development"
+        }
+      },
+      "defaultConfiguration": "development"
+    },
+    "extract-i18n": {
+      "executor": "@angular/build:extract-i18n",
+      "options": {
+        "buildTarget": "droneshop:build"
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "apps/droneshop/jest.config.ts"
+      }
+    },
+    "serve-static": {
+      "continuous": true,
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "droneshop:build",
+        "port": 4200,
+        "staticFilePath": "dist/apps/droneshop/browser",
+        "spa": true
+      }
+    }
+  }
+}

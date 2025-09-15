@@ -1,0 +1,40 @@
+{
+  "name": "ui-notifications",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/ui/notifications/src",
+  "prefix": "royal-code",
+  "projectType": "library",
+  "tags": ["scope:shared", "type:ui", "context:notifications"],
+  "implicitDependencies": [
+    "overlay-ui",
+    "button"
+  ],
+  "targets": {
+    "build": {
+      "executor": "@nx/angular:package",
+      "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+      "options": {
+        "project": "libs/ui/notifications/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/ui/notifications/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/ui/notifications/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "libs/ui/notifications/jest.config.ts"
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    }
+  }
+}

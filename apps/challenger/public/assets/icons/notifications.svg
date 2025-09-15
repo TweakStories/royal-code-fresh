@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Example notifications icon -->
+  <path d="M32 8 A16 16 0 0 1 48 24 V36 L54 42 H10 L16 36 V24 A16 16 0 0 1 32 8 Z" fill="currentColor"/>
+</svg>

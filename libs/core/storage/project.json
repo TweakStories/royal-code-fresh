@@ -1,0 +1,36 @@
+{
+  "name": "storage",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/core/storage/src",
+  "prefix": "lib-royal-code",
+  "projectType": "library",
+  "tags": ["type:core", "scope:core-storage"],
+  "targets": {
+    "build": {
+      "executor": "@nx/angular:package",
+      "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+      "options": {
+        "project": "libs/core/storage/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/core/storage/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/core/storage/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "libs/core/storage/jest.config.ts"
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    }
+  }
+}

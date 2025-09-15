@@ -1,0 +1,18 @@
+{
+  "extends": "./tsconfig.lib.json",
+  "compilerOptions": {
+    "paths": {
+      "@royal-code/ui/media": ["dist/libs/ui/media/public-api.d.ts"]
+    },
+    "declarationMap": false,
+    "moduleResolution": "node",
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": false,
+    "strict": false,
+    "noImplicitAny": false,
+    "strictNullChecks": false
+  },
+  "angularCompilerOptions": {
+    "compilationMode": "full"
+  }
+}

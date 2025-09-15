@@ -1,0 +1,21 @@
+{
+  "name": "account-ui-droneshop",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/features/account/ui-droneshop/src",
+  "prefix": "droneshop",
+  "projectType": "library",
+  "tags": ["scope:droneshop", "type:feature", "context:account"],
+  "targets": {
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "libs/features/account/ui-droneshop/jest.config.ts",
+        "tsConfig": "libs/features/account/ui-droneshop/tsconfig.spec.json"
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    }
+  }
+}

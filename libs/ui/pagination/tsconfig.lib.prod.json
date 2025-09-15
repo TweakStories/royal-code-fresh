@@ -1,0 +1,9 @@
+﻿{
+  "extends": "./tsconfig.lib.json",
+  "compilerOptions": {
+    "declarationMap": false,
+    "moduleResolution": "node"
+  },
+  "angularCompilerOptions": {}
+}
+

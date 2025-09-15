@@ -1,0 +1,926 @@
+{
+  "common": {
+    "buttons": {
+      "back": "Terug",
+      "cancel": "Annuleren",
+      "close": "Sluiten",
+      "confirm": "Bevestigen",
+      "delete": "Verwijderen",
+      "edit": "Bewerken",
+      "next": "Volgende",
+      "no": "Nee",
+      "ok": "OK",
+      "previous": "Vorige",
+      "reply": "Antwoorden",
+      "report": "Melden",
+      "save": "Opslaan",
+      "search": "Zoeken",
+      "share": "Delen",
+      "submit": "Verzenden",
+      "viewDetails": "Bekijk details",
+      "yes": "Ja",
+      "saving": "Opslaan...",
+      "explore": "Verkennen",
+      "saveChanges": "Wijzigingen opslaan"
+    },
+    "dateTime": {
+      "dateFormat": "MMM dd, yyyy, HH:mm",
+      "timeFormat": "HH:mm:ss",
+      "today": "Vandaag",
+      "unknownDate": "Onbekende Datum",
+      "yesterday": "Gisteren"
+    },
+    "labels": {
+      "address": "Adres",
+      "email": "E-mail",
+      "firstName": "Voornaam",
+      "middleName": "Tussenvoegsel",
+      "lastName": "Achternaam",
+      "password": "Wachtwoord",
+      "phone": "Telefoonnummer",
+      "username": "Gebruikersnaam",
+      "displayName": "Weergavenaam",
+      "bio": "Over mij",
+      "currentPassword": "Huidig Wachtwoord",
+      "newPassword": "Nieuw Wachtwoord",
+      "confirmNewPassword": "Bevestig Nieuw Wachtwoord"
+    },
+    "messages": {
+      "error": "Er is een fout opgetreden",
+      "loading": "Laden...",
+      "noData": "Geen gegevens beschikbaar",
+      "success": "Bewerking succesvol",
+      "welcome": "Welkom bij onze applicatie!"
+    },
+    "placeholders": {
+      "comments": "Voeg hier uw opmerkingen toe",
+      "email": "Voer uw e-mailadres in",
+      "password": "Voer uw wachtwoord in",
+      "search": "Typ om te zoeken...",
+      "username": "Voer uw gebruikersnaam in"
+    },
+    "forms": {
+      "errors": {
+        "required": "Dit veld is verplicht.",
+        "invalid": "Ongeldige invoer.",
+        "pattern": {
+          "postalCode": "Ongeldige postcode."
+        },
+        "requiredField": "Dit veld is verplicht"
+      }
+    },
+    "themes": {
+      "dark": "Donker",
+      "light": "Licht"
+    },
+    "productFound": "product gevonden",
+    "productsFound": "producten gevonden",
+    "yes": "Ja",
+    "no": "Nee",
+    "or": "of",
+    "options": "Opties",
+    "review": "recensie",
+    "reviews": "recensies",
+    "stars": {
+      "five": "5 Sterren",
+      "four": "4 Sterren",
+      "three": "3 Sterren",
+      "two": "2 Sterren",
+      "one": "1 Ster"
+    }
+
+  },
+  "footer": {
+    "columns": {
+            "newsletter": {
+        "title": "Newsletter",
+        "text": "Stay up to date with my latest projects and insights."
+      }
+
+    }
+  },
+  "architecture": {
+    "pageTitle": "Technische Architectuur",
+    "intro": "Dit portfolio toont niet alleen mijn werk, maar is ook een live demonstratie van mijn architecturale principes. Het is gebouwd op een robuuste, schaalbare en onderhoudbare basis met behulp van een Nx Monorepo.",
+    "principlesTitle": "Kernprincipes",
+    "principle1": {
+      "title": "Schaalbare Monorepo",
+      "desc": "Alle code bevindt zich in één Nx Monorepo, wat maximale herbruikbaarheid van code en consistente tooling mogelijk maakt."
+    },
+    "principle2": {
+      "title": "Strikte Afhankelijkheidsregels",
+      "desc": "Afgedwongen grenzen tussen bibliotheken voorkomen spaghetticode en zorgen voor een duidelijke, unidirectionele gegevensstroom."
+    },
+    "principle3": {
+      "title": "Statusgestuurde UI",
+      "desc": "De gebruikersinterface is een directe functie van de applicatiestatus, beheerd door NgRx voor voorspelbaar en debugbaar gedrag."
+    },
+    "structureTitle": "Bibliotheekstructuur & Gegevensstroom",
+    "structureIntro": "De architectuur volgt een strikte, gelaagde aanpak. Elke bibliotheek heeft één verantwoordelijkheid en gegevens stromen naar beneden, wat zorgt voor een duidelijke scheiding van verantwoordelijkheden.",
+    "layer": {
+      "feature": {
+        "title": "Feature (UI-laag)",
+        "desc": "Bevat 'slimme' componenten en routing. Regelt de gebruikersinterface en interageert uitsluitend met een Facade uit de 'feature-core'-laag."
+      },
+      "core": {
+        "title": "Feature Core (Statusbeheer)",
+        "desc": "Het brein van een feature. Bevat alle NgRx-statuslogica (Actions, Reducer, Effects, Selectors) en exposeert deze via een enkele, schone Facade."
+      },
+      "dataAccess": {
+        "title": "Gegevenstoegang",
+        "desc": "De enige laag die communiceert met de buitenwereld. Bevat Angular-services met HttpClient-aanroepen naar de backend-API. Retourneert ruwe DTO's."
+      },
+      "domain": {
+        "title": "Domein",
+        "desc": "Het hart van de applicatie. Bevat alleen TypeScript-typen, interfaces en enums. Het heeft geen afhankelijkheden en wordt gedeeld over alle lagen."
+      }
+    }
+  },
+  "ui": {
+    "mediaUploader": {
+      "dragAndDrop": "Sleep bestanden hierheen of klik om te bladeren",
+      "supportedFormatsAndSize": "PNG, JPG, WEBP tot {{maxFileSizeMb}}MB",
+      "uploadingFiles": "Bestand(en) uploaden...",
+      "uploadError": "Uploadfout: {{message}}",
+      "invalidFileType": "Bestandstype '{{fileType}}' is niet toegestaan.",
+      "fileTooLarge": "Afbeelding '{{fileName}}' is te groot."
+    }
+  },
+  "auth": {
+    "login": {
+      "email": "E-mailadres",
+      "password": "Wachtwoord",
+      "submit": "Inloggen",
+      "forgotPassword": "Wachtwoord vergeten?",
+      "noAccount": "Nog geen account?",
+      "linkText": "Log in",
+      "invalidCredentials": "Ongeldig e-mailadres of wachtwoord."
+    },
+    "register": {
+      "title": "Nieuw account aanmaken",
+      "displayName": "Displaynaam",
+      "firstName": "Voornaam",
+       "middleName": "Tussenvoegsel",
+      "lastName": "Achternaam",
+      "confirmPassword": "Bevestig wachtwoord",
+      "submit": "Registreren",
+      "alreadyAccount": "Heb je al een account?",
+      "linkText": "Registreer",
+      "genericError": "Er is een onverwachte fout opgetreden bij de registratie. Probeer het opnieuw.",
+      "duplicateEmail": "Dit e-mailadres is al geregistreerd."
+    },
+    "loginPrompt": {
+      "message": "Log in om verder te gaan.",
+      "reasonChatLimit": "U heeft de anonieme chatlimiet bereikt."
+    }
+  },
+  "cart": {
+    "addToCart": "Toevoegen aan winkelwagen",
+    "viewDetails": "Bekijk details"
+  },
+  "charProgression": {
+    "categories": {
+      "combatEffectiveness": "Gevechtseffectiviteit",
+      "coreAttributes": "Kernattributen",
+      "resources": "Middelen"
+    },
+    "errors": {
+      "loadStatsFailed": "Niet gelukt om statistieken te laden."
+    },
+    "messages": {
+      "loadStatsFailed": "Niet gelukt om karakterstatistieken te laden. Probeer het later opnieuw.",
+      "noStatsAvailable": "Karakterstatistieken zijn momenteel niet beschikbaar.",
+      "noStatsInCategory": "Geen gedetailleerde statistieken beschikbaar voor deze categorie."
+    },
+    "skills": {
+      "availableSkillPoints": "Beschikbare Vaardigheidspunten",
+      "cannotUpgrade": "Kan niet verder upgraden",
+      "currentStatValue": "Huidige Stat Waarde",
+      "nextTierAtStat": "Volgende Niveau bij Stat {{stat}} {{value}}",
+      "noCategoriesAvailable": "Momenteel geen vaardigheidscategorieën beschikbaar.",
+      "noSkillPoints": "Niet genoeg vaardigheidspunten",
+      "noSkillsInCategory": "Geen vaardigheden gevonden in deze categorie.",
+      "pageTitle": "Vaardigheden & Talenten",
+      "tierProgress": "Voortgang Niveau"
+    },
+    "srOnly": {
+      "levelResources": "Karakterniveau, Ervaring en Middelen"
+    },
+    "stats": {
+      "arcane": {
+        "description": "Verbetert arcane spreuken, weerstanden en mystieke kennis.",
+        "name": "Arcane"
+      },
+      "attackPower": "Aanvalskracht",
+      "critChance": "Kritieke Kans",
+      "dexterity": {
+        "description": "Verbetert behendigheid, nauwkeurigheid op afstand en kritieke aanvalskans.",
+        "name": "Behendigheid"
+      },
+      "effectPrefix": "Effect",
+      "intelligence": {
+        "description": "Verhoogt magische schade, mana-regeneratie en succes bij crafting.",
+        "name": "Intelligentie"
+      },
+      "luck": {
+        "description": "Beïnvloedt kritieke aanvalskansen, buitkwaliteit en zeldzame ontmoetingen.",
+        "name": "Geluk"
+      },
+      "strength": {
+        "description": "Verhoogt fysieke kracht en draagcapaciteit.",
+        "name": "Kracht"
+      }
+    },
+    "titles": {
+      "coreStats": "Kernstatistieken",
+      "fullStats": "Volledige karakterstatistieken",
+      "skillCategories": "Vaardigheidscategorieën"
+    }
+  },
+"checkout": {
+  "saveAddress": "Als nieuw adres opslaan",
+    "backToCart": "Terug naar winkelwagen",
+    "orderSummary": {
+      "loading": "Besteloverzicht wordt geladen...",
+      "shippingCosts": "Verzendkosten",
+      "subtotal": "Subtotaal",
+      "title": "Besteloverzicht",
+      "total": "Totaal",
+      "includingVat": "Incl. BTW",
+      "discount": "Korting",
+      "freeShipping": "Gratis"
+    },
+     "notifications": {
+      "selectAddressAndShippingMethod": "Selecteer alstublieft een verzendadres én een verzendmethode om door te gaan.",
+      "selectAddress": "Selecteer alstublieft een verzendadres.",
+      "selectShippingMethod": "Selecteer alstublieft een verzendmethode."
+    },
+    "pageTitle": "Afrekenen",
+    "payment": {
+      "continueButton": "Doorgaan naar overzicht",
+      "description": "Selecteer hoe je wilt betalen.",
+      "methods": {
+        "creditcard": {
+          "description": "Visa, Mastercard, Amex",
+          "name": "Creditcard"
+        },
+        "ideal": {
+          "description": "Betaal met uw bank",
+          "name": "iDEAL"
+        },
+        "paypal": {
+          "description": "Veilig betalen met je PayPal-account. 2.4% transactiekosten.",
+          "name": "PayPal"
+        },
+        "banktransfer": {
+          "description": "Handmatige bankoverboeking. Wordt dagelijks gecontroleerd en even snel verwerkt als andere methoden. En je betaald hiervoor geen extra kosten",
+          "name": "Bankoverboeking"
+        }
+      },
+      "title": "Betaalmethode"
+    },
+    "previousStep": "Vorige stap",
+    "progress": {
+      "payment": "Betaling",
+      "review": "Overzicht",
+      "shipping": "Verzending",
+      "title": "Voortgang afrekenen"
+    },
+    "review": {
+      "confirmAndPayButton": "Bestelling Plaatsen & Betalen",
+      "description": "Dit is een placeholder voor de inhoud van de laatste beoordelingsstap.",
+      "title": "Overzicht & Bevestigen",
+      "noShippingAddress": "Geen verzendadres geselecteerd.",
+      "noPaymentMethod": "Geen betaalmethode geselecteerd."
+    },
+    "success": {
+      "title": "Bedankt voor je bestelling!",
+      "description": "Je bestelling is succesvol geplaatst. Je ontvangt zo dadelijk een bevestigingse-mail.",
+      "orderNumber": "Jouw bestelnummer is"
+    },
+    "shipping": {
+      "description": "Selecteer een bestaand adres of voer een nieuw adres in voor verzending.",
+      "form": {
+        "city": "Plaats",
+        "continueButton": "Doorgaan naar betaling",
+        "country": "Land",
+        "houseNumber": "Huisnummer",
+        "postalCode": "Postcode",
+        "recipientName": "Naam ontvanger",
+        "recipientPlaceholder": "Volledige naam",
+        "saveAddress": "Dit adres opslaan in mijn profiel voor toekomstig gebruik.",
+        "street": "Straat",
+        "addressAddition": "Toevoeging (optioneel)",
+        "companyName": "Bedrijfsnaam (optioneel)",
+        "phoneNumber": "Telefoonnummer (optioneel)",
+        "email": "E-mailadres (optioneel)",
+        "deliveryInstructions": "Leveringsinstructies (optioneel)"
+      },
+      "orDivider": "OF",
+      "title": "Verzendadres",
+      "selectSavedAddress": "Selecteer een opgeslagen adres"
+    }
+  },
+  
+  "errors": {
+    "http": {
+      "400": "Ongeldig verzoek",
+      "401": "Niet geautoriseerd",
+      "403": "Toegang geweigerd",
+      "404": "Pagina niet gevonden",
+      "500": "Interne serverfout"
+    },
+    "server": {
+      "connectionError": "Kon geen verbinding maken met de server",
+      "timeout": "Server time-out. Probeer het later opnieuw.",
+      "unknownError": "Er is een onverwachte fout opgetreden op de server"
+    },
+    "validation": {
+      "invalidEmail": "Voer een geldig e-mailadres in",
+      "maxLength": "Maximale lengte is {{max}} tekens",
+      "minLength": "Minimale lengte is {{min}} tekens",
+      "passwordMismatch": "Wachtwoorden komen niet overeen",
+      "requiredField": "Dit veld is verplicht"
+    },
+        "requiredField": "Dit veld is verplicht.",
+    "invalidEmail": "Voer een geldig e-mailadres in.",
+    "passwordsDoNotMatch": "Wachtwoorden komen niet overeen.",
+    "minLengthPassword": "Wachtwoord moet minimaal {requiredLength} tekens lang zijn.",
+    "password": {
+      "tooShort": "Wachtwoord moet minimaal 6 tekens lang zijn.",
+      "noUppercase": "Wachtwoord moet minimaal één hoofdletter bevatten.",
+      "noLowercase": "Wachtwoord moet minimaal één kleine letter bevatten.",
+      "noDigit": "Wachtwoord moet minimaal één cijfer bevatten.",
+      "noSpecialChar": "Wachtwoord moet minimaal één speciaal teken bevatten."
+    }
+
+  },
+    "account": {
+      "overview": {
+        "greeting": "Welkom, {{name}}!",
+        "loadingGreeting": "Welkom!",
+        "ordersCardTitle": "Mijn Bestellingen",
+        "ordersCardDescription": "Bekijk uw bestelgeschiedenis en volg uw pakketten.",
+        "ordersCountText": "{count, plural, one {bestelling} other {bestellingen}}",
+        "viewOrdersButton": "Bekijk Bestellingen",
+        "addressesCardTitle": "Mijn Adressen",
+        "addressesCardDescription": "Beheer uw opgeslagen verzend- en factuuradressen.",
+        "addressesCountText": "{count, plural, one {adres} other {adressen}}",
+        "manageAddressesButton": "Adressen Beheren",
+        "wishlistCardTitle": "Mijn Verlanglijst",
+        "wishlistCardDescription": "Bekijk alle producten die u heeft opgeslagen voor later.",
+        "wishlistCountText": "{count, plural, one {artikel} other {artikelen}}",
+        "viewWishlistButton": "Bekijk Verlanglijst",
+        "reviewsCardTitle": "Mijn Productrecensies",
+        "reviewsCardDescription": "Bekijk en beheer alle recensies die u heeft geschreven.",
+        "reviewsCountText": "{count, plural, one {recensie} other {recensies}}",
+        "viewMyReviewsButton": "Bekijk Mijn Recensies",
+        "settingsCardTitle": "Accountinstellingen",
+        "settingsCardDescription": "Wijzig uw profiel, wachtwoord en voorkeuren.",
+        "goToSettingsButton": "Ga naar Instellingen"
+      },
+      "profile": {
+        "personalData": {
+          "title": "Persoonlijke gegevens",
+          "description": "Beheer uw naam, weergavenaam en biografie."
+        },
+        "security": {
+          "title": "Beveiliging",
+          "changePassword": {
+            "title": "Wachtwoord wijzigen",
+            "description": "Wijzig uw wachtwoord om uw account veilig te houden.",
+            "button": "Wachtwoord wijzigen",
+            "currentPassword": "Huidig Wachtwoord",
+            "newPassword": "Nieuw Wachtwoord",
+            "confirmNewPassword": "Bevestig Nieuw Wachtwoord"
+          },
+          "twoFactor": {
+            "title": "Twee-factor authenticatie",
+            "description": "Voeg een extra beveiligingslaag toe aan uw account.",
+            "button": "Instellen"
+          },
+          "errors": {
+            "passwordsDoNotMatch": "Nieuwe wachtwoorden komen niet overeen."
+          }
+        },
+        "deleteAccount": {
+          "title": "Account verwijderen",
+          "description": "Verwijder uw account en alle gerelateerde gegevens permanent.",
+          "button": "Account verwijderen",
+          "passwordConfirmation": "Voer uw wachtwoord in ter bevestiging",
+          "confirmTitle": "Accountverwijdering bevestigen",
+          "confirmMessage": "Weet u zeker dat u uw account permanent wilt verwijderen? Deze actie kan niet ongedaan worden gemaakt."
+        }
+      },
+      "addresses": {
+        "addAddressTitle": "Nieuw adres toevoegen",
+        "addAddressDescription": "Voeg een nieuw verzend- of factuuradres toe."
+      },
+      "myReviews": {
+        "pageDescription": "Bekijk en beheer alle productrecensies die u heeft geschreven.",
+        "searchPlaceholder": "Zoek mijn recensies...",
+        "sortOptions": {
+          "newest": "Nieuwste eerst",
+          "oldest": "Oudste eerst",
+          "highestRated": "Hoogst beoordeeld",
+          "lowestRated": "Laagst beoordeeld",
+          "mostHelpful": "Meest behulpzaam"
+        },
+        "noReviewsYet": "U heeft nog geen recensies geschreven."
+      }
+    },
+    "challenges": {
+      "detail": {
+        "addReview": "Review toevoegen",
+        "difficulty": "Moeilijkheidsgraad",
+        "duration": "Duur",
+        "mode": "Modus",
+        "reward": "Beloning",
+        "endDate": "Einddatum",
+        "joinChallenge": "Doe mee aan uitdaging",
+        "leaveChallenge": "Verlaat uitdaging",
+        "participants": "Deelnemers",
+        "reviews": "Recensies",
+        "startDate": "Startdatum",
+        "status": "Status",
+        "title": "Details van de uitdaging"
+      },
+      "overview": {
+        "description": "Ontdek en neem deel aan spannende uitdagingen",
+        "title": "Uitdagingen"
+      },
+      "reviews": {
+        "noReviews": "Nog geen recensies, wees de eerste!",
+        "rating": "Beoordeling",
+        "reviewText": "Uw recensie",
+        "writeReview": "Schrijf een recensie"
+      }
+    },
+    "orders": {
+      "detail": {
+        "items": "Items",
+        "orderDate": "Besteldatum",
+        "orderNumber": "Bestelnummer",
+        "status": "Status",
+        "total": "Totaal",
+        "title": "Besteldetails voor"
+      },
+      "overview": {
+        "title": "Mijn bestellingen",
+        "description": "Volg en beheer uw bestellingen",
+        "searchPlaceholder": "Zoek alle bestellingen...",
+        "allOrders": "Alle bestellingen",
+        "unshipped": "Niet verzonden",
+        "cancelled": "Geannuleerde bestellingen",
+        "noOrders": "U heeft nog geen bestellingen geplaatst.",
+        "startShopping": "Begin met winkelen"
+      },
+      "card": {
+        "placed": "Bestelling geplaatst",
+        "total": "Totaal",
+        "shipTo": "Verzenden naar",
+        "orderActions": "Bestelacties",
+        "viewDetails": "Bekijk Besteldetails",
+        "downloadInvoice": "Factuur downloaden",
+        "deliveredOn": "Geleverd op {{date}}",
+        "returnWindow": "Retourtermijn sluit op {{date}}",
+        "buyAgain": "Opnieuw kopen",
+        "viewItem": "Bekijk item",
+        "trackPackage": "Pakket volgen",
+        "returnItems": "Items retourneren",
+        "writeReview": "Schrijf een recensie"
+      },
+      "summary": {
+        "items": "{{count}} artikel"
+      },
+      "status": {
+        "pendingPayment": "Wachtend op betaling",
+        "paymentFailed": "Betaling mislukt",
+        "awaitingFulfillment": "Wachtend op uitvoering",
+        "processing": "Verwerken",
+        "shipped": "Verzonden",
+        "inTransit": "Onderweg",
+        "delivered": "Geleverd",
+        "completed": "Voltooid",
+        "cancelled": "Geannuleerd",
+        "refundPending": "Terugbetaling in afwachting",
+        "partiallyRefunded": "Gedeeltelijk terugbetaald",
+        "fullyRefunded": "Volledig terugbetaald",
+        "onHold": "In de wacht",
+        "unknown": "Onbekende status"
+      }
+    },
+     "productDetail": {
+      "byBrand": "Door",
+      "reviewsCount": "beoordelingen",
+      "loadingDetails": "Drone details worden geladen...",
+      "addToCartError": "Dit product kan niet worden toegevoegd aan de winkelwagen.",
+      "addToCartAriaLabelPrefix": "Voeg",
+      "addToCartAriaLabelSuffix": "toe aan winkelwagen",
+      "reviewModalError": "Kan geen review starten: product-ID ontbreekt.",
+      "writeReviewButton": "Schrijf een review",
+      "readAllReviews": "Lees alle reviews",
+      "here": "hier",
+      "descriptionTitle": "Over de Siren F3.5",
+      "tagsTitle": "Tags",
+      "specsTitle": "Specificaties",
+      "qualitiesTitle": "Product Kwaliteiten",
+      "attributes": {
+        "durability": "Duurzaamheid",
+        "durability_desc": "Hoe goed de drone crashes en impact kan weerstaan.",
+        "maxSpeed": "Max. Snelheid (km/u)",
+        "maxSpeed_desc": "De topsnelheid die de drone kan bereiken in ideale omstandigheden.",
+        "flightTime": "Vliegtijd (min)",
+        "flightTime_desc": "De geschatte maximale vliegtijd op een enkele batterijlading.",
+        "responsiveness": "Responsiviteit",
+        "responsiveness_desc": "Hoe direct en scherp de drone reageert op stick-input.",
+        "controlRange": "Bereik (km)",
+        "controlRange_desc": "Het maximale effectieve bereik van de radio- en videoverbinding.",
+        "cameraQualityScore": "Camerakwaliteit",
+        "cameraQualityScore_desc": "Een algemene score voor de beeldkwaliteit van de FPV-camera."
+      },
+      "ageAdviceTitle": "Leeftijdsadvies",
+      "generalSpecsTitle": "Algemene Specificaties",
+      "noSpecsApplicable": "Geen specifieke specificaties van toepassing.",
+      "whyChooseTitle": "Waarom kiezen voor Droneshop?",
+      "trustBadge1_text": "Professioneel getuned",
+      "trustBadge2_text": "Premium componenten",
+      "trustBadge3_text": "Snelle levering",
+      "trustBadge4_text": "2 jaar garantie",
+      "trustBadge5_text": "Passie voor FPV",
+      "trustBadge6_text": "Bewezen kwaliteit",
+      "outOfStock": "Niet op voorraad",
+      "onBackorder": "Nabestelling",
+      "preOrder": "Pre-order",
+      "comingSoon": "Binnenkort",
+      "discontinued": "Niet meer leverbaar",
+      "onlyXLeft": "Nog slechts {{ quantity }} op voorraad!",
+      "almostSoldOut": "Beperkte voorraad!",
+      "inStock": "Op voorraad",
+      "availableFrom": "Beschikbaar vanaf {{ date }}",
+      "flashDeal": "Flash Deal",
+      "deliveryMessage": "Bestel binnen {{ countdown }} voor levering morgen!",
+      "selectStandardView": "Selecteer standaard weergave (alle opties)"
+    },
+    "product": {
+       "spec": {
+          "frameMaterial": "Frame Materiaal",
+          "propellerSize": "Propeller Grootte",
+          "batteryCompatibility": "Batterij Compatibiliteit",
+          "videoSystem": "Video Systeem",
+          "flightController": "Flight Controller",
+          "escCurrent": "ESC Stroomsterkte",
+          "motorKv": "Motor KV Rating",
+          "weightDry": "Droog Gewicht",
+          "gps": "GPS Aanwezig",
+          "bnfProtocol": "BNF Protocol",
+          "chargerCompatibility": "Lader Compatibiliteit",
+          "toolType": "Gereedschapstype",
+          "wireGauge": "Draaddikte"
+       }
+      },
+    "productOverview": {
+      "productFound": "product gevonden",
+      "productsFound": "producten gevonden",
+      "controls": {
+        "hideSidebar": "Verberg zijbalk",
+        "showSidebar": "Toon zijbalk"
+      },
+      "sortBy": {
+        "nameAsc": "Naam (A-Z)",
+        "nameDesc": "Naam (Z-A)",
+        "priceAsc": "Prijs (laag-hoog)",
+        "priceDesc": "Prijs (hoog-laag)",
+        "newest": "Nieuwste",
+        "popularity": "Populariteit"
+      }
+    },
+    "products": {
+      "addToCart": "Toevoegen",
+      "addToCartAria": "Voeg {{name}} toe aan winkelwagen",
+      "carouselControls": "Productafbeelding carrouselbediening",
+      "color": "Kleur",
+      "detail": {
+        "addToCart": "Toevoegen",
+        "availability": "Beschikbaarheid",
+        "inStock": "Op voorraad",
+        "outOfStock": "Niet op voorraad",
+        "price": "Prijs",
+        "loadingDetails": "Productdetails laden...",
+        "liveViewers": "mensen bekijken dit product nu",
+    "productImages": "Productafbeeldingen",
+    "about": {
+      "title": "Over de {{productName}}"
+    },
+        "siren_f5_rtf_8s_carbon_red": {
+      "name": "Siren F5 RTF 8S Drone Carbon/Red"
+    },
+    "quadmula_siren_f5_rtf_8s": {
+      "name": "Quadmula Siren F5 RTF (8S)"
+    },
+    "sirenF5": {
+      "description": {
+        "highlight1": {
+          "title": "Explosieve 8S Kracht",
+          "text": "Ervaar ongeëvenaarde acceleratie en 'hang-time' voor de meest extreme freestyle manoeuvres."
+        },
+        "highlight2": {
+          "title": "Onverwoestbaar Chassis",
+          "text": "Het legendarische Quadmula Siren F5 frame is ontworpen voor maximale impact-resistentie."
+        },
+        "highlight3": {
+          "title": "HD Cinematic Platform",
+          "text": "Stabiel en krachtig genoeg om een full-size GoPro te dragen voor professionele, vloeiende opnames."
+        },
+        "highlight4": {
+          "title": "Professioneel Geassembleerd & Getuned",
+          "text": "Elke drone wordt met de hand gebouwd, voorzien van een pro-tune en uitvoerig getest door onze FPV-experts."
+        },
+        "summary": "Dit is de keuze voor de serieuze piloot die controle, betrouwbaarheid en pure prestaties eist. Geen compromissen, alleen de ultieme FPV-ervaring, direct uit de doos."
+      }
+    },
+
+        "pricingAndAvailability": "Prijzen & Beschikbaarheid",
+        "newProductStatus": "Nieuw product",
+        "newProductBadge": "NIEUW",
+        "byBrand": "Door",
+        "reviewsCount": "recensies",
+        "flashDeal": "Flash Deal eindigt over",
+        "deliveryMessage": "Bestel binnen {{countdown}} voor levering morgen",
+        "selectOptions": "Selecteer uw opties",
+        "selectColorLabel": "Selecteer een kleur",
+        "selectSizeLabel": "Selecteer een maat",
+        "quantityAndActions": "Hoeveelheid & Acties",
+        "trustAndGuarantees": "Onze Garanties",
+        "trustBadge1": "Kindveilig",
+        "trustBadge2": "30 Dagen Retourbeleid",
+        "trustBadge3": "Snelle Levering",
+        "trustBadge4": "Topkwaliteit",
+        "trustBadge5": "Handgemaakt met Liefde",
+        "trustBadge6": "Perfect Formaat",
+        "descriptionTitle": "Beschrijving",
+        "tagsTitle": "Tags",
+        "specsTitle": "Specificaties",
+        "qualitiesTitle": "Kwaliteiten",
+        "ageAdviceTitle": "Leeftijdsadvies",
+        "generalSpecsTitle": "Algemene Specificaties",
+        "whyChooseTitle": "Waarom kiezen voor Droneshop?",
+        "reviewsTitle": "Recensies",
+        "writeReviewButton": "Schrijf een recensie",
+        "addToCartAriaLabelPrefix": "Toevoegen",
+        "addToCartAriaLabelSuffix": "aan winkelwagen",
+        "reviewHelpful": "behulpzaam",
+        "verifiedPurchase": "Geverifieerde Aankoop",
+        "reviewLikes": "mensen vonden dit behulpzaam",
+        "reviewPhotosTitle": "Klantfoto's",
+        "noSpecsApplicable": "Geen specificaties van toepassing voor dit product.",
+        "notFound": "Product niet gevonden.",
+        "statusUnknown": "Status Onbekend",
+        "almostSoldOut": "Bijna uitverkocht",
+        "onlyXLeft": "Nog maar {{quantity}} op voorraad!",
+        "onBackorder": "Verkrijgbaar op nabestelling",
+        "preOrder": "Beschikbaar voor pre-order",
+        "comingSoon": "Binnenkort beschikbaar",
+        "discontinued": "Niet meer leverbaar",
+        "availableFrom": "Verkrijgbaar vanaf {{date}}",
+        "attributes": {
+          "durability": "Duurzaamheid",
+          "cuddleFactor": "Knuffelbaarheid",
+          "fluffiness": "Zachtheid",
+          "dreamGuard": "Droomwacht",
+          "adventureSpirit": "Avontuurlijke Geest",
+          "cheerfulness": "Vrolijkheid",
+          "comfortLevel": "Comfortniveau",
+          "rarityScore": "Zeldzaamheidsscore",
+          "washable": "Wasbaar",
+          "cameraQualityScore": "Camerakwaliteit",
+          "flightTime": "Vliegtijd (min)",
+          "maxSpeed": "Max. Snelheid (km/u)"
+        },
+        "errors": {
+          "combinationUnavailable": "Deze combinatie van opties is niet beschikbaar.",
+          "addToCartError": "Kon item niet toevoegen. Selecteer geldige opties.",
+          "reviewModalError": "Kon het beoordelingsformulier niet openen. Product niet gevonden."
+        },
+        "specs": {
+          "material": "Materiaal",
+          "filling": "Vulling",
+          "washable": "Wasbaar",
+          "size": "Afmeting",
+          "weight": "Gewicht",
+          "origin": "Oorsprong",
+          "certification": "Certificering"
+        }
+      },
+      "image": {
+        "alt": {
+          "heroImageAlt": "heldenafbeelding",
+          "slank-zachte-muis.algemeen": "Algemeen slank zachte muis productafbeelding"
+        }
+      },
+      "nextImage": "Volgende afbeelding",
+      "noProductInfo": "Geen productinformatie beschikbaar",
+      "noReviewsYet": "Nog geen recensies",
+      "overview": {
+        "description": "Ontdek ons uitgebreide productassortiment",
+        "title": "Onze Producten"
+      },
+      "previousImage": "Vorige afbeelding",
+      "ratingAriaLabel": "Gemiddelde beoordeling: {{rating}} van 5 sterren, gebaseerd op {{count}} recensies",
+      "reviewCountText": "{{count}} recensies",
+      "select": "Selecteren",
+      "selectColor": "Selecteer kleur {{color}}",
+      "shopNow": "Nu winkelen",
+      "size": "Maat",
+      "viewOptions": "Opties bekijken"
+    },
+    "profile": {
+      "editProfile": {
+        "avatar": "Profielfoto",
+        "title": "Bewerk uw profiel",
+        "updateButton": "Profiel bijwerken"
+      },
+      "settings": {
+        "notifications": "Meldingen",
+        "preferences": "Voorkeuren",
+        "privacy": "Privacy",
+        "profile": "Profiel"
+      }
+    },
+    "shoppingCart": {
+      "overview": {
+        "title": "Winkelwagen",
+        "emptyCartTitle": "Uw winkelwagen is leeg",
+        "emptyCartDescription": "Het lijkt erop dat u nog geen artikelen heeft toegevoegd. Ontdek onze collectie en vind uw nieuwe favoriet!",
+        "continueShopping": "Verder winkelen",
+        "viewCart": "Winkelwagen bekijken",
+        "checkout": "Doorgaan naar afrekenen",
+        "cartCleared": "Uw winkelwagen is geleegd.",
+        "mergeSuccess": "Winkelwagen succesvol samengevoegd!"
+      },
+      "item": {
+        "added": "'{{name}}' is toegevoegd aan uw winkelwagen.",
+        "removed": "'{{name}}' is verwijderd uit uw winkelwagen.",
+        "productImageAlt": "Productafbeelding",
+        "removeAriaLabel": "Item verwijderen"
+      },
+      "headers": {
+        "product": "Product",
+        "quantity": "Hoeveelheid",
+        "total": "Totaal"
+      },
+      "errors": {
+        "removeItem": "Kon item niet verwijderen. Probeer het opnieuw."
+      },
+      "notifications": {
+        "itemAddedSuccess": "Product succesvol toegevoegd aan winkelwagen."
+      }
+    },
+  "home": {
+    "buttons": {
+      "viewAllSkills": "Bekijk alle vaardigheden"
+    },
+    "titles": {
+      "skillsPreview": "Vaardigheidscategorieën"
+    }
+  },
+  "reviews": {
+    "card": {
+      "helpfulButton": "Behulpzaam",
+      "replyButton": "Antwoorden",
+      "verifiedPurchase": "Geverifieerde Aankoop"
+    },
+    "list": {
+      "errorTitle": "Oeps, er ging iets mis",
+      "loading": "Recensies laden...",
+      "loadingMore": "Meer laden...",
+      "noReviewsYetSubtitle": "Wees de eerste die uw gedachten deelt!",
+      "noReviewsYetTitle": "Nog geen recensies",
+      "tryAgainButton": "Probeer opnieuw"
+    },
+    "summary": {
+      "averageRating": "Gemiddelde Beoordeling",
+      "totalReviews": "{{count}} Recensies"
+    },
+    "stars": {
+      "1star": "1 Ster",
+      "2stars": "2 Sterren",
+      "3stars": "3 Sterren",
+      "4stars": "4 Sterren",
+      "5stars": "5 Sterren"
+    },
+    "errors": {
+      "loadFailed": "Het laden van de recensies is mislukt.",
+      "myReviewsLoadFailed": "Het laden van je recensies is mislukt.",
+      "summaryLoadFailed": "Het laden van de recensie samenvatting is mislukt.",
+      "createFailed": "Het versturen van je recensie is mislukt. Probeer het opnieuw.",
+      "updateFailed": "Het bijwerken van de recensie is mislukt.",
+      "deleteFailed": "Het verwijderen van de recensie is mislukt.",
+      "voteFailed": "Het uitbrengen van je stem is mislukt."
+    },
+    "notifications": {
+      "createSuccess": "Je recensie is succesvol verzonden en wacht op goedkeuring.",
+      "updateSuccess": "Recensie succesvol bijgewerkt!",
+      "deleteSuccess": "Recensie succesvol verwijderd."
+    }
+  },
+  "messages": {
+    "loading": "Laden...",
+    "noDataAvailable": "Geen gegevens beschikbaar"
+  },
+  "navigation": {
+   "home": "Home",
+    "products": "Producten",
+    "search": "Zoekresultaten",
+    "rtfDrones": "Ready-to-Fly Drones",
+    "buildKits": "Bouwpakketten",
+    "cart": "Winkelwagen",
+    "checkout": "Afrekenen",
+    "chat": "Chat",
+    "orders": "Mijn Bestellingen",
+    "sale": "Sale",
+    "guides": "Gidsen",
+    "account": "Mijn Account",
+    "login": "Inloggen",
+    "register": "Registreren",
+    "jsonTest": "JSON Test",
+    "menu": {
+      "avatar": "Avatar",
+      "challenges": "Uitdagingen",
+      "help": "Hulp",
+      "home": "Home",
+      "menu": "Menu",
+      "myChallenges": "Mijn uitdagingen",
+      "nodes": "Kaart",
+      "profile": "Profiel",
+      "settings": "Instellingen",
+      "social": "Sociaal",
+      "stats": "Statistieken"
+    },
+    "userMenu": {
+      "myAccount": "Mijn account",
+      "profile": "Profiel",
+      "settings": "Instellingen"
+    },
+    "accountOverview": "Accountoverzicht",
+    "myProfile": "Mijn profiel",
+    "myAddresses": "Mijn adressen",
+    "myReviews": "Mijn productrecensies"
+  },
+  "nodes": {
+    "actions": {
+      "navigate": "Navigeren"
+    },
+    "challenge": {
+      "difficultyLevel": "Moeilijkheidsgraad",
+      "duration": "Duur",
+      "mode": "Modus",
+      "reward": "Beloning"
+    },
+    "sections": {
+      "challenge": "Uitdaging",
+      "information": "Informatie",
+      "social": "Sociaal"
+    },
+    "status": {
+      "loading": "Laden..."
+    }
+  },
+  "mediaViewer": {
+    "title": "Mediagalerij",
+    "noMediaSelected": "Geen media geselecteerd.",
+    "viewItemN": "Bekijk {{itemTitle}} (item {{current}} van {{total}})",
+    "thumbnails": "Miniaturen voor media"
+  },
+  "admin": {
+    "products": {
+      "form": {
+        "priceCannotBeHigherThanOriginal": "Prijs kan niet hoger zijn dan de originele prijs."
+      }
+    }
+  },
+  "wishlist": {
+    "pageTitle": "Mijn Verlanglijst",
+    "pageDescription": "Hier vindt u een overzicht van al uw favoriete producten die u heeft opgeslagen voor later.",
+    "noWishlistItems": "Uw verlanglijst is momenteel leeg.",
+    "emptyWishlistCta": "Ontdek onze producten",
+    "noWishlistItemsSubtitle": "Voeg producten toe die u leuk vindt en ze verschijnen hier.",
+    "notification": {
+      "added": "Product toegevoegd aan verlanglijst.",
+      "removed": "Product verwijderd van verlanglijst."
+    }
+  },
+  "attribute": {
+    "platform": "Platform",
+    "other": "Opties",
+    "color": "Kleur"
+  },
+  "reviewForm": {
+    "title": "Schrijf uw recensie",
+    "ratingLabel": "Uw beoordeling",
+    "noRatingSelected": "Selecteer alstublieft een beoordeling.",
+    "reviewTitleLabel": "Titel van uw recensie",
+    "reviewTextLabel": "Uw recensie",
+    "addPhotosLabel": "Voeg foto's toe"
+  }
+}

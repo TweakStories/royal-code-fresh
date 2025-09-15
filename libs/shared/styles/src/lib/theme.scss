@@ -1,0 +1,709 @@
+/* apps/challenger/src/styles.scss
+   ============================================================================
+   Challenger Design System – tokens (enterprise)          v3.16.1 (Neon on Hover)
+   - Neon effect nu alleen on hover voor .neon-effect-target elementen.
+   - Oude .btn-neon.neon-<theme> klassen verwijderd.
+   ========================================================================== */
+
+/* 1 ▸ Imports ------------------------------------------------------------- */
+@import "tailwindcss";
+@import "@ctrl/ngx-emoji-mart/picker";   /* indien nog gebruikt */
+
+
+/* 2 ▸ LIGHT-MODE TOKENS (:root) ------------------------------------------ */
+:root {
+  /* -- 2A. Hue & Saturation basis --------------------------------------- */
+  --hue-app-primary: 38;   --sat-app-primary: 92%;
+  --hue-theme-sun:    45;  --sat-theme-sun:    95%;
+  --hue-theme-fire:    0;  --sat-theme-fire:   88%;
+  --hue-theme-water: 210;  --sat-theme-water:  80%;
+  --hue-theme-forest:130;  --sat-theme-forest: 65%;
+  --hue-theme-arcane:270;  --sat-theme-arcane: 70%;
+  --hue-neutral: 215;  --sat-neutral: 15%;  --sat-neutral-strong: 20%;
+  --hue-accent:  200;  --sat-accent:  80%;
+  --hue-success-state:134; --sat-success-state:60%;
+  --hue-error-state:   0;  --sat-error-state: 85%;
+  --hue-info-state:   205; --sat-info-state:  80%;
+  --hue-warning-state: 40; --sat-warning-state:90%;
+
+  /* -- 2B. 5-stop gradient hues/sats (card borders) --------------------- */
+  --hue-fire-grad-stop1: 0;  --sat-fire-grad-stop1: 95%;
+  --hue-fire-grad-stop2: 8;  --sat-fire-grad-stop2: 93%;
+  --hue-fire-grad-stop3:20;  --sat-fire-grad-stop3: 90%;
+  --hue-fire-grad-stop4: 8;  --sat-fire-grad-stop4: 93%;
+  --hue-fire-grad-stop5: 0;  --sat-fire-grad-stop5: 95%;
+  --hue-water-grad-stop1:210; --sat-water-grad-stop1:92%;
+  --hue-water-grad-stop2:200; --sat-water-grad-stop2:88%;
+  --hue-water-grad-stop3:190; --sat-water-grad-stop3:85%;
+  --hue-water-grad-stop4:200; --sat-water-grad-stop4:88%;
+  --hue-water-grad-stop5:210; --sat-water-grad-stop5:92%;
+  --hue-forest-grad-stop1:120; --sat-forest-grad-stop1:78%;
+  --hue-forest-grad-stop2:130; --sat-forest-grad-stop2:75%;
+  --hue-forest-grad-stop3:100; --sat-forest-grad-stop3:72%;
+  --hue-forest-grad-stop4:130; --sat-forest-grad-stop4:75%;
+  --hue-forest-grad-stop5:120; --sat-forest-grad-stop5:78%;
+  --hue-sun-grad-stop1:50; --sat-sun-grad-stop1:100%;
+  --hue-sun-grad-stop2:45; --sat-sun-grad-stop2: 98%;
+  --hue-sun-grad-stop3:40; --sat-sun-grad-stop3: 95%;
+  --hue-sun-grad-stop4:45; --sat-sun-grad-stop4: 98%;
+  --hue-sun-grad-stop5:50; --sat-sun-grad-stop5:100%;
+  --hue-arcane-grad-stop1:270; --sat-arcane-grad-stop1:75%;
+  --hue-arcane-grad-stop2:285; --sat-arcane-grad-stop2:72%;
+  --hue-arcane-grad-stop3:300; --sat-arcane-grad-stop3:78%;
+  --hue-arcane-grad-stop4:255; --sat-arcane-grad-stop4:70%;
+  --hue-arcane-grad-stop5:270; --sat-arcane-grad-stop5:75%;
+
+  /* -- 2C. Light-mode lightness (5-stop card borders) -- */
+  --l-fire-grad-stop1:55%; --l-fire-grad-stop2:58%;
+  --l-fire-grad-stop3:62%; --l-fire-grad-stop4:58%;
+  --l-fire-grad-stop5:55%;
+  --l-water-grad-stop1:53%; --l-water-grad-stop2:58%;
+  --l-water-grad-stop3:60%; --l-water-grad-stop4:58%;
+  --l-water-grad-stop5:53%;
+  --l-forest-grad-stop1:48%; --l-forest-grad-stop2:53%;
+  --l-forest-grad-stop3:56%; --l-forest-grad-stop4:53%;
+  --l-forest-grad-stop5:48%;
+  --l-sun-grad-stop1:60%; --l-sun-grad-stop2:63%;
+  --l-sun-grad-stop3:68%; --l-sun-grad-stop4:63%;
+  --l-sun-grad-stop5:60%;
+  --l-arcane-grad-stop1:58%; --l-arcane-grad-stop2:61%;
+  --l-arcane-grad-stop3:65%; --l-arcane-grad-stop4:61%;
+  --l-arcane-grad-stop5:58%;
+
+  /* -- 2D. Full HSL colours (light) -- */
+  --color-primary:             hsl(var(--hue-app-primary) var(--sat-app-primary) 58%);
+  --color-primary-hover:       hsl(var(--hue-app-primary) var(--sat-app-primary) 51%);
+  --color-primary-on:          hsl(var(--hue-app-primary) calc(var(--sat-app-primary)*.4) 12%);
+  --color-theme-sun:           hsl(var(--hue-theme-sun) var(--sat-theme-sun) 60%);
+  --color-theme-sun-hover:     hsl(var(--hue-theme-sun) var(--sat-theme-sun) 53%);
+  --color-theme-sun-on:        hsl(var(--hue-theme-sun) calc(var(--sat-theme-sun)*.4) 15%);
+  --color-theme-fire:          hsl(var(--hue-theme-fire) var(--sat-theme-fire) 55%);
+  --color-theme-fire-hover:    hsl(var(--hue-theme-fire) var(--sat-theme-fire) 48%);
+  --color-theme-fire-on:       hsl(var(--hue-theme-fire) calc(var(--sat-theme-fire)*.4) 100%);
+  --color-theme-water:         hsl(var(--hue-theme-water) var(--sat-theme-water) 57%);
+  --color-theme-water-hover:   hsl(var(--hue-theme-water) var(--sat-theme-water) 50%);
+  --color-theme-water-on:      hsl(var(--hue-theme-water) calc(var(--sat-theme-water)*.4) 100%);
+  --color-theme-forest:        hsl(var(--hue-theme-forest) var(--sat-theme-forest) 48%);
+  --color-theme-forest-hover:  hsl(var(--hue-theme-forest) var(--sat-theme-forest) 41%);
+  --color-theme-forest-on:     hsl(var(--hue-theme-forest) calc(var(--sat-theme-forest)*.4) 100%);
+  --color-theme-arcane:        hsl(var(--hue-theme-arcane) var(--sat-theme-arcane) 58%);
+  --color-theme-arcane-hover:  hsl(var(--hue-theme-arcane) var(--sat-theme-arcane) 51%);
+  --color-theme-arcane-on:     hsl(var(--hue-theme-arcane) calc(var(--sat-theme-arcane)*.4) 100%);
+  --color-background:          hsl(var(--hue-neutral) var(--sat-neutral) 98%);
+  --color-foreground:          hsl(var(--hue-neutral) var(--sat-neutral-strong) 8%);
+  --color-surface:             hsl(var(--hue-neutral) var(--sat-neutral) 100%);
+  --color-surface-alt:         hsl(var(--hue-neutral) var(--sat-neutral) 96%);
+  --surface-card:              hsl(var(--hue-neutral) var(--sat-neutral) 99%);
+  --color-border:              hsl(var(--hue-neutral) var(--sat-neutral) 90%);
+  --color-ring:                var(--color-primary);
+  --color-text:                var(--color-foreground);
+  --color-text-muted:          hsl(var(--hue-neutral) var(--sat-neutral) 66%);
+  --color-placeholder:         hsl(var(--hue-neutral) var(--sat-neutral) 65%);
+  --color-background-secondary:hsl(var(--hue-neutral) var(--sat-neutral) 96%);
+  --color-hover:               hsl(var(--hue-neutral) var(--sat-neutral) 92%);
+  --color-foreground-default:  hsl(var(--hue-neutral) var(--sat-neutral-strong) 15%);
+  --color-secondary:           hsl(var(--hue-neutral) var(--sat-neutral) 45%);
+  --color-secondary-hover:     var(--color-primary);
+  --color-accent:              hsl(var(--hue-accent) var(--sat-accent) 58%);
+  --color-accent-on:           hsl(var(--hue-accent) calc(var(--sat-accent)*.3) 100%);
+  --color-success:             hsl(var(--hue-success-state) var(--sat-success-state) 50%);
+  --color-success-on:          hsl(var(--hue-success-state) calc(var(--sat-success-state)*.3) 100%);
+  --color-warning:             hsl(var(--hue-warning-state) var(--sat-warning-state) 50%);
+  --color-warning-on:          hsl(var(--hue-warning-state) calc(var(--sat-warning-state)*.3) 15%);
+  --color-error:               var(--color-theme-fire);
+  --color-error-on:            var(--color-theme-fire-on);
+  --color-info:                hsl(var(--hue-info-state) var(--sat-info-state) 58%);
+  --color-info-on:             hsl(var(--hue-info-state) calc(var(--sat-info-state)*.3) 100%);
+  --color-overlay-backdrop:    hsla(var(--hue-neutral) 20% 5% / 0.7);
+  --color-muted:               hsl(var(--hue-neutral) var(--sat-neutral) 96%);
+  --color-destructive:         hsl(var(--hue-error-state) var(--sat-error-state) 50%);
+
+  /* 5-stop gradient full colours (light) - Card Borders */
+  --color-fire-grad-stop1:   hsl(var(--hue-fire-grad-stop1) var(--sat-fire-grad-stop1) var(--l-fire-grad-stop1));
+  --color-fire-grad-stop2:   hsl(var(--hue-fire-grad-stop2) var(--sat-fire-grad-stop2) var(--l-fire-grad-stop2));
+  --color-fire-grad-stop3:   hsl(var(--hue-fire-grad-stop3) var(--sat-fire-grad-stop3) var(--l-fire-grad-stop3));
+  --color-fire-grad-stop4:   hsl(var(--hue-fire-grad-stop4) var(--sat-fire-grad-stop4) var(--l-fire-grad-stop4));
+  --color-fire-grad-stop5:   hsl(var(--hue-fire-grad-stop5) var(--sat-fire-grad-stop5) var(--l-fire-grad-stop5));
+  --color-water-grad-stop1:  hsl(var(--hue-water-grad-stop1) var(--sat-water-grad-stop1) var(--l-water-grad-stop1));
+  --color-water-grad-stop2:  hsl(var(--hue-water-grad-stop2) var(--sat-water-grad-stop2) var(--l-water-grad-stop2));
+  --color-water-grad-stop3:  hsl(var(--hue-water-grad-stop3) var(--sat-water-grad-stop3) var(--l-water-grad-stop3));
+  --color-water-grad-stop4:  hsl(var(--hue-water-grad-stop4) var(--sat-water-grad-stop4) var(--l-water-grad-stop4));
+  --color-water-grad-stop5:  hsl(var(--hue-water-grad-stop5) var(--sat-water-grad-stop5) var(--l-water-grad-stop5));
+  --color-forest-grad-stop1: hsl(var(--hue-forest-grad-stop1) var(--sat-forest-grad-stop1) var(--l-forest-grad-stop1));
+  --color-forest-grad-stop2: hsl(var(--hue-forest-grad-stop2) var(--sat-forest-grad-stop2) var(--l-forest-grad-stop2));
+  --color-forest-grad-stop3: hsl(var(--hue-forest-grad-stop3) var(--sat-forest-grad-stop3) var(--l-forest-grad-stop3));
+  --color-forest-grad-stop4: hsl(var(--hue-forest-grad-stop4) var(--sat-forest-grad-stop4) var(--l-forest-grad-stop4));
+  --color-forest-grad-stop5: hsl(var(--hue-forest-grad-stop5) var(--sat-forest-grad-stop5) var(--l-forest-grad-stop5));
+  --color-sun-grad-stop1:    hsl(var(--hue-sun-grad-stop1) var(--sat-sun-grad-stop1) var(--l-sun-grad-stop1));
+  --color-sun-grad-stop2:    hsl(var(--hue-sun-grad-stop2) var(--sat-sun-grad-stop2) var(--l-sun-grad-stop2));
+  --color-sun-grad-stop3:    hsl(var(--hue-sun-grad-stop3) var(--sat-sun-grad-stop3) var(--l-sun-grad-stop3));
+  --color-sun-grad-stop4:    hsl(var(--hue-sun-grad-stop4) var(--sat-sun-grad-stop4) var(--l-sun-grad-stop4));
+  --color-sun-grad-stop5:    hsl(var(--hue-sun-grad-stop5) var(--sat-sun-grad-stop5) var(--l-sun-grad-stop5));
+  --color-arcane-grad-stop1: hsl(var(--hue-arcane-grad-stop1) var(--sat-arcane-grad-stop1) var(--l-arcane-grad-stop1));
+  --color-arcane-grad-stop2: hsl(var(--hue-arcane-grad-stop2) var(--sat-arcane-grad-stop2) var(--l-arcane-grad-stop2));
+  --color-arcane-grad-stop3: hsl(var(--hue-arcane-grad-stop3) var(--sat-arcane-grad-stop3) var(--l-arcane-grad-stop3));
+  --color-arcane-grad-stop4: hsl(var(--hue-arcane-grad-stop4) var(--sat-arcane-grad-stop4) var(--l-arcane-grad-stop4));
+  --color-arcane-grad-stop5: hsl(var(--hue-arcane-grad-stop5) var(--sat-arcane-grad-stop5) var(--l-arcane-grad-stop5));
+
+  /* Lightness waarden voor 2-stop Button Gradients (light) */
+  --l-btn-fire-grad-start-light: 58%; --l-btn-fire-grad-end-light: 50%;
+  --l-btn-water-grad-start-light: 60%; --l-btn-water-grad-end-light: 52%;
+  --l-btn-forest-grad-start-light: 52%; --l-btn-forest-grad-end-light: 44%;
+  --l-btn-sun-grad-start-light: 65%; --l-btn-sun-grad-end-light: 57%;
+  --l-btn-arcane-grad-start-light: 62%; --l-btn-arcane-grad-end-light: 54%;
+
+  /* Samengestelde 2-stop Button Gradient Kleuren (light) */
+  --color-btn-fire-grad-start:   hsl(var(--hue-theme-fire) var(--sat-theme-fire) var(--l-btn-fire-grad-start-light));
+  --color-btn-fire-grad-end:     hsl(var(--hue-theme-fire) var(--sat-theme-fire) var(--l-btn-fire-grad-end-light));
+  --color-btn-water-grad-start:  hsl(var(--hue-theme-water) var(--sat-theme-water) var(--l-btn-water-grad-start-light));
+  --color-btn-water-grad-end:    hsl(var(--hue-theme-water) var(--sat-theme-water) var(--l-btn-water-grad-end-light));
+  --color-btn-forest-grad-start: hsl(var(--hue-theme-forest) var(--sat-theme-forest) var(--l-btn-forest-grad-start-light));
+  --color-btn-forest-grad-end:   hsl(var(--hue-theme-forest) var(--sat-theme-forest) var(--l-btn-forest-grad-end-light));
+  --color-btn-sun-grad-start:    hsl(var(--hue-theme-sun) var(--sat-theme-sun) var(--l-btn-sun-grad-start-light));
+  --color-btn-sun-grad-end:      hsl(var(--hue-theme-sun) var(--sat-theme-sun) var(--l-btn-sun-grad-end-light));
+  --color-btn-arcane-grad-start: hsl(var(--hue-theme-arcane) var(--sat-theme-arcane) var(--l-btn-arcane-grad-start-light));
+  --color-btn-arcane-grad-end:   hsl(var(--hue-theme-arcane) var(--sat-theme-arcane) var(--l-btn-arcane-grad-end-light));
+
+  /* Inputs */
+  --color-input:               var(--color-background);
+  --color-input-border:        var(--color-border);
+  --color-input-ring:          var(--color-primary);
+  --color-input-text:          var(--color-foreground);
+  --color-input-placeholder:   var(--color-placeholder);
+
+  /* Misc primitives */
+  --elevation-xs:   0 1px 2px 0 hsla(var(--hue-neutral) 10% 0% / .05);
+  --elevation-sm:   0 1px 3px 0 hsla(var(--hue-neutral) 10% 0% / .07), 0 1px 2px -1px hsla(var(--hue-neutral) 10% 0% / .04);
+  --elevation-md:   0 4px 6px -1px hsla(var(--hue-neutral) 10% 0% / .07), 0 2px 4px -2px hsla(var(--hue-neutral) 10% 0% / .04);
+  --elevation-lg:   0 10px 15px -3px hsla(var(--hue-neutral) 10% 0% / .07), 0 4px 6px -4px hsla(var(--hue-neutral) 10% 0% / .04);
+  --radius-xs: .25rem; --radius-sm: .5rem; --radius-md: .75rem; --radius-lg: .75rem; --radius-full: 9999px;
+  --header-height: 4rem;
+  --z-backdrop: 500; --z-dropdown: 1000; --z-header: 1100;
+  --z-modal: 1200;   --z-toast: 1300;   --z-tooltip: 1400;
+  --radius: 0rem;
+
+  /* Neon Variabelen (light-mode defaults voor de glow kleur) */
+  --neon-blur-radius: 7px;
+  --neon-spread-radius: 1px;
+  --neon-opacity: 0.6;
+  --neon-blur-radius-hover: 10px;
+  --neon-spread-radius-hover: 2px;
+  --neon-opacity-hover: 0.8;
+
+  --card-neon-blur-radius-hover: 15px;
+  --card-neon-spread-radius-hover: 5px;
+  --card-neon-opacity-hover: 0.65;
+
+  --l-neon-glow-primary-light: 60%;
+  --l-neon-glow-fire-light: 65%;
+  --l-neon-glow-water-light: 62%;
+  --l-neon-glow-forest-light: 53%;
+  --l-neon-glow-sun-light: 65%;
+  --l-neon-glow-arcane-light: 60%;
+
+  --progress-neon-blur-radius-hover: 5px;
+  --progress-neon-spread-radius-hover: 4px;
+  --progress-neon-opacity-hover: 0.75;
+
+  /* == Resource Battery Kleuren (Light Mode) == */
+  --hue-theme-fire:    0;  --sat-theme-fire:   88%; /* Voor Health */
+  --hue-theme-water: 210;  --sat-theme-water:  80%; /* Voor Mana */
+  --hue-theme-sun:    45;  --sat-theme-sun:    95%; /* Voor Stamina */
+  /* Je kunt ook aparte --hue-resource-<type> definiëren als ze afwijken */
+  --hue-resource-health: var(--hue-theme-fire);
+  --sat-resource-health: var(--sat-theme-fire);
+  --hue-resource-mana:   var(--hue-theme-water);
+  --sat-resource-mana:   var(--sat-theme-water);
+  --hue-resource-stamina:var(--hue-theme-sun);
+  --sat-resource-stamina:var(--sat-theme-sun);
+
+  /* -- Lightness voor Resource Battery Fill - BASIS (Light Mode) -- */
+  /* Deze waarden zijn voor de *gevulde* segmenten in rust */
+  --l-resource-health-fill-light: 45%; /* Iets donkerder dan button voor diepte */
+  --l-resource-mana-fill-light:   48%;
+  --l-resource-stamina-fill-light:52%;
+
+  /* -- Samengestelde Kleuren voor Resource Battery Fill - BASIS (Light Mode) -- */
+  --color-resource-health:  hsl(var(--hue-resource-health) var(--sat-resource-health) var(--l-resource-health-fill-light));
+  --color-resource-mana:    hsl(var(--hue-resource-mana)   var(--sat-resource-mana)   var(--l-resource-mana-fill-light));
+  --color-resource-stamina: hsl(var(--hue-resource-stamina)var(--sat-resource-stamina)var(--l-resource-stamina-fill-light));
+
+  /* -- Lightness & Saturation voor Resource Battery Fill - HOVER (Light Mode) -- */
+  /* Deze waarden zijn voor de *gevulde* segmenten bij hover - maak ze helderder/meer verzadigd */
+  --l-resource-health-fill-hover-light: 65%;  --sat-resource-health-fill-hover-light: 100%;
+  --l-resource-mana-fill-hover-light:   70%;  --sat-resource-mana-fill-hover-light:   98%;
+  --l-resource-stamina-fill-hover-light:75%;  --sat-resource-stamina-fill-hover-light:100%;
+
+  /* --- Samengestelde Kleuren voor Resource Battery Fill - HOVER (Light Mode) --- */
+  --hue-gold-source: 38;     --sat-gold-source: 92%;   /* Voor balancedGold */
+  --hue-water-source: 210;   --sat-water-source:  80%;  /* Voor oceanicFlow */
+  --hue-forest-source:130;   --sat-forest-source: 65%;  /* Voor verdantGrowth */
+  --hue-arcane-source:270;   --sat-arcane-source: 70%;  /* Voor arcaneMyst */
+  --lightness-app-primary: 58%;
+  --lightness-app-primary-hover: 51%;
+  --lightness-app-primary-on-fg: 12%; /* Voor donkere tekst op lichte primary */
+}
+
+/* 3 ▸ Tailwind v4 @theme block - Exposing custom properties as utilities */
+@theme {
+  /* Core semantic colors */
+  --color-background: var(--color-background);
+  --color-foreground: var(--color-foreground);
+  --color-surface: var(--color-surface);
+  --color-surface-alt: var(--color-surface-alt);
+  --color-muted: var(--color-muted);
+  --color-border: var(--color-border);
+  --color-ring: var(--color-ring);
+  --color-text: var(--color-text);
+  --color-text-muted: var(--color-text-muted);
+  --color-placeholder: var(--color-placeholder);
+  --color-hover: var(--color-hover);
+  --color-secondary: var(--color-secondary);
+  --color-secondary-hover: var(--color-secondary-hover);
+  --color-accent: var(--color-accent);
+  --color-accent-on: var(--color-accent-on);
+
+  /* Primary colors */
+  --color-primary: var(--color-primary);
+  --color-primary-hover: var(--color-primary-hover);
+  --color-primary-on: var(--color-primary-on);
+
+  /* Theme colors */
+  --color-theme-sun: var(--color-theme-sun);
+  --color-theme-sun-hover: var(--color-theme-sun-hover);
+  --color-theme-sun-on: var(--color-theme-sun-on);
+  --color-theme-fire: var(--color-theme-fire);
+  --color-theme-fire-hover: var(--color-theme-fire-hover);
+  --color-theme-fire-on: var(--color-theme-fire-on);
+  --color-theme-water: var(--color-theme-water);
+  --color-theme-water-hover: var(--color-theme-water-hover);
+  --color-theme-water-on: var(--color-theme-water-on);
+  --color-theme-forest: var(--color-theme-forest);
+  --color-theme-forest-hover: var(--color-theme-forest-hover);
+  --color-theme-forest-on: var(--color-theme-forest-on);
+  --color-theme-arcane: var(--color-theme-arcane);
+  --color-theme-arcane-hover: var(--color-theme-arcane-hover);
+  --color-theme-arcane-on: var(--color-theme-arcane-on);
+
+  /* State colors */
+  --color-success: var(--color-success);
+  --color-success-on: var(--color-success-on);
+  --color-warning: var(--color-warning);
+  --color-warning-on: var(--color-warning-on);
+  --color-error: var(--color-error);
+  --color-error-on: var(--color-error-on);
+  --color-info: var(--color-info);
+  --color-info-on: var(--color-info-on);
+  --color-destructive: var(--color-destructive);
+
+  /* Input colors */
+  --color-input: var(--color-input);
+  --color-input-border: var(--color-input-border);
+  --color-input-ring: var(--color-input-ring);
+  --color-input-text: var(--color-input-text);
+  --color-input-placeholder: var(--color-input-placeholder);
+
+  /* Shadows */
+  --elevation-xs: var(--elevation-xs);
+  --elevation-sm: var(--elevation-sm);
+  --elevation-md: var(--elevation-md);
+  --elevation-lg: var(--elevation-lg);
+
+  /* Resource colors */
+  --color-resource-health: var(--color-resource-health);
+  --color-resource-mana: var(--color-resource-mana);
+  --color-resource-stamina: var(--color-resource-stamina);
+
+  /* Gradient colors */
+  --color-fire-grad-stop1: var(--color-fire-grad-stop1);
+  --color-fire-grad-stop2: var(--color-fire-grad-stop2);
+  --color-fire-grad-stop3: var(--color-fire-grad-stop3);
+  --color-fire-grad-stop4: var(--color-fire-grad-stop4);
+  --color-fire-grad-stop5: var(--color-fire-grad-stop5);
+  --color-water-grad-stop1: var(--color-water-grad-stop1);
+  --color-water-grad-stop2: var(--color-water-grad-stop2);
+  --color-water-grad-stop3: var(--color-water-grad-stop3);
+  --color-water-grad-stop4: var(--color-water-grad-stop4);
+  --color-water-grad-stop5: var(--color-water-grad-stop5);
+  --color-forest-grad-stop1: var(--color-forest-grad-stop1);
+  --color-forest-grad-stop2: var(--color-forest-grad-stop2);
+  --color-forest-grad-stop3: var(--color-forest-grad-stop3);
+  --color-forest-grad-stop4: var(--color-forest-grad-stop4);
+  --color-forest-grad-stop5: var(--color-forest-grad-stop5);
+  --color-sun-grad-stop1: var(--color-sun-grad-stop1);
+  --color-sun-grad-stop2: var(--color-sun-grad-stop2);
+  --color-sun-grad-stop3: var(--color-sun-grad-stop3);
+  --color-sun-grad-stop4: var(--color-sun-grad-stop4);
+  --color-sun-grad-stop5: var(--color-sun-grad-stop5);
+  --color-arcane-grad-stop1: var(--color-arcane-grad-stop1);
+  --color-arcane-grad-stop2: var(--color-arcane-grad-stop2);
+  --color-arcane-grad-stop3: var(--color-arcane-grad-stop3);
+  --color-arcane-grad-stop4: var(--color-arcane-grad-stop4);
+  --color-arcane-grad-stop5: var(--color-arcane-grad-stop5);
+
+  /* Button gradients */
+  --color-btn-fire-grad-start: var(--color-btn-fire-grad-start);
+  --color-btn-fire-grad-end: var(--color-btn-fire-grad-end);
+  --color-btn-water-grad-start: var(--color-btn-water-grad-start);
+  --color-btn-water-grad-end: var(--color-btn-water-grad-end);
+  --color-btn-forest-grad-start: var(--color-btn-forest-grad-start);
+  --color-btn-forest-grad-end: var(--color-btn-forest-grad-end);
+  --color-btn-sun-grad-start: var(--color-btn-sun-grad-start);
+  --color-btn-sun-grad-end: var(--color-btn-sun-grad-end);
+  --color-btn-arcane-grad-start: var(--color-btn-arcane-grad-start);
+  --color-btn-arcane-grad-end: var(--color-btn-arcane-grad-end);
+
+  /* Border radius */
+  --radius-xs: var(--radius-xs);
+  --radius-sm: var(--radius-sm);
+  --radius-md: var(--radius-md);
+  --radius-lg: var(--radius-lg);
+  --radius-full: var(--radius-full);
+  --radius: var(--radius);
+}
+
+/* 4 ▸ DARK-MODE OVERRIDES */
+html.dark {
+  /* -- 4A. Neutrals -- */
+  --color-background:          hsl(var(--hue-neutral) var(--sat-neutral) 7%);
+  --color-foreground:          hsl(var(--hue-neutral) var(--sat-neutral-strong) 93%);
+  --color-surface:             hsl(var(--hue-neutral) var(--sat-neutral) 10%);
+  --color-surface-alt:         hsl(var(--hue-neutral) var(--sat-neutral) 12%);
+  --surface-card:              hsl(var(--hue-neutral) var(--sat-neutral) 11%);
+  --color-border:              hsl(var(--hue-neutral) var(--sat-neutral) 18%);
+  --color-text-muted:          hsl(var(--hue-neutral) var(--sat-neutral) 55%);
+  --color-placeholder:         hsl(var(--hue-neutral) var(--sat-neutral) 45%);
+  --color-background-secondary:hsl(var(--hue-neutral) var(--sat-neutral) 12%);
+  --color-hover:               hsl(var(--hue-neutral) var(--sat-neutral) 19%);
+  --color-foreground-default:  hsl(var(--hue-neutral) var(--sat-neutral-strong) 90%);
+  --color-secondary:           hsl(var(--hue-neutral) var(--sat-neutral) 60%);
+  --color-accent:              hsl(var(--hue-accent) var(--sat-accent) 55%);
+  --color-accent-on:           hsl(var(--hue-accent) calc(var(--sat-accent)*.3) 10%);
+  --color-overlay-backdrop:    hsla(var(--hue-neutral) 20% 2% / 0.8);
+  --color-muted:               hsl(var(--hue-neutral) var(--sat-neutral) 14%);
+
+  /* -- 4B. States -- */
+  --color-success:             hsl(var(--hue-success-state) var(--sat-success-state) 53%);
+  --color-success-on:          hsl(var(--hue-success-state) calc(var(--sat-success-state)*.3) 10%);
+  --color-warning:             hsl(var(--hue-warning-state) var(--sat-warning-state) 55%);
+  --color-warning-on:          hsl(var(--hue-warning-state) calc(var(--sat-warning-state)*.3) 10%);
+  --color-error:               var(--color-theme-fire);
+  --color-error-on:            var(--color-theme-fire-on);
+  --color-info:                hsl(var(--hue-info-state) var(--sat-info-state) 57%);
+  --color-info-on:             hsl(var(--hue-info-state) calc(var(--sat-info-state)*.3) 10%);
+
+  /* inputs */
+  --color-input:               hsl(var(--hue-neutral) var(--sat-neutral) 7%);
+  --color-input-border:        hsl(var(--hue-neutral) var(--sat-neutral) 18%);
+  --color-input-ring:          var(--color-primary);
+  --color-input-text:          hsl(var(--hue-neutral) var(--sat-neutral-strong) 93%);
+  --color-input-placeholder:   hsl(var(--hue-neutral) var(--sat-neutral) 45%);
+
+  /* -- 4C. Gradient lightness overrides (5-stop card borders) -- */
+  --l-fire-grad-stop1:48%; --l-fire-grad-stop2:50%;
+  --l-fire-grad-stop3:53%; --l-fire-grad-stop4:50%;
+  --l-fire-grad-stop5:48%;
+  --l-water-grad-stop1:47%; --l-water-grad-stop2:52%;
+  --l-water-grad-stop3:50%; --l-water-grad-stop4:42%;
+  --l-water-grad-stop5:45%;
+  --l-forest-grad-stop1:42%; --l-forest-grad-stop2:47%;
+  --l-forest-grad-stop3:50%; --l-forest-grad-stop4:44%;
+  --l-forest-grad-stop5:40%;
+  --l-sun-grad-stop1:50%; --l-sun-grad-stop2:47%;
+  --l-sun-grad-stop3:52%; --l-sun-grad-stop4:45%;
+  --l-sun-grad-stop5:42%;
+  --l-arcane-grad-stop1:52%; --l-arcane-grad-stop2:50%;
+  --l-arcane-grad-stop3:54%; --l-arcane-grad-stop4:47%;
+  --l-arcane-grad-stop5:45%;
+
+  /* Neon Variabelen (dark-mode glow kleuren) */
+  --l-neon-glow-primary-dark: 65%;
+  --l-neon-glow-fire-dark: 70%;
+  --l-neon-glow-water-dark: 65%;
+  --l-neon-glow-forest-dark: 58%;
+  --l-neon-glow-sun-dark: 68%;
+  --l-neon-glow-arcane-dark: 65%;
+
+  /* -- 4D. Re-assemble 5-stop gradient colours (dark) - Card Borders -- */
+  --color-fire-grad-stop1:   hsl(var(--hue-fire-grad-stop1) var(--sat-fire-grad-stop1) var(--l-fire-grad-stop1));
+  --color-fire-grad-stop2:   hsl(var(--hue-fire-grad-stop2) var(--sat-fire-grad-stop2) var(--l-fire-grad-stop2));
+  --color-fire-grad-stop3:   hsl(var(--hue-fire-grad-stop3) var(--sat-fire-grad-stop3) var(--l-fire-grad-stop3));
+  --color-fire-grad-stop4:   hsl(var(--hue-fire-grad-stop4) var(--sat-fire-grad-stop4) var(--l-fire-grad-stop4));
+  --color-fire-grad-stop5:   hsl(var(--hue-fire-grad-stop5) var(--sat-fire-grad-stop5) var(--l-fire-grad-stop5));
+  --color-water-grad-stop1:  hsl(var(--hue-water-grad-stop1) var(--sat-water-grad-stop1) var(--l-water-grad-stop1));
+  --color-water-grad-stop2:  hsl(var(--hue-water-grad-stop2) var(--sat-water-grad-stop2) var(--l-water-grad-stop2));
+  --color-water-grad-stop3:  hsl(var(--hue-water-grad-stop3) var(--sat-water-grad-stop3) var(--l-water-grad-stop3));
+  --color-water-grad-stop4:  hsl(var(--hue-water-grad-stop4) var(--sat-water-grad-stop4) var(--l-water-grad-stop4));
+  --color-water-grad-stop5:  hsl(var(--hue-water-grad-stop5) var(--sat-water-grad-stop5) var(--l-water-grad-stop5));
+  --color-forest-grad-stop1: hsl(var(--hue-forest-grad-stop1) var(--sat-forest-grad-stop1) var(--l-forest-grad-stop1));
+  --color-forest-grad-stop2: hsl(var(--hue-forest-grad-stop2) var(--sat-forest-grad-stop2) var(--l-forest-grad-stop2));
+  --color-forest-grad-stop3: hsl(var(--hue-forest-grad-stop3) var(--sat-forest-grad-stop3) var(--l-forest-grad-stop3));
+  --color-forest-grad-stop4: hsl(var(--hue-forest-grad-stop4) var(--sat-forest-grad-stop4) var(--l-forest-grad-stop4));
+  --color-forest-grad-stop5: hsl(var(--hue-forest-grad-stop5) var(--sat-forest-grad-stop5) var(--l-forest-grad-stop5));
+  --color-sun-grad-stop1:    hsl(var(--hue-sun-grad-stop1) var(--sat-sun-grad-stop1) var(--l-sun-grad-stop1));
+  --color-sun-grad-stop2:    hsl(var(--hue-sun-grad-stop2) var(--sat-sun-grad-stop2) var(--l-sun-grad-stop2));
+  --color-sun-grad-stop3:    hsl(var(--hue-sun-grad-stop3) var(--sat-sun-grad-stop3) var(--l-sun-grad-stop3));
+  --color-sun-grad-stop4:    hsl(var(--hue-sun-grad-stop4) var(--sat-sun-grad-stop4) var(--l-sun-grad-stop4));
+  --color-sun-grad-stop5:    hsl(var(--hue-sun-grad-stop5) var(--sat-sun-grad-stop5) var(--l-sun-grad-stop5));
+  --color-arcane-grad-stop1: hsl(var(--hue-arcane-grad-stop1) var(--sat-arcane-grad-stop1) var(--l-arcane-grad-stop1));
+  --color-arcane-grad-stop2: hsl(var(--hue-arcane-grad-stop2) var(--sat-arcane-grad-stop2) var(--l-arcane-grad-stop2));
+  --color-arcane-grad-stop3: hsl(var(--hue-arcane-grad-stop3) var(--sat-arcane-grad-stop3) var(--l-arcane-grad-stop3));
+  --color-arcane-grad-stop4: hsl(var(--hue-arcane-grad-stop4) var(--sat-arcane-grad-stop4) var(--l-arcane-grad-stop4));
+  --color-arcane-grad-stop5: hsl(var(--hue-arcane-grad-stop5) var(--sat-arcane-grad-stop5) var(--l-arcane-grad-stop5));
+
+  /* Lightness waarden voor 2-stop Button Gradients (dark) */
+  --l-btn-fire-grad-start-dark: 50%; --l-btn-fire-grad-end-dark: 42%;
+  --l-btn-water-grad-start-dark: 52%; --l-btn-water-grad-end-dark: 44%;
+  --l-btn-forest-grad-start-dark: 46%; --l-btn-forest-grad-end-dark: 38%;
+  --l-btn-sun-grad-start-dark: 57%; --l-btn-sun-grad-end-dark: 49%;
+  --l-btn-arcane-grad-start-dark: 54%; --l-btn-arcane-grad-end-dark: 46%;
+
+  /* Samengestelde 2-stop Button Gradient Kleuren (dark) */
+  --color-btn-fire-grad-start:   hsl(var(--hue-theme-fire) var(--sat-theme-fire) var(--l-btn-fire-grad-start-dark));
+  --color-btn-fire-grad-end:     hsl(var(--hue-theme-fire) var(--sat-theme-fire) var(--l-btn-fire-grad-end-dark));
+  --color-btn-water-grad-start:  hsl(var(--hue-theme-water) var(--sat-theme-water) var(--l-btn-water-grad-start-dark));
+  --color-btn-water-grad-end:    hsl(var(--hue-theme-water) var(--sat-theme-water) var(--l-btn-water-grad-end-dark));
+  --color-btn-forest-grad-start: hsl(var(--hue-theme-forest) var(--sat-theme-forest) var(--l-btn-forest-grad-start-dark));
+  --color-btn-forest-grad-end:   hsl(var(--hue-theme-forest) var(--sat-theme-forest) var(--l-btn-forest-grad-end-dark));
+  --color-btn-sun-grad-start:    hsl(var(--hue-theme-sun) var(--sat-theme-sun) var(--l-btn-sun-grad-start-dark));
+  --color-btn-sun-grad-end:      hsl(var(--hue-theme-sun) var(--sat-theme-sun) var(--l-btn-sun-grad-end-dark));
+  --color-btn-arcane-grad-start: hsl(var(--hue-theme-arcane) var(--sat-theme-arcane) var(--l-btn-arcane-grad-start-dark));
+  --color-btn-arcane-grad-end:   hsl(var(--hue-theme-arcane) var(--sat-theme-arcane) var(--l-btn-arcane-grad-end-dark));
+
+  /* == Resource Battery Kleuren (Dark Mode) == */
+  --l-resource-health-fill-dark: 50%;
+  --l-resource-mana-fill-dark:   53%;
+  --l-resource-stamina-fill-dark:58%;
+
+  /* -- Samengestelde Kleuren voor Resource Battery Fill - BASIS (Dark Mode) -- */
+  --color-resource-health:  hsl(var(--hue-resource-health) var(--sat-resource-health) var(--l-resource-health-fill-dark));
+  --color-resource-mana:    hsl(var(--hue-resource-mana)   var(--sat-resource-mana)   var(--l-resource-mana-fill-dark));
+  --color-resource-stamina: hsl(var(--hue-resource-stamina)var(--sat-resource-stamina)var(--l-resource-stamina-fill-dark));
+
+  /* -- Lightness & Saturation voor Resource Battery Fill - HOVER (Dark Mode) -- */
+  /* Maak deze nog helderder/meer verzadigd voor het oplicht-effect */
+  --l-resource-health-fill-hover-dark: 75%;   --sat-resource-health-fill-hover-dark: 100%;
+  --l-resource-mana-fill-hover-dark:   78%;   --sat-resource-mana-fill-hover-dark:   98%;
+  --l-resource-stamina-fill-hover-dark:82%;   --sat-resource-stamina-fill-hover-dark:100%;
+
+  /* -- Aanpassen/Toevoegen: Generieke dark mode lightness voor de primary rol -- */
+  /* Deze werken samen met de --hue-app-primary en --sat-app-primary van het actieve [data-theme] */
+  /* Als je deze al had, controleer of ze passen bij de nieuwe structuur. */
+  --lightness-app-primary: 48%;       /* Primary wordt donkerder in dark mode */
+  --lightness-app-primary-hover: 42%; /* Nog iets donkerder bij hover */
+  --lightness-app-primary-on-fg: 90%; /* Tekst op primary wordt lichter */
+
+  --color-primary-on: var(--color-slate-50); /* Bijvoorbeeld, bijna wit */
+  --color-primary-hover: rgba(255, 255, 255, 0.1); /* Een subtiele lichte overlay voor hover */
+
+  &[data-theme="oceanicFlow"] {
+    /* Als de generieke dark-mode lightness voor primary (48%) niet ideaal is voor water: */
+    /* --lightness-app-primary: 45%; */
+    /* Eventuele andere dark-mode specifieke overrides voor dit thema: */
+    /* --color-background: hsl(var(--hue-water-source) 25% 8%); */
+  }
+
+  &[data-theme="verdantGrowth"] {
+    /* Als de generieke dark-mode lightness voor primary (48%) niet ideaal is voor forest: */
+    /* --lightness-app-primary: 40%; */ /* Forest is al donker, misschien nog iets meer */
+    /* --lightness-app-primary-on-fg: 95%; */ /* Zorg voor goed contrast */
+  }
+
+  &[data-theme="arcaneMyst"] {
+    /* Als de generieke dark-mode lightness voor primary (48%) niet ideaal is voor arcane: */
+    /* --lightness-app-primary: 50%; */ /* Arcane kan iets lichter blijven */
+    /* --lightness-app-primary-on-fg: 92%; */
+  }
+}
+
+/* Oceanic Flow Thema (Water-gebaseerd) */
+[data-theme="oceanicFlow"] {
+  --hue-app-primary: var(--hue-water-source);
+  --sat-app-primary: var(--sat-water-source);
+}
+
+/* Verdant Growth Thema (Forest-gebaseerd) */
+[data-theme="verdantGrowth"] {
+  --hue-app-primary: var(--hue-forest-source);
+  --sat-app-primary: var(--sat-forest-source);
+}
+
+/* Arcane Myst Thema (Arcane-gebaseerd) */
+[data-theme="arcaneMyst"] {
+  --hue-app-primary: var(--hue-arcane-source);
+  --sat-app-primary: var(--sat-arcane-source);
+}
+
+/* 5 ▸ Foundation styles */
+body {
+  @apply bg-background text-foreground;
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100dvh;
+  line-height: 1.5;
+  font-size: 110%;
+}
+
+.container-max {
+  width: 100%;
+  max-width: 2000px;
+  margin-inline: auto;
+}
+input::placeholder,
+textarea::placeholder { color: var(--color-placeholder); opacity: .7; }
+.shadow-surface    { box-shadow: var(--elevation-xs); }
+.shadow-surface-sm { box-shadow: var(--elevation-sm); }
+.shadow-surface-md { box-shadow: var(--elevation-md); }
+.shadow-surface-lg { box-shadow: var(--elevation-lg); }
+royal-code-ui-stat-bar-segment .stat-bar-segment { background: transparent; }
+
+/* ========================================================================== */
+/* NEON EFFECT ON HOVER – FOUNDATION                                          */
+/* ========================================================================== */
+
+.neon-effect-target,
+.neon-card-border {
+  transition-property: box-shadow, padding;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: .2s;
+  box-shadow: none;
+}
+
+/* ========================================================================== */
+/* 1. BUTTON GLOWS (neon-effect-target)                                       */
+/* ========================================================================== */
+
+$themes: (
+  primary: ( var(--hue-app-primary),  var(--sat-app-primary), var(--l-neon-glow-primary-light),  var(--l-neon-glow-primary-dark) ),
+  fire:    ( var(--hue-theme-fire),   var(--sat-theme-fire),  var(--l-neon-glow-fire-light),     var(--l-neon-glow-fire-dark) ),
+  water:   ( var(--hue-theme-water),  var(--sat-theme-water), var(--l-neon-glow-water-light),    var(--l-neon-glow-water-dark) ),
+  forest:  ( var(--hue-theme-forest), var(--sat-theme-forest),var(--l-neon-glow-forest-light),   var(--l-neon-glow-forest-dark)),
+  sun:     ( var(--hue-theme-sun),    var(--sat-theme-sun),   var(--l-neon-glow-sun-light),      var(--l-neon-glow-sun-dark)   ),
+  arcane:  ( var(--hue-theme-arcane), var(--sat-theme-arcane),var(--l-neon-glow-arcane-light),   var(--l-neon-glow-arcane-dark) )
+);
+
+/* genereer :hover & .group:hover varianten voor elke knop-kleur */
+@each $name, $vals in $themes {
+  .neon-effect-target.neon-#{$name}:hover,
+  .group:hover .neon-effect-target.neon-#{$name} {
+    box-shadow: 0 0 var(--neon-blur-radius-hover)
+                     var(--neon-spread-radius-hover)
+                     hsla(nth($vals,1), nth($vals,2), nth($vals,3), var(--neon-opacity-hover));
+  }
+  html.dark .neon-effect-target.neon-#{$name}:hover,
+  html.dark .group:hover .neon-effect-target.neon-#{$name} {
+    box-shadow: 0 0 var(--neon-blur-radius-hover)
+                     var(--neon-spread-radius-hover)
+                     hsla(nth($vals,1), nth($vals,2), nth($vals,4), var(--neon-opacity-hover));
+  }
+}
+
+/* ========================================================================== */
+/* 2. OPTIONAL – CARD BORDER GLOWS (neon-card-border)                         */
+/* ========================================================================== */
+
+@each $name, $vals in $themes {
+  .neon-card-border.neon-#{$name}:hover,
+  .group:hover .neon-card-border.neon-#{$name} {
+    box-shadow: 0 0 var(--card-neon-blur-radius-hover)
+                     var(--card-neon-spread-radius-hover)
+                     hsla(nth($vals,1), nth($vals,2), nth($vals,3), var(--card-neon-opacity-hover));
+  }
+  html.dark .neon-card-border.neon-#{$name}:hover,
+  html.dark .group:hover .neon-card-border.neon-#{$name} {
+    box-shadow: 0 0 var(--card-neon-blur-radius-hover)
+                     var(--card-neon-spread-radius-hover)
+                     hsla(nth($vals,1), nth($vals,2), nth($vals,4), var(--card-neon-opacity-hover));
+  }
+}
+
+/* Progress bar neon effects */
+@each $theme, $vals in $themes {
+  .neon-target-progress-#{$theme} .rounded-full {
+    overflow: visible !important;
+  }
+}
+
+.progress-bar-fill-element {
+  transition: box-shadow .2s cubic-bezier(.4,0,.2,1) !important;
+}
+
+@each $theme, $vals in $themes {
+  $hue     : nth($vals,1);
+  $sat     : nth($vals,2);
+  $light   : nth($vals,3);
+  $dark    : nth($vals,4);
+
+  .neon-target-progress-#{$theme} {
+    &:hover .progress-bar-fill-element,
+    .group:hover & .progress-bar-fill-element {
+      box-shadow:
+        0 0 var(--progress-neon-blur-radius-hover)
+             var(--progress-neon-spread-radius-hover)
+        hsla(#{$hue}, #{$sat}, #{$light}, var(--progress-neon-opacity-hover))
+        !important;
+    }
+
+    html.dark & {
+      &:hover .progress-bar-fill-element,
+      .group:hover & .progress-bar-fill-element {
+        box-shadow:
+          0 0 var(--progress-neon-blur-radius-hover)
+               var(--progress-neon-spread-radius-hover)
+          hsla(#{$hue}, #{$sat}, #{$dark},  var(--progress-neon-opacity-hover))
+          !important;
+      }
+    }
+  }
+}
+
+/* Resource battery neon effects */
+.group:hover .neon-card-border.neon-fire {
+  box-shadow: 0 0 var(--card-neon-blur-radius-hover)
+                   var(--card-neon-spread-radius-hover)
+                   hsla(var(--hue-theme-fire), var(--sat-theme-fire), var(--l-neon-glow-fire-light), var(--card-neon-opacity-hover));
+}
+
+html.dark .group:hover .neon-card-border.neon-fire {
+  box-shadow: 0 0 var(--card-neon-blur-radius-hover)
+                   var(--card-neon-spread-radius-hover)
+                   hsla(var(--hue-theme-fire), var(--sat-theme-fire), var(--l-neon-glow-fire-dark), var(--card-neon-opacity-hover));
+}
+
+.resource-battery.group:hover {
+  --color-resource-health:  hsl(var(--hue-resource-health) var(--sat-resource-health-fill-hover-light) var(--l-resource-health-fill-hover-light));
+  --color-resource-mana:    hsl(var(--hue-resource-mana)   var(--sat-resource-mana-fill-hover-light)   var(--l-resource-mana-fill-hover-light));
+  --color-resource-stamina: hsl(var(--hue-resource-stamina)var(--sat-resource-stamina-fill-hover-light)var(--l-resource-stamina-fill-hover-light));
+}
+
+html.dark .resource-battery.group:hover {
+  --color-resource-health:  hsl(var(--hue-resource-health) var(--sat-resource-health-fill-hover-dark) var(--l-resource-health-fill-hover-dark));
+  --color-resource-mana:    hsl(var(--hue-resource-mana)   var(--sat-resource-mana-fill-hover-dark)   var(--l-resource-mana-fill-hover-dark));
+  --color-resource-stamina: hsl(var(--hue-resource-stamina)var(--sat-resource-stamina-fill-hover-dark)var(--l-resource-stamina-fill-hover-dark));
+}
+
+/* ========================================================================== */
+/* OVERLAY BACKDROP FIXES                                                     */
+/* ========================================================================== */
+
+.royal-code-dropdown-overlay-pane {
+  background-color: hsl(215, 15%, 99%) !important;
+  background: var(--surface-card) !important;
+  border: 1px solid var(--color-border) !important;
+  border-radius: 0.375rem !important;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  z-index: 50 !important;
+}
+
+html.dark .royal-code-dropdown-overlay-pane {
+  background-color: hsl(215, 15%, 11%) !important;
+  background: hsl(var(--hue-neutral) var(--sat-neutral) 11%) !important;
+  border-color: hsl(var(--hue-neutral) var(--sat-neutral) 18%) !important;
+}
+
+.text-destructive {
+  color: var(--color-error) !important;
+}

@@ -1,0 +1,595 @@
+{
+  "common": {
+    "buttons": {
+      "save": "Save",
+      "saving": "Saving...",
+      "cancel": "Cancel",
+      "back": "Back",
+      "edit": "Edit",
+      "delete": "Delete",
+      "create": "Create",
+      "add": "Add",
+      "manage": "Manage",
+      "continue": "Continue",
+      "yes": "Yes",
+      "no": "No",
+      "ok": "OK",
+      "close": "Close",
+      "search": "Search"
+    },
+    "messages": {
+      "loading": "Loading...",
+      "success": "Operation successful.",
+      "error": "An error occurred.",
+      "noChanges": "No changes to save."
+    },
+    "placeholders": {
+      "email": "Enter your email",
+      "password": "Enter your password",
+      "search": "Search..."
+    },
+    "errors": {
+      "genericAuth": "Authentication failed. Please try again.",
+      "server": {
+        "unknownError": "An unexpected server error occurred."
+      },
+      "validation": {
+        "requiredField": "This field is required.",
+        "invalidEmail": "Please enter a valid email address.",
+        "summaryTitle": "Form Incomplete",
+        "summaryDescription": "Please correct the following fields before saving:",
+        "debugDataTitle": "Raw Form Data (for debugging)"
+      },
+      "forms": {
+        "required": "This field is required.",
+        "pattern": {
+          "postalCode": "Invalid postal code format."
+        },
+        "invalid": "Invalid value."
+      }
+    },
+    "or": "or"
+  },
+  "navigation": {
+    "home": "Home"
+  },
+  "auth": {
+    "login": {
+      "title": "Sign in to your account",
+      "email": "Email address",
+      "password": "Password",
+      "submit": "Sign in",
+      "forgotPassword": "Forgot password?",
+      "noAccount": "Don't have an account?",
+      "invalidCredentials": "Invalid email or password."
+    },
+    "register": {
+      "linkText": "Sign up here"
+    },
+    "refresh": {
+      "failed": "Session expired. Please log in again."
+    }
+  },
+  "admin": {
+    "dashboard": {
+      "title": "Dashboard"
+    },
+    "products": {
+      "title": "Products",
+      "createTitle": "Create New Product",
+      "editTitle": "Edit Product",
+      "form": {
+        "cancel": "Cancel",
+        "save": "Save",
+        "saving": "Saving...",
+        "basicInfo": "Basic Information",
+        "productName": "Product Name",
+        "shortSummary": "Short Summary",
+        "fullDescription": "Full Description",
+        "media": "Media",
+        "featuredImage": "Featured Image",
+        "setAsFeatured": "Set as featured image",
+        "featured": "Featured",
+        "noMedia": "No media uploaded yet.",
+        "variants": "Variants",
+        "addAttribute": "Add Attribute",
+        "loadingAttributes": "Loading attributes...",
+        "errorLoadingAttributes": "Error loading attributes",
+        "chooseExistingAttribute": "Choose existing attribute",
+        "isRequired": "Is Required",
+        "removeAttribute": "Remove Attribute",
+        "chooseValue": "Choose value",
+        "selectExisting": "Select existing...",
+        "createNewValue": "Create new value",
+        "displayNameNew": "Display Name (New)",
+        "colorHexOptional": "Color (Hex, optional)",
+        "priceModifierOptional": "Price Modifier (optional)",
+        "displayName": "Display Name",
+        "linkedMedia": "Linked Media",
+        "noLinkedMedia": "No media linked.",
+        "addValue": "Add Value",
+        "combinations": "Combinations",
+        "tableHeaders": {
+          "SKU": "SKU",
+          "Price": "Price",
+          "Original Price": "Original Price",
+          "Stock": "Stock",
+          "Status": "Status",
+          "Media": "Media",
+          "Default": "Default",
+          "Active": "Active"
+        },
+        "duplicateSku": "This SKU is a duplicate.",
+        "noDefaultVariant": "One variant must be set as default.",
+        "noCombinationsGenerated": "Add attributes to generate combinations.",
+        "addAttributesToGenerate": "Add variant attributes to generate combinations.",
+        "propertiesAndQualities": "Properties & Qualities",
+        "errorLoadingProperties": "Error loading properties and qualities.",
+        "otherGroup": "Other",
+        "noCustomProperties": "No custom properties defined for products.",
+        "displaySpecifications": "Display Specifications",
+        "addSpec": "Add Specification",
+        "specKeyInternal": "Specification Key (Internal)",
+        "displayValue": "Display Value",
+        "groupOptional": "Group (optional)",
+        "addSpecsHelp": "Add display specifications to show detailed product information.",
+        "organizationAndStatus": "Organization & Status",
+        "status": "Status",
+        "isActive": "Is Active",
+        "isFeatured": "Is Featured",
+        "currency": "Currency",
+        "tags": "Tags",
+        "categories": "Categories",
+        "physicalConfig": "Physical Product Configuration",
+        "price": "Price",
+        "originalPriceOptional": "Original Price (optional)",
+        "priceCannotBeHigherThanOriginal": "Price cannot be higher than original price.",
+        "skuOptional": "SKU (optional)",
+        "brandOptional": "Brand (optional)",
+        "manageStock": "Manage Stock",
+        "stockQuantity": "Stock Quantity",
+        "stockQuantityRequired": "Stock quantity is required when stock management is enabled.",
+        "allowBackorders": "Allow Backorders",
+        "lowStockThreshold": "Low Stock Threshold",
+        "seo": "SEO",
+        "seoTitle": "SEO Title",
+        "seoDescription": "SEO Description",
+        "seoKeywordsCommaSeparated": "SEO Keywords (comma separated)",
+        "seoImageUrlOptional": "SEO Image URL (optional)"
+      },
+      "notifications": {
+        "formInvalid": "Please correct the errors in the form."
+      }
+    },
+    "orders": {
+      "title": "Orders",
+      "createTitle": "Create New Order",
+      "detail": {
+        "titlePrefix": "Order Details",
+        "loadingOrderDetails": "Loading order details...",
+        "orderNotFound": "Order not found.",
+        "notes": "Notes",
+        "customerNotes": "Customer Notes",
+        "noNotes": "No customer notes.",
+        "internalNotes": "Internal Notes",
+        "saveNotes": "Save Notes",
+        "actionsAndDocuments": "Actions & Documents",
+        "downloadInvoice": "Download Invoice",
+        "exportOrder": "Export Order",
+        "saveStatus": "Save Status & Tracking",
+        "financialSummary": "Financial Summary",
+        "paymentDetails": "Payment Details",
+        "customerAndAddresses": "Customer & Addresses",
+        "saveAddress": "Save Address",
+        "confirmRemoveItem": "Are you sure you want to remove this item from the order?",
+        "confirmCancelOrder": "Are you sure you want to cancel this order?",
+        "refundAmountPrompt": "Enter refund amount:",
+        "invalidRefundAmount": "Invalid refund amount.",
+        "refundReasonPrompt": "Enter reason for refund (optional):",
+        "invoiceNotFound": "Invoice not available for download.",
+        "exportNotImplemented": "Export functionality is not yet implemented.",
+        "addProducts": "Add Products",
+        "formInvalid": "Please correct the errors in the order items.",
+        "noChanges": "No changes detected.",
+        "status": "Status",
+        "orderNumber": "Order Number",
+        "orderCancel": "Cancel Order",
+        "refund": "Refund"
+      },
+      "fulfillment": {
+        "products": "Products",
+        "trackingNumber": "Tracking Number",
+        "trackingUrlOptional": "Tracking URL (optional)"
+      },
+      "messages": {
+        "invalidShippingAddress": "Please fill in all required shipping address fields."
+      },
+      "overview": {
+        "searchPlaceholder": "Search by order #, customer...",
+        "allOrders": "All Orders",
+        "unshipped": "Unshipped",
+        "cancelled": "Cancelled",
+        "title": "My Orders",
+        "noOrders": "You haven't placed any orders yet.",
+        "startShopping": "Start Shopping!"
+      },
+      "card": {
+        "placed": "Placed on",
+        "total": "Total",
+        "shipTo": "Ship to",
+        "viewDetails": "View Details",
+        "downloadInvoice": "Download Invoice",
+        "deliveredOn": "Delivered on {date}",
+        "returnWindow": "Return window until {date}",
+        "buyAgain": "Buy Again",
+        "viewItem": "View Item",
+        "trackPackage": "Track Package",
+        "writeReview": "Write Review"
+      },
+      "status": {
+        "pendingPayment": "Pending Payment",
+        "paymentFailed": "Payment Failed",
+        "awaitingFulfillment": "Awaiting Fulfillment",
+        "processing": "Processing",
+        "shipped": "Shipped",
+        "inTransit": "In Transit",
+        "delivered": "Delivered",
+        "completed": "Completed",
+        "cancelled": "Cancelled",
+        "refundPending": "Refund Pending",
+        "partiallyRefunded": "Partially Refunded",
+        "fullyRefunded": "Fully Refunded",
+        "onHold": "On Hold",
+        "unknown": "Unknown"
+      }
+    },
+    "users": {
+      "title": "Users",
+      "createTitle": "Create New User",
+      "editTitle": "Edit User",
+      "management": {
+        "title": "User Management",
+        "newUser": "New User",
+        "confirmDeleteUser": "Are you sure you want to delete this user? This action cannot be undone."
+      },
+      "form": {
+        "accountInfo": "Account Information",
+        "email": "Email",
+        "displayName": "Display Name",
+        "profileInfo": "Profile Information",
+        "firstName": "First Name",
+        "middleName": "Middle Name",
+        "lastName": "Last Name",
+        "bio": "Biography",
+        "roles": "Roles",
+        "password": "Password",
+        "newPassword": "New Password",
+        "setPasswordButton": "Set Password",
+        "lockedOut": "User is locked out",
+        "unlockAccount": "Unlock Account",
+        "lockAccount": "Lock Account"
+      }
+    },
+    "roles": {
+      "manageRoles": "Role Management",
+      "prompts": {
+        "newRoleName": "Enter new role name:",
+        "newNameForRole": "Enter new name for role '{roleName}':",
+        "confirmDeleteRole": "Are you sure you want to delete role '{roleName}'? This action cannot be undone."
+      },
+      "messages": {
+        "invalidRoleName": "Role name cannot be empty.",
+        "noRolesAvailable": "No roles available."
+      },
+      "newRolePlaceholder": "Enter new role name",
+      "createButton": "Create Role"
+    },
+    "settings": {
+      "title": "Settings"
+    },
+    "errors": {
+      "loadingOrderFailed": "Failed to load order details.",
+      "loadingUserFailed": "Failed to load user details."
+    },
+    "reviews": {
+      "title": "Reviews",
+      "list": {
+        "author": "Author",
+        "rating": "Rating",
+        "title": "Title",
+        "status": "Status",
+        "date": "Date",
+        "actions": "Actions",
+        "noTitle": "No title",
+        "noReviewsFound": "No reviews found.",
+        "statusPending": "Pending",
+        "statusApproved": "Approved",
+        "statusRejected": "Rejected",
+        "statusFlagged": "Flagged"
+      },
+      "filter": {
+        "searchPlaceholder": "Search by product ID or author ID...",
+        "allStatuses": "All Statuses",
+        "sortByNewest": "Newest first",
+        "sortByOldest": "Oldest first",
+        "sortByHighest": "Highest rated first",
+        "sortByLowest": "Lowest rated first",
+        "sortByMostHelpful": "Most helpful first"
+      },
+      "editTitle": "Edit Review: {reviewId}",
+      "form": {
+        "reviewContent": "Review Content",
+        "rating": "Rating",
+        "title": "Title",
+        "reviewText": "Review Text",
+        "verifiedPurchase": "Verified Purchase",
+        "notVerifiedPurchase": "Not a Verified Purchase",
+        "authorInfo": "Author Information",
+        "author": "Author",
+        "authorId": "Author ID",
+        "submittedOn": "Submitted On",
+        "moderation": "Moderation",
+        "status": "Status",
+        "moderatorNoteOptional": "Moderator Note (optional)",
+        "updateStatus": "Update Status",
+        "deleteReview": "Delete Review"
+      }
+    }
+  },
+  "product": {
+    "quality": {
+      "cuddleFactor": "Cuddle Factor",
+      "durability": "Durability",
+      "fluffiness": "Fluffiness",
+      "adventureSpirit": "Adventure Spirit",
+      "dreamGuard": "Dream Guard",
+      "washable": "Washable",
+      "cheerfulness": "Cheerfulness",
+      "comfortLevel": "Comfort Level",
+      "rarityScore": "Rarity Score"
+    },
+    "spec": {
+      "size": "Dimensions",
+      "weight": "Weight",
+      "material": "Material",
+      "filling": "Filling",
+      "certification": "Certification",
+      "origin": "Origin",
+      "washable": "Wash Instructions"
+    },
+    "image": {
+      "alt": {
+        "verfijnd-verse-worstjes.ongelooflijk": "Refined fresh sausages. Incredible",
+        "klein-ijzeren-toetsenbord.algemeen": "Small iron keyboard. General",
+        "merkloos-ijzeren-tafel.ambachtelijk": "Brandless iron table. Handcrafted",
+        "fantastisch-staal-chips.merkloos": "Fantastic steel chips. Brandless",
+        "verantwoord-rubberen-zeep.slank": "Responsible rubber soap. Slim",
+        "prachtig-staal-tafel.ergonomisch": "Beautiful steel table. Ergonomic",
+        "rustiek-zachte-schoenen.geweldig": "Rustic soft shoes. Great",
+        "algemeen-granieten-leunstoel.merkloos": "General granite armchair. Brandless"
+      }
+    },
+    "detail": {
+      "outOfStock": "Out of Stock",
+      "onBackorder": "On Backorder",
+      "availableFrom": "available from {date}",
+      "preOrder": "Pre-Order",
+      "comingSoon": "Coming Soon",
+      "discontinued": "Discontinued",
+      "onlyXLeft": "Only {quantity} left!",
+      "almostSoldOut": "Almost Sold Out",
+      "inStock": "In Stock"
+    }
+  },
+  "reviews": {
+    "summary": {
+      "totalReviews": "{count, plural, one {1 review} other {{count} reviews}}",
+      "averageRating": "Average Rating",
+      "noReviews": "No reviews yet for this product."
+    },
+    "stars": {
+      "1star": "1 Star",
+      "2stars": "2 Stars",
+      "3stars": "3 Stars",
+      "4stars": "4 Stars",
+      "5stars": "5 Stars"
+    }
+  },
+  "features": {
+    "shoppingCart": {
+      "overview": {
+        "title": "Shopping Cart",
+        "emptyCartTitle": "Your cart is empty",
+        "emptyCartDescription": "It looks like you haven't added any items to your cart yet. Discover our products!",
+        "continueShopping": "Continue Shopping",
+        "viewCart": "View Cart",
+        "checkout": "Checkout"
+      },
+      "headers": {
+        "product": "Product",
+        "quantity": "Quantity",
+        "total": "Total"
+      },
+      "item": {
+        "removeAriaLabel": "Remove item from cart"
+      },
+      "notifications": {
+        "itemAddedSuccess": "Product added to cart."
+      },
+      "errors": {
+        "itemRemoveFailed": "Failed to remove item. Please try again.",
+        "quantityUpdateFailed": "Failed to update quantity. Please try again.",
+        "clearCartFailed": "Failed to clear cart. Please try again."
+      }
+    },
+    "orders": {
+      "overview": {
+        "title": "My Orders",
+        "allOrders": "All Orders",
+        "unshipped": "Unshipped",
+        "cancelled": "Cancelled",
+        "noOrders": "You haven't placed any orders yet.",
+        "startShopping": "Start Shopping!"
+      },
+      "card": {
+        "placed": "Placed on",
+        "total": "Total",
+        "shipTo": "Ship to",
+        "viewDetails": "View Details",
+        "downloadInvoice": "Download Invoice",
+        "deliveredOn": "Delivered on {date}",
+        "returnWindow": "Return window until {date}",
+        "buyAgain": "Buy Again",
+        "viewItem": "View Item",
+        "trackPackage": "Track Package",
+        "writeReview": "Write Review"
+      },
+      "status": {
+        "pendingPayment": "Pending Payment",
+        "paymentFailed": "Payment Failed",
+        "awaitingFulfillment": "Awaiting Fulfillment",
+        "processing": "Processing",
+        "shipped": "Shipped",
+        "inTransit": "In Transit",
+        "delivered": "Delivered",
+        "completed": "Completed",
+        "cancelled": "Cancelled",
+        "refundPending": "Refund Pending",
+        "partiallyRefunded": "Partially Refunded",
+        "fullyRefunded": "Fully Refunded",
+        "onHold": "On Hold",
+        "unknown": "Unknown"
+      },
+      "detail": {
+        "title": "Order Details",
+        "notes": "Notes",
+        "customerNotes": "Customer Notes",
+        "noNotes": "No customer notes.",
+        "internalNotes": "Internal Notes",
+        "saveNotes": "Save Notes",
+        "actionsAndDocuments": "Actions & Documents",
+        "downloadInvoice": "Download Invoice",
+        "exportOrder": "Export Order",
+        "saveStatus": "Save Status & Tracking",
+        "financialSummary": "Financial Summary",
+        "paymentDetails": "Payment Details",
+        "customerAndAddresses": "Customer & Addresses",
+        "saveAddress": "Save Address",
+        "confirmRemoveItem": "Are you sure you want to remove this item from the order?",
+        "confirmCancelOrder": "Are you sure you want to cancel this order?",
+        "refundAmountPrompt": "Enter refund amount:",
+        "invalidRefundAmount": "Invalid refund amount.",
+        "refundReasonPrompt": "Enter reason for refund (optional):",
+        "invoiceNotFound": "Invoice not available for download.",
+        "exportNotImplemented": "Export functionality is not yet implemented.",
+        "addProducts": "Add Products",
+        "formInvalid": "Please correct the errors in the order items.",
+        "noChanges": "No changes detected.",
+        "status": "Status",
+        "orderCancel": "Cancel Order",
+        "refund": "Refund"
+      },
+      "fulfillment": {
+        "products": "Products",
+        "trackingNumber": "Tracking Number",
+        "trackingUrlOptional": "Tracking URL (optional)"
+      }
+    }
+  },
+  "chat": {
+    "overlay": {
+      "title": "Chat with Support"
+    },
+    "aiCoachDefaultName": "Plushie Pal",
+    "input": {
+      "typeYourQuestion": "Type your question...",
+      "placeholderDefault": "Send a message...",
+      "addEmoji": "Add Emoji",
+      "addGif": "Add GIF",
+      "addPhoto": "Add Photo",
+      "send": "Send"
+    },
+    "messages": {
+      "loading": "Loading...",
+      "selectConversationPrompt": "Select a conversation to begin."
+    },
+    "errors": {
+      "messageLimitReached": "You've reached the message limit. Log in to continue chatting."
+    }
+  },
+  "checkout": {
+    "pageTitle": "Checkout",
+    "progress": {
+      "title": "Checkout Progress",
+      "shipping": "Shipping",
+      "payment": "Payment",
+      "review": "Review"
+    },
+    "shipping": {
+      "title": "Shipping Information",
+      "description": "Please provide where your order should be shipped.",
+      "selectSavedAddress": "Or select a saved address:",
+      "form": {
+        "recipientName": "Recipient Name",
+        "street": "Street",
+        "houseNumber": "House Number",
+        "addressAddition": "Address Addition",
+        "postalCode": "Postal Code",
+        "city": "City",
+        "country": "Country",
+        "saveAddress": "Save address for future purchases",
+        "continueButton": "Continue to Payment"
+      },
+      "delete": {
+        "title": "Delete Address",
+        "message": "Are you sure you want to delete this address? This action cannot be undone."
+      },
+      "newTitle": "Add New Address",
+      "editTitle": "Edit Address"
+    },
+    "payment": {
+      "title": "Payment Method",
+      "description": "Choose how you would like to pay for your order.",
+      "methods": {
+        "ideal": {
+          "name": "iDEAL",
+          "description": "Pay securely via your own bank."
+        },
+        "creditcard": {
+          "name": "Credit Card",
+          "description": "Pay securely with Visa, MasterCard, or American Express."
+        },
+        "paypal": {
+          "name": "PayPal",
+          "description": "Pay quickly and securely with your PayPal account."
+        }
+      },
+      "continueButton": "Continue to Review"
+    },
+    "review": {
+      "title": "Review & Confirm",
+      "noShippingAddress": "No shipping address selected.",
+      "noPaymentMethod": "No payment method selected.",
+      "confirmAndPayButton": "Confirm & Pay"
+    },
+    "orderSummary": {
+      "title": "Your Order",
+      "loading": "Loading order summary...",
+      "subtotal": "Subtotal",
+      "discount": "Discount",
+      "shippingCosts": "Shipping Costs",
+      "freeShipping": "Free shipping!",
+      "total": "Total",
+      "includingVat": "incl. VAT",
+      "product": "Product",
+      "quantity": "Quantity"
+    },
+    "success": {
+      "title": "Thank you for your order!",
+      "description": "Your order has been placed successfully and will be processed as soon as possible.",
+      "orderNumber": "Your order number:"
+    },
+    "previousStep": "Previous step",
+    "backToCart": "Back to cart"
+  }
+}

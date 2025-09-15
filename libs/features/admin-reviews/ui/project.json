@@ -1,0 +1,21 @@
+{
+  "name": "admin-reviews-ui",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/features/admin-reviews/ui/src",
+  "prefix": "admin",
+  "projectType": "library",
+  "tags": ["scope:admin-panel", "type:feature", "context:admin-reviews"],
+  "targets": {
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "libs/features/admin-reviews/ui/jest.config.ts",
+        "tsConfig": "libs/features/admin-reviews/ui/tsconfig.spec.json"
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    }
+  }
+}

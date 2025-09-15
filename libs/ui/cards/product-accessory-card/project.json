@@ -1,0 +1,14 @@
+{
+  "name": "product-accessory-card-ui",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/ui/cards/product-accessory-card/src",
+  "prefix": "royal-code",
+  "projectType": "library",
+  "tags": ["scope:shared", "type:ui", "context:product"],
+  "implicitDependencies": ["media-ui", "title"],
+  "targets": {
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "chat-core",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/features/chat/core/src",
+  "prefix": "royal-code",
+  "projectType": "library",
+  "tags": ["scope:shared", "type:feature-core", "context:chat"],
+  "targets": {
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "libs/features/chat/core/jest.config.ts"
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    }
+  }
+}

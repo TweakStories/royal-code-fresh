@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>droneshop</title>
+    <base href="/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+
+    <script>
+      (function() {
+        try {
+          const storageKey = 'droneshopApp_theme'; // Aangepaste storage key
+          const preferenceString = localStorage.getItem(storageKey);
+          const defaultIsDark = true;
+
+          if (preferenceString) {
+            const preference = JSON.parse(preferenceString);
+            if (preference.darkMode) {
+              document.documentElement.classList.add('dark');
+            }
+            if (preference.currentTheme) {
+              document.documentElement.setAttribute('data-theme', preference.currentTheme);
+            }
+          } else {
+            if (defaultIsDark) {
+              document.documentElement.classList.add('dark');
+            }
+          }
+        } catch (e) {
+          console.error('Error applying initial theme', e);
+        }
+      })();
+    </script>
+
+  </head>
+  <body>
+    <droneshop-royal-code-root></droneshop-royal-code-root>
+  </body>
+</html>

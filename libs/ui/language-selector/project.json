@@ -1,0 +1,20 @@
+{
+  "name": "language-selector",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/ui/language-selector/src",
+  "prefix": "royal",
+  "projectType": "library",
+  "tags": ["scope:shared-ui", "type:ui", "context:i18n"],
+  "targets": {
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "libs/ui/language-selector/jest.config.ts"
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    }
+  }
+}

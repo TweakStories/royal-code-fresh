@@ -1,0 +1,111 @@
+{
+  "name": "cv",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "prefix": "app-cv",
+  "sourceRoot": "apps/cv/src",
+  "tags": ["scope:cv", "type:app"],
+  "targets": {
+    "build": {
+      "executor": "@angular/build:application",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/apps/cv",
+        "index": "apps/cv/src/index.html",
+        "browser": "apps/cv/src/main.ts",
+        "polyfills": ["zone.js"],
+        "tsConfig": "apps/cv/tsconfig.app.json",
+        "preserveSymlinks": true,
+        "assets": [
+          "apps/cv/src/favicon.ico",
+          {
+            "glob": "**/*",
+            "input": "libs/shared/assets/src/lib/i18n",
+            "output": "./assets/i18n"
+          },
+          {
+            "glob": "**/*",
+            "input": "apps/cv/src/app/shared/assets/i18n",
+            "output": "./assets/i18n"
+          },
+          {
+            "glob": "**/*",
+            "input": "apps/cv/public",
+            "output": "./"
+          },
+          {
+            "glob": "staticwebapp.config.json",
+            "input": "apps/cv/src",
+            "output": "./"
+          }
+        ],
+        "styles": [
+          "apps/cv/src/styles.css",
+          "libs/shared/styles/src/lib/theme.css"
+        ],
+        "scripts": []
+      },
+      "configurations": {
+        "production": {
+          "budgets": [
+            {
+              "type": "initial",
+              "maximumWarning": "2mb",
+              "maximumError": "3mb"
+            },
+            {
+              "type": "anyComponentStyle",
+              "maximumWarning": "20kb",
+              "maximumError": "40kb"
+            }
+          ],
+          "outputHashing": "all"
+        },
+        "development": {
+          "optimization": false,
+          "extractLicenses": false,
+          "sourceMap": true
+        }
+      },
+      "defaultConfiguration": "development"
+    },
+    "serve": {
+      "executor": "@angular-devkit/build-angular:dev-server",
+      "configurations": {
+        "production": {
+          "buildTarget": "cv:build:production"
+        },
+        "development": {
+          "buildTarget": "cv:build:development"
+        }
+      },
+      "defaultConfiguration": "development",
+      "continuous": true
+    },
+    "extract-i18n": {
+      "executor": "@angular-devkit/build-angular:extract-i18n",
+      "options": {
+        "buildTarget": "cv:build"
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "apps/cv/jest.config.ts"
+      }
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "cv:build",
+        "port": 4200,
+        "staticFilePath": "dist/apps/cv/browser",
+        "spa": true
+      }
+    }
+  }
+}

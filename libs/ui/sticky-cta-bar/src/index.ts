@@ -1,0 +1,1 @@
+export * from './lib/sticky-cta-bar/sticky-cta-bar.component';

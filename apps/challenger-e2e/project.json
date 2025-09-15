@@ -1,0 +1,9 @@
+{
+  "name": "challenger-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/challenger-e2e/src",
+  "implicitDependencies": ["challenger"],
+  "// targets": "to see all targets run: nx show project challenger-e2e --web",
+  "targets": {}
+}

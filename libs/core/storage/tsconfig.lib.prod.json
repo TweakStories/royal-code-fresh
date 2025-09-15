@@ -1,0 +1,11 @@
+{
+  "extends": "./tsconfig.lib.json",
+  "compilerOptions": {
+    "declarationMap": false,
+    "moduleResolution": "bundler",
+    "target": "es2022"
+  },
+  "angularCompilerOptions": {
+    "compilationMode": "partial"
+  }
+}

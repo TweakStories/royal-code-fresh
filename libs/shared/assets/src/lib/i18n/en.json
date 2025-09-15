@@ -1,0 +1,698 @@
+{
+  "architecture": {
+    "pageTitle": "Technical Architecture",
+    "intro": "This portfolio is not just a showcase of my work, but a live demonstration of my architectural principles. It's built on a robust, scalable, and maintainable foundation using an Nx Monorepo.",
+    "principlesTitle": "Core Principles",
+    "principle1": {
+      "title": "Scalable Monorepo",
+      "desc": "All code resides in a single Nx Monorepo, enabling maximum code reuse and consistent tooling."
+    },
+    "principle2": {
+      "title": "Strict Dependency Rules",
+      "desc": "Enforced boundaries between library types prevent spaghetti code and ensure a clear, one-way data flow."
+    },
+    "principle3": {
+      "title": "State-Driven UI",
+      "desc": "The UI is a direct function of the application state, managed by NgRx for predictable and debuggable behavior."
+    },
+    "structureTitle": "Library Structure & Data Flow",
+    "structureIntro": "The architecture follows a strict, layered approach. Each library has a single responsibility, and data flows downwards, ensuring a clear separation of concerns.",
+    "layer": {
+      "feature": {
+        "title": "Feature (UI Layer)",
+        "desc": "Contains 'smart' components and routing. Orchestrates the UI and interacts exclusively with a Facade from the 'feature-core' layer."
+      },
+      "core": {
+        "title": "Feature Core (State Management)",
+        "desc": "The brain of a feature. Contains all NgRx state logic (Actions, Reducer, Effects, Selectors) and exposes it through a single, clean Facade."
+      },
+      "dataAccess": {
+        "title": "Data Access",
+        "desc": "The only layer that communicates with the outside world. Contains Angular services with HttpClient calls to the backend API. Returns raw DTOs."
+      },
+      "domain": {
+        "title": "Domain",
+        "desc": "The heart of the application. Contains only TypeScript types, interfaces, and enums. It has zero dependencies and is shared across all layers."
+      }
+    }
+  },
+  "ui": {
+    "mediaUploader": {
+      "dragAndDrop": "Drag and drop files here or click to browse",
+      "supportedFormatsAndSize": "PNG, JPG, WEBP up to {{maxFileSizeMb}}MB",
+      "uploadingFiles": "Uploading file(s)...",
+      "uploadError": "Upload error: {{message}}",
+      "invalidFileType": "File type '{{fileType}}' is not allowed.",
+      "fileTooLarge": "Image '{{fileName}}' is too large."
+    }
+  },
+  "auth": {
+    "login": {
+      "forgotPassword": "Forgot password?",
+      "password": "Password",
+      "rememberMe": "Remember me",
+      "submit": "Sign In",
+      "title": "Sign in to your account",
+      "username": "Username"
+    },
+    "logout": {
+      "confirmationMessage": "Are you sure you want to log out?",
+      "logoutButton": "Log Out"
+    },
+    "register": {
+      "confirmPassword": "Confirm Password",
+      "email": "Email Address",
+      "password": "Password",
+      "submit": "Register",
+      "title": "Create a new account"
+    }
+  },
+  "cart": {
+    "addToCart": "Add to Cart",
+    "viewDetails": "View Details"
+  },
+  "charProgression": {
+    "categories": {
+      "combatEffectiveness": "Combat Effectiveness",
+      "coreAttributes": "Core Attributes",
+      "resources": "Resources"
+    },
+    "errors": {
+      "load,StatsFailed": "Could not load statistics."
+    },
+    "messages": {
+      "loadStatsFailed": "Failed to load character statistics. Please try again later.",
+      "noStatsAvailable": "Character statistics are currently unavailable.",
+      "noStatsInCategory": "No detailed statistics available for this category."
+    },
+    "skills": {
+      "availableSkillPoints": "Available Skill Points",
+      "cannotUpgrade": "Cannot upgrade further",
+      "currentStatValue": "Current Stat Value",
+      "nextTierAtStat": "Next tier at {{stat}} {{value}}",
+      "noCategoriesAvailable": "No skill categories available at this time.",
+      "noSkillPoints": "Not enough Skill Points",
+      "noSkillsInCategory": "No skills found in this category.",
+      "pageTitle": "Skills & Talents",
+      "tierProgress": "Tier Progress"
+    },
+    "srOnly": {
+      "levelResources": "Character Level, Experience, and Resources"
+    },
+    "stats": {
+      "arcane": {
+        "description": "Enhances arcane spells, resistances, and mystical knowledge.",
+        "name": "Arcane"
+      },
+      "attackPower": "Attack Power",
+      "critChance": "Critical Chance",
+      "dexterity": {
+        "description": "Improves agility, ranged accuracy, and critical hit chance.",
+        "name": "Dexterity"
+      },
+      "effectPrefix": "Effect",
+      "intelligence": {
+        "description": "Boosts magical damage, mana regeneration, and crafting success.",
+        "name": "Intelligence"
+      },
+      "luck": {
+        "description": "Influences critical hit rates, loot quality, and rare encounters.",
+        "name": "Luck"
+      },
+      "strength": {
+        "description": "Increases physical power and carrying capacity.",
+        "name": "Strength"
+      }
+    },
+    "titles": {
+      "coreStats": "Core Stats",
+      "fullStats": "Full Character Stats",
+      "skillCategories": "Skill Categories"
+    }
+  },
+  "checkout": {
+    "backToCart": "Back to Cart",
+    "orderSummary": {
+      "loading": "Loading...",
+      "shippingCosts": "Shipping Costs",
+      "subtotal": "Subtotal",
+      "title": "Order Summary",
+      "total": "Total",
+      "includingVat": "including VAT",
+      "discount": "Discount",
+      "freeShipping": "Free"
+    },
+    "pageTitle": "Checkout",
+    "payment": {
+      "continueButton": "Continue to Review",
+      "description": "Choose how you want to pay. All payments are secure.",
+      "methods": {
+        "creditcard": {
+          "description": "Visa, Mastercard, Amex",
+          "name": "Credit Card"
+        },
+        "ideal": {
+          "description": "Pay with your own bank",
+          "name": "iDEAL"
+        },
+        "paypal": {
+          "description": "Use your PayPal account",
+          "name": "PayPal"
+        }
+      },
+      "title": "Payment Method"
+    },
+    "previousStep": "Previous Step",
+    "progress": {
+      "payment": "Payment",
+      "review": "Review",
+      "shipping": "Shipping",
+      "title": "Checkout Progress"
+    },
+    "review": {
+      "confirmAndPayButton": "Confirm and Pay",
+      "description": "This is a placeholder for the final review step content.",
+      "title": "Review & Confirm",
+      "noShippingAddress": "No shipping address selected.",
+      "noPaymentMethod": "No payment method selected."
+    },
+    "success": {
+      "title": "Thank you for your order!",
+      "description": "Your order has been placed successfully.",
+      "orderNumber": "Your order number is:"
+    },
+    "shipping": {
+      "description": "Choose a saved address or enter a new one.",
+      "form": {
+        "city": "City",
+        "continueButton": "Continue to Payment",
+        "country": "Country",
+        "houseNumber": "No.",
+        "postalCode": "Postal Code",
+        "recipientName": "Recipient Name",
+        "recipientPlaceholder": "Full name",
+        "saveAddress": "Save this address to my profile for future use.",
+        "street": "Street",
+        "addressAddition": "Address Addition (Apt, Suite, etc.)"
+      },
+      "orDivider": "OR",
+      "title": "Shipping Address"
+    }
+  },
+  "common": {
+    "buttons": {
+      "back": "Back",
+      "cancel": "Cancel",
+      "close": "Close",
+      "confirm": "Confirm",
+      "delete": "Delete",
+      "edit": "Edit",
+      "next": "Next",
+      "no": "No",
+      "ok": "OK",
+      "previous": "Previous",
+      "reply": "Reply",
+      "report": "Report",
+      "save": "Save",
+      "search": "Search",
+      "share": "Share",
+      "submit": "Submit",
+      "viewDetails": "View Details",
+      "yes": "Yes",
+      "saving": "Saving..."
+    },
+    "dateTime": {
+      "dateFormat": "dd MMM yyyy, HH:mm",
+      "timeFormat": "HH:mm:ss",
+      "today": "Today",
+      "unknownDate": "Unknown date",
+      "yesterday": "Yesterday"
+    },
+    "labels": {
+      "address": "Address",
+      "email": "Email",
+      "firstName": "First Name",
+      "middleName": "Middle Name",
+      "lastName": "Last Name",
+      "password": "Password",
+      "phone": "Phone Number",
+      "username": "Username"
+    },
+    "messages": {
+      "error": "An error occurred",
+      "loading": "Loading...",
+      "noData": "No data available",
+      "success": "Operation successful",
+      "welcome": "Welcome to our application!"
+    },
+    "placeholders": {
+      "comments": "Add your comments here",
+      "email": "Enter your email address",
+      "password": "Enter your password",
+      "search": "Type to search...",
+      "username": "Enter your username"
+    },
+    "forms": {
+      "errors": {
+        "required": "This field is required.",
+        "invalid": "Invalid input.",
+        "pattern": {
+          "postalCode": "Invalid postal code."
+        },
+        "requiredField": "This field is required"
+      }
+    },
+    "themes": {
+      "dark": "Dark",
+      "light": "Light"
+    },
+    "productFound": "product found",
+    "productsFound": "products found",
+    "yes": "Yes",
+    "no": "No"
+  },
+  "errors": {
+    "http": {
+      "400": "Bad request",
+      "401": "Unauthorized",
+      "403": "Access denied",
+      "404": "Page not found",
+      "500": "Internal server error"
+    },
+    "server": {
+      "connectionError": "Could not connect to server",
+      "timeout": "Server timeout. Please try again later.",
+      "unknownError": "An unexpected error occurred on the server"
+    },
+    "validation": {
+      "invalidEmail": "Please enter a valid email",
+      "maxLength": "Maximum length is {{max}} characters",
+      "minLength": "Minimum length is {{min}} characters",
+      "passwordMismatch": "Passwords do not match",
+      "requiredField": "This field is required"
+    }
+  },
+  "features": {
+    "account": {
+      "overview": {
+        "ordersCardTitle": "My Orders",
+        "ordersCardDescription": "View your order history and track your packages.",
+        "viewOrdersButton": "View orders",
+        "addressesCardTitle": "My Addresses",
+        "addressesCardDescription": "Manage your saved shipping and billing addresses.",
+        "manageAddressesButton": "Manage addresses",
+        "settingsCardTitle": "Account Settings",
+        "settingsCardDescription": "Change your profile, password, and preferences.",
+        "goToSettingsButton": "Go to settings",
+        "reviewsCardTitle": "My Product Reviews",
+        "reviewsCardDescription": "View and manage all reviews you have written.",
+        "viewMyReviewsButton": "View my reviews"
+      }
+    },
+    "challenges": {
+      "detail": {
+        "addReview": "Add Review",
+        "difficulty": "Difficulty",
+        "endDate": "End Date",
+        "joinChallenge": "Join Challenge",
+        "leaveChallenge": "Leave Challenge",
+        "participants": "Participants",
+        "reviews": "Reviews",
+        "startDate": "Start Date",
+        "status": "Status",
+        "title": "Challenge Details"
+      },
+      "overview": {
+        "description": "Discover and join exciting challenges",
+        "title": "Challenges"
+      },
+      "reviews": {
+        "noReviews": "No reviews yet, be the first!",
+        "rating": "Rating",
+        "reviewText": "Your review",
+        "writeReview": "Write a review"
+      }
+    },
+    "orders": {
+      "detail": {
+        "items": "Items",
+        "orderDate": "Order Date",
+        "orderNumber": "Order Number",
+        "status": "Status",
+        "total": "Total",
+        "title": "Order Details for"
+      },
+      "overview": {
+        "title": "My Orders",
+        "description": "Track and manage your orders",
+        "searchPlaceholder": "Search all orders...",
+        "allOrders": "All Orders",
+        "unshipped": "Not Yet Shipped",
+        "cancelled": "Cancelled Orders",
+        "noOrders": "You have not placed any orders yet.",
+        "startShopping": "Start Shopping"
+      },
+      "card": {
+        "placed": "Order Placed",
+        "total": "Total",
+        "shipTo": "Ship To",
+        "orderActions": "Order Actions",
+        "viewDetails": "View order details",
+        "downloadInvoice": "Download invoice",
+        "deliveredOn": "Delivered on {{date}}",
+        "returnWindow": "Return window closes {{date}}",
+        "buyAgain": "Buy Again",
+        "viewItem": "View Item",
+        "trackPackage": "Track Package",
+        "returnItems": "Return Items",
+        "writeReview": "Write a Review"
+      },
+      "summary": {
+        "items": "{{count}} item"
+      },
+      "status": {
+        "pendingPayment": "Pending Payment",
+        "paymentFailed": "Payment Failed",
+        "awaitingFulfillment": "Awaiting Fulfillment",
+        "processing": "Processing",
+        "shipped": "Shipped",
+        "inTransit": "In Transit",
+        "delivered": "Delivered",
+        "completed": "Completed",
+        "cancelled": "Cancelled",
+        "refundPending": "Refund Pending",
+        "partiallyRefunded": "Partially Refunded",
+        "fullyRefunded": "Fully Refunded",
+        "onHold": "On Hold",
+        "unknown": "Status Unknown"
+      }
+    },
+    "products": {
+      "addToCart": "Add to Cart",
+      "addToCartAria": "Add {{name}} to cart",
+      "carouselControls": "Product image carousel controls",
+      "color": "Color",
+      "detail": {
+        "addToCart": "Add to Cart",
+        "availability": "Availability",
+        "inStock": "In Stock",
+        "outOfStock": "Out of Stock",
+        "price": "Price"
+      },
+      "heroImageAlt": "hero image",
+      "nextImage": "Next image",
+      "noProductInfo": "No product information available",
+      "noReviewsYet": "No reviews yet",
+      "overview": {
+        "description": "Explore our extensive range of products",
+        "title": "Our Products"
+      },
+      "previousImage": "Previous image",
+      "ratingAriaLabel": "Average rating: {{rating}} out of 5 stars, based on {{count}} reviews",
+      "reviewCountText": "{{count}} reviews",
+      "select": "Select",
+      "selectColor": "Select color {{color}}",
+      "shopNow": "Shop Now",
+      "size": "Size"
+    },
+    "profile": {
+      "editProfile": {
+        "avatar": "Profile Picture",
+        "title": "Edit Your Profile",
+        "updateButton": "Update Profile"
+      },
+      "settings": {
+        "notifications": "Notifications",
+        "preferences": "Preferences",
+        "privacy": "Privacy",
+        "profile": "Profile"
+      }
+    },
+    "reviews": {
+      "card": {
+        "helpfulButton": "Helpful",
+        "replyButton": "Reply",
+        "verifiedPurchase": "Verified Purchase"
+      },
+      "list": {
+        "errorTitle": "Oops, something went wrong",
+        "loading": "Loading reviews...",
+        "loadingMore": "Loading more...",
+        "noReviewsYetSubtitle": "Be the first to share your thoughts!",
+        "noReviewsYetTitle": "No Reviews Yet",
+        "tryAgainButton": "Try Again"
+      },
+      "summary": {
+        "averageRating": "Average Rating",
+        "totalReviews": "{{count}} Reviews"
+      },
+      "stars": {
+        "1star": "1 Star",
+        "2stars": "2 Stars",
+        "3stars": "3 Stars",
+        "4stars": "4 Stars",
+        "5stars": "5 Stars"
+      }
+    },
+    "shoppingCart": {
+      "overview": {
+        "title": "Shopping Cart",
+        "emptyCartTitle": "Your cart is empty",
+        "emptyCartDescription": "Looks like you haven't added any items yet. Discover our collection and find your new favorite!",
+        "continueShopping": "Continue Shopping",
+        "viewCart": "View Cart",
+        "checkout": "Proceed to Checkout",
+        "cartCleared": "Your cart has been cleared.",
+        "mergeSuccess": "Shopping cart successfully merged!"
+      },
+      "item": {
+        "added": "'{{name}}' has been added to your cart.",
+        "removed": "'{{name}}' has been removed from your cart.",
+        "productImageAlt": "Product image",
+        "removeAriaLabel": "Remove item"
+      },
+      "headers": {
+        "product": "Product",
+        "quantity": "Quantity",
+        "total": "Total"
+      },
+      "errors": {
+        "removeItem": "Could not remove the item. Please try again."
+      }
+    }
+  },
+  "home": {
+    "buttons": {
+      "viewAllSkills": "View All Skills"
+    },
+    "titles": {
+      "skillsPreview": "Skill Categories"
+    }
+  },
+  "messages": {
+    "loading": "Loading...",
+    "noDataAvailable": "No data available"
+  },
+  "navigation": {
+    "home": "Home",
+    "menu": {
+      "avatar": "Avatar",
+      "challenges": "Challenges",
+      "help": "Help",
+      "home": "Home",
+      "menu": "Menu",
+      "myChallenges": "My Challenges",
+      "nodes": "Map",
+      "profile": "Profile",
+      "settings": "Settings",
+      "social": "Social",
+      "stats": "Stats"
+    },
+    "userMenu": {
+      "myAccount": "My Account",
+      "profile": "Profile",
+      "settings": "Settings"
+    }
+  },
+  "nodes": {
+    "actions": {
+      "navigate": "Navigate"
+    },
+    "challenge": {
+      "difficultyLevel": "Difficulty",
+      "duration": "Duration",
+      "mode": "Mode",
+      "reward": "Reward"
+    },
+    "sections": {
+      "challenge": "Challenge",
+      "information": "Information",
+      "social": "Social"
+    },
+    "status": {
+      "loading": "Loading..."
+    }
+  },
+  "productDetail": {
+    "loadingDetails": "Loading product details...",
+    "liveViewers": "people are viewing this product right now",
+    "productImages": "Product images",
+    "pricingAndAvailability": "Pricing and availability",
+    "newProductStatus": "New product",
+    "newProductBadge": "NEW",
+    "byBrand": "By",
+    "reviewsCount": "reviews",
+    "flashDeal": "Flash Deal ends in",
+    "deliveryMessage": "Order within {{countdown}} for next‑day delivery",
+    "selectOptions": "Select your options",
+    "selectColorLabel": "Choose a color",
+    "selectSizeLabel": "Choose a size",
+    "quantityAndActions": "Quantity and actions",
+    "trustAndGuarantees": "Our guarantees",
+    "trustBadge1": "Child‑safe",
+    "trustBadge2": "30‑day return policy",
+    "trustBadge3": "Fast delivery",
+    "trustBadge4": "Top quality",
+    "trustBadge5": "Hand‑made with love",
+    "trustBadge6": "Perfect size",
+    "descriptionTitle": "Description",
+    "tagsTitle": "Tags",
+    "specsTitle": "Specifications",
+    "qualitiesTitle": "Qualities",
+    "ageAdviceTitle": "Age advice",
+    "generalSpecsTitle": "General specifications",
+    "whyChooseTitle": "Why choose our plushies?",
+    "reviewsTitle": "Reviews",
+    "writeReviewButton": "Write a review",
+    "addToCartAriaLabelPrefix": "Add",
+    "addToCartAriaLabelSuffix": "to cart",
+    "reviewHelpful": "helpful",
+    "verifiedPurchase": "Verified purchase",
+    "reviewLikes": "people found this helpful",
+    "reviewPhotosTitle": "Customer photos",
+    "noSpecsApplicable": "No specifications applicable for this product.",
+    "notFound": "Product not found.",
+    "statusUnknown": "Status unknown",
+    "inStock": "In stock",
+    "outOfStock": "Out of stock",
+    "almostSoldOut": "Almost sold out",
+    "onlyXLeft": "Only {{quantity}} left in stock!",
+    "onBackorder": "Available on back‑order",
+    "preOrder": "Available for pre‑order",
+    "comingSoon": "Coming soon",
+    "discontinued": "Discontinued",
+    "availableFrom": "Available from {{date}}",
+    "attributes": {
+      "durability": "Durability",
+      "cuddleFactor": "Cuddle factor",
+      "fluffiness": "Fluffiness",
+      "dreamGuard": "Dream guard",
+      "adventureSpirit": "Adventurous spirit",
+      "cheerfulness": "Cheerfulness",
+      "comfortLevel": "Comfort level",
+      "rarityScore": "Rarity score",
+      "washable": "Washable"
+    },
+    "errors": {
+      "combinationUnavailable": "This combination of options is not available.",
+      "addToCartError": "Could not add item. Please select valid options.",
+      "reviewModalError": "Could not open review form. Product not found."
+    }
+  },
+  "RATING": {
+    "ARIA_LABEL": "Rating: {{stars}} out of 5 stars"
+  },
+  "reviewForm": {
+    "add": "Add",
+    "addPhotosLabel": "Add Photos",
+    "noRatingSelected": "Select a rating",
+    "ratingLabel": "Your Overall Rating",
+    "ratingRequired": "A rating is required.",
+    "reviewTextLabel": "Your Review",
+    "reviewTextMaxLength": "Your review cannot exceed {{maxLength}} characters.",
+    "reviewTextMinLength": "Your review must be at least {{minLength}} characters long.",
+    "reviewTextPlaceholder": "Tell us more about your experience...",
+    "reviewTextRequired": "Please enter your review.",
+    "reviewTitleLabel": "Review Title",
+    "reviewTitlePlaceholder": "Summarize your experience (optional)",
+    "starsDisplay": "{{stars}} / 5 stars",
+    "submitButton": "Submit Review",
+    "title": "Write a Review",
+    "validationError": "Please correct the errors before submitting."
+  },
+  "social": {
+    "feed": {
+      "actions": {
+        "like": "Like",
+        "post": "Post",
+        "reply": "Reply"
+      },
+      "aria": {
+        "moreOptions": "More options for this comment",
+        "react": "Like or react to comment"
+      },
+      "beFirstReply": "Be the first to reply.",
+      "deleteReplyConfirmMessage": "Are you sure you want to permanently delete this reply? This cannot be undone.",
+      "deleteReplyConfirmTitle": "Delete Reply?",
+      "editNotAllowed": "You do not have permission to edit this.",
+      "editedSuffix": "edited",
+      "loadRepliesError": "Could not load replies.",
+      "maxNestingReached": "Maximum reply depth reached.",
+      "newLineHint": "Shift+Enter for new line",
+      "noGifsFound": "No GIFs found for \"{{term}}\"",
+      "noReplies": "No replies yet.",
+      "picker": {
+        "searchGif": "Search for a GIF",
+        "selectEmoji": "Select Emoji",
+        "startTyping": "Start typing to search GIFs"
+      },
+      "placeholders": {
+        "editComment": "Edit your comment...",
+        "post": "Leave a message behind...",
+        "reply": "Write a reply...",
+        "replyTo": "Reply to {{user}}..."
+      },
+      "repliesLoading": "Loading replies...",
+      "replyNotAllowed": "You cannot reply at this level or to this item.",
+      "tooltips": {
+        "reactionSummary": "Reactions"
+      },
+      "unknownUser": "Unknown User"
+    }
+  },
+  "shopPage": {
+    "title": "Our Droneshop Collection",
+    "subtitle": "Discover the latest drones, accessories, and FPV gear for every skill level."
+  },
+  "productFilters": {
+    "title": "Product Filters",
+    "loading": "Loading filters...",
+    "noFiltersAvailable": "No filters available.",
+    "clearAll": "Clear All Filters",
+    "labels": {
+      "Categorie": "Category",
+      "Merk": "Brand",
+      "Prijs": "Price",
+      "Vaardigheidsniveau": "Skill Level",
+      "Met Camera": "With Camera",
+      "Alleen Aanbiedingen": "On Sale Only"
+    }
+  },
+  "productOverview": {
+    "loadingProducts": "Loading drones...",
+    "noProductsFound": "No products found matching your criteria.",
+    "viewMode": {
+      "grid": "Grid",
+      "list": "List"
+    },
+    "sortBy": {
+      "label": "Sort by",
+      "nameAsc": "Name (A-Z)",
+      "nameDesc": "Name (Z-A)",
+      "priceAsc": "Price (Low-High)",
+      "priceDesc": "Price (High-Low)",
+      "newest": "Newest First",
+      "popularity": "Most Popular"
+    }
+  }
+}

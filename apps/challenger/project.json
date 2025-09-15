@@ -1,0 +1,119 @@
+{
+  "name": "challenger",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "prefix": "app",
+  "sourceRoot": "apps/challenger/src",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@angular-devkit/build-angular:application",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "aot": true,
+        "outputPath": "dist/apps/challenger",
+        "index": "apps/challenger/src/index.html",
+        "browser": "apps/challenger/src/main.ts",
+        "polyfills": ["zone.js"],
+        "tsConfig": "apps/challenger/tsconfig.app.json",
+        "inlineStyleLanguage": "scss",
+        "assets": [
+          "apps/challenger/src/favicon.ico",
+          {
+            "glob": "**/*",
+            "input": "apps/challenger/public",
+            "output": "/"
+          },
+          {
+            "glob": "**/*",
+            "input": "libs/shared/assets/src/lib/i18n",
+            "output": "assets/i18n/"
+          },
+          {
+            "glob": "**/*",
+            "input": "libs/features/avatar/src/lib/assets",
+            "output": "assets/features/avatar/"
+          },
+          {
+            "glob": "**/*",
+            "input": "apps/challenger/src/assets",
+            "output": "assets/"
+          }
+        ],
+        "styles": [
+          "node_modules/leaflet/dist/leaflet.css",
+          "apps/challenger/src/styles.css"
+        ],
+        "scripts": []
+      },
+      "configurations": {
+        "production": {
+          "budgets": [
+            {
+              "type": "initial",
+              "maximumWarning": "2mb",
+              "maximumError": "3mb"
+            },
+            {
+              "type": "anyComponentStyle",
+              "maximumWarning": "4kb",
+              "maximumError": "8kb"
+            }
+          ],
+          "fileReplacements": [
+            {
+              "replace": "apps/challenger/src/environments/environment.ts",
+              "with": "apps/challenger/src/environments/environment.prod.ts"
+            }
+          ],
+          "outputHashing": "all"
+        },
+        "development": {
+          "optimization": false,
+          "extractLicenses": false,
+          "sourceMap": true
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "serve": {
+      "executor": "@angular-devkit/build-angular:dev-server",
+      "configurations": {
+        "production": {
+          "buildTarget": "challenger:build:production"
+        },
+        "development": {
+          "buildTarget": "challenger:build:development"
+        }
+      },
+      "defaultConfiguration": "development",
+      "scripts": [],
+      "continuous": true
+    },
+    "extract-i18n": {
+      "executor": "@angular-devkit/build-angular:extract-i18n",
+      "options": {
+        "buildTarget": "challenger:build"
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "apps/challenger/jest.config.ts"
+      }
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "challenger:build",
+        "port": 4200,
+        "staticFilePath": "dist/apps/challenger/browser",
+        "spa": true
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "faq",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/ui/faq/src",
+  "prefix": "royal-code",
+  "projectType": "library",
+  "tags": ["scope:shared", "type:ui"],
+  "implicitDependencies": ["icon", "paragraph"],
+  "targets": {
+    "build": {
+      "executor": "@nx/angular:ng-packagr-lite",
+      "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+      "options": {
+        "project": "libs/ui/faq/ng-package.json",
+        "tsConfig": "libs/ui/faq/tsconfig.lib.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/ui/faq/tsconfig.lib.prod.json"
+        },
+        "development": {}
+      },
+      "defaultConfiguration": "production"
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    }
+  }
+}

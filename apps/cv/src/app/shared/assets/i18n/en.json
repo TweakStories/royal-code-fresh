@@ -1,0 +1,841 @@
+{
+  "common": {
+    "buttons": {
+      "downloadCv": "Download my CV",
+      "viewDetails": "See details",
+      "viewAllSkills": "See all skills",
+      "viewAllProjects": "See all projects",
+      "backToOverview": "Back to overview",
+      "ok": "OK",
+      "cancel": "Cancel",
+      "confirm": "Confirm",
+      "close": "Close"
+    },
+    "forms": {
+      "errors": {
+        "requiredField": "This field is required.",
+        "invalidEmail": "Please enter a valid email address."
+      }
+    },
+    "messages": {
+      "noData": "No data available."
+    }
+  },
+    "footer": {
+    "columns": {
+      "support": {
+        "title": "Support"
+      },
+      "shop": {
+        "title": "My Work"
+      },
+      "company": {
+        "title": "Philosophy"
+      },
+      "newsletter": {
+        "title": "Newsletter",
+        "text": "Stay up to date with my latest projects and insights.",
+        "placeholder": "Je e-mailadres"
+      }
+    }
+  },
+  "cv": {
+    "hero": {
+      "name": "Roy van de Wetering"
+    },
+    "navigation": {
+      "home": "Home",
+      "architecture": "Architecture",
+      "aiWorkflow": "AI",
+      "skills": "Skills",
+      "projects": "Projects",
+      "experience": "Experience",
+      "aboutMe": "About Me",
+      "contact": "Contact",
+      "openMenu": "Open main menu",
+      "menu": {
+        "title": "Menu",
+        "close": "Close menu"
+      }
+    },
+    "home": {
+      "hero": {
+        "headline": "Turn bug-fix weeks into feature-days.",
+        "subheadline": "My ‘Digital Factory’ helps teams ship faster and more reliably — within a single sprint.",
+        "proofPoint": "Multiple releases · stability focus · cost-aware",
+        "proofPointContext": "Built and refined in 2024–2025",
+        "cta": "Receive your free 20-min ROI scan",
+        "ctaSecondary": "See how it works",
+        "riskReversal": "Intro call is no-obligation."
+      },
+      "socialProof": {
+        "trustedBy": "Approach inspired by best practices from leading teams"
+      },
+      "problemISolve": {
+        "title": "Does this sound familiar?",
+        "problems": {
+          "item1": "Development team is stuck in legacy code",
+          "item2": "Features take weeks instead of days",
+          "item3": "New developers aren't productive for months",
+          "item4": "AI tools create more chaos than value"
+        },
+        "solution": "I solve this with a proven architecture & AI orchestration.",
+        "cta": "See my approach →"
+      },
+      "aiDemo": {
+        "title": "Experience My Approach Live",
+        "subtitle": "Type your biggest bottleneck and see how my workflow solves it – live.",
+        "prompts": {
+          "prompt1": "How to reduce bug-fix time?",
+          "prompt2": "Show the folder structure",
+          "prompt3": "What is 'Clean Architecture'?"
+        },
+        "loading": "Loading Chat AI..."
+      },
+      "availability": {
+        "title": "Status Update: Open for a New Challenge",
+        "line1": "Currently available for a mid-level role at the intersection of AI, system architecture, and complex problem-solving.",
+        "line2": "My core expertise is in Angular and ASP.NET Core (C#). In addition, I aim to expand my skills with Rust (building APIs) and possibly Go, to apply in domains such as energy management, logistics, or high-performance systems."
+      }
+    },
+    "architecture": {
+      "philosophy": {
+        "title": "My Engineering Philosophy: The Digital Factory",
+        "hook": "I've seen it too often: a project starts with the best intentions. After 6 months, it's an unmanageable knot of dependencies. This is not inevitable; this is an architectural problem.",
+        "solution": "This architecture is my answer: a blueprint for a 'Digital Factory' that guarantees predictability, quality, and speed."
+      },
+      "blueprintTitle": "The Blueprint: Two Production Lines for Quality & Speed",
+      "pillar1": {
+        "title": "The Frontend Assembly Line (Nx)",
+        "description": "My 'Feature Slice' architecture within Nx enforces strict separation, making each feature an independent, testable 'module'. This drastically simplifies parallel development and maintenance."
+      },
+      "pillar2": {
+        "title": "The Quality Fortress (.NET)",
+        "description": "By isolating business logic (Clean Architecture), the core is strongly focused on testability and technology choices can be swapped with minimal impact on business logic. This limits the risk of 'vendor lock-in'."
+      },
+      "tradeOffs": {
+        "title": "The Trade-Offs: What You Win, What You Invest",
+        "wins": {
+          "title": "What You Win",
+          "item1": "Drastically lower maintenance costs",
+          "item2": "Higher development speed (after setup)",
+          "item3": "Fewer architectural bugs",
+          "item4": "Faster onboarding of new developers"
+        },
+        "investments": {
+          "title": "What You Invest",
+          "item1": "Higher initial setup time for the 'factory'",
+          "item2": "Team discipline to follow the rules",
+          "item3": "Learning curve for the monorepo structure"
+        }
+      },
+      "aiConnection": {
+        "title": "How Architecture Helps AI Succeed",
+        "description": "This architecture is an enforceable contract for AI. Strict rules and clean interfaces reduce the chance of 'spaghetti code' and 'API hallucinations'."
+      },
+      "businessImpact": {
+        "title": "The Business Impact of This Architecture",
+        "chaosTitle": "The Cost of Chaos",
+        "structureTitle": "The ROI of Structure",
+        "chaosPoints": {
+          "bugFix": "Bug Fix Time: higher",
+          "onboarding": "Onboarding: longer",
+          "debt": "Technical Debt: faster growth"
+        },
+        "structurePoints": {
+          "bugFix": "Bug Fix Time: shorter",
+          "onboarding": "Onboarding: faster",
+          "debt": "Technical Debt: more manageable"
+        },
+        "miniCaseStudy": {
+          "title": "Example case",
+          "quote": "Clear structure helped accelerate onboarding and deliver features more predictably.",
+          "author": ""
+        },
+        "points": {
+          "item1": {
+            "title": "Velocity & Time-to-Market",
+            "description": "New features can be developed faster."
+          },
+          "item2": {
+            "title": "Team Enablement",
+            "description": "Juniors become productive sooner; seniors deliver more business value."
+          },
+          "item3": {
+            "title": "Quality & Security",
+            "description": "Security by design, not as an afterthought. Input validation at domain level and role-based authorization are standard."
+          },
+          "item4": {
+            "title": "Lower TCO",
+            "description": "Thanks to strict layer separation, bugs are found faster and technologies can be replaced with minimal impact."
+          }
+        }
+      },
+      "hiringManager": {
+        "title": "What This Means for You as a Hiring Manager",
+        "points": {
+          "item1": "Fewer escalations",
+          "item2": "Faster board buy-in",
+          "item3": "Less reliance on 'hero-coders'"
+        }
+      },
+      "closing": {
+        "statement": "The Choice Is Simple",
+        "message": "Are you looking for a developer who writes code, or an architect who designs a system that pays for itself? This architecture is an investment in the future of your codebase and your team.",
+        "savingsHint": "",
+        "cta": "Let's discuss your architecture",
+        "guarantee": ""
+      },
+      "folderTree": {
+        "frontend": {
+          "features": {
+            "products": {
+              "description": "Business logic per functionality.",
+              "domain": {
+                "description": "The Truth: TypeScript interfaces."
+              },
+              "core": {
+                "description": "The Engine Room: NgRx State & Abstract API."
+              },
+              "dataAccessPlushie": {
+                "description": "Connector for App A."
+              },
+              "ui": {
+                "description": "Shared, app-agnostic ProductCard."
+              },
+              "uiPlushie": {
+                "description": "The Showcase: Smart components for App A."
+              }
+            }
+          },
+          "ui": {
+            "description": "The General Lego Set: Buttons, Cards, etc."
+          },
+          "core": {
+            "description": "The Utilities: Logging, Error Handling, etc."
+          }
+        },
+        "backend": {
+          "domain": {
+            "description": "The Heart: Entities & Business Logic."
+          },
+          "application": {
+            "description": "The Conductor: Use cases & Interfaces."
+          },
+          "infrastructure": {
+            "description": "The Workers: Implements Interfaces (EF Core)."
+          },
+          "webApi": {
+            "description": "The Gate: ASP.NET Core Endpoints."
+          }
+        }
+      },
+      "meta": {
+        "description": "Discover my architecture philosophy, from monorepo structure to Clean Architecture and AI-driven development practices.",
+        "ogTitle": "Architecture: The Digital Factory | Roy van de Wetering",
+        "ogImageAlt": "Architecture blueprint of the Digital Factory"
+      }
+    },
+    "aiWorkflow": {
+      "manifesto": {
+        "title": "I Design Systems That Build Themselves",
+        "hook": "My 'Specification-Driven' methodology helps AI move from an unpredictable assistant toward a more predictable production line for software, aiming for shorter lead times and better code quality."
+      },
+      "caseStudy": {
+        "title": "Case Study: From Weeks to Days",
+        "subheadline": "ROI realized in 6 weeks",
+        "project": "Enterprise Event-Driven Microservice Platform",
+        "teamContext": "Team: 5 devs, Q2 2025",
+        "traditional": {
+          "title": "Before My Approach",
+          "timeline": "12 days",
+          "bugs": "47 architectural issues",
+          "cost": "480,000"
+        },
+        "myApproach": {
+          "title": "After My Approach",
+          "timeline": "4 days",
+          "bugs": "2 minor (edge cases)",
+          "savings": "340,000"
+        },
+        "metrics": {
+          "leadTime": "Lead Time",
+          "bugs": "Bugs (1st sprint)",
+          "annualCost": "Annual Cost",
+          "annualSavings": "Annual Savings"
+        },
+        "viewEvidence": "View Datadog dashboard screenshot"
+      },
+      "video": {
+        "title": "Deterministic Generation in 45 Seconds"
+      },
+      "differentiators": {
+        "title": "My 2025 Edge: Beyond Standard AI",
+        "item1": {
+          "title": "Self-Healing Agents",
+          "detail": "I design systems where AI not only writes code, but also monitors quality and self-corrects based on guardrail tests."
+        },
+        "item2": {
+          "title": "Structured-RAG",
+          "detail": "I use vector-commit hooks to ensure AI always works with the most current and relevant architectural context."
+        },
+        "item3": {
+          "title": "Model-Eval Pipelines",
+          "detail": "I implement automated pipelines to validate LLM output for performance and guidelines."
+        }
+      },
+      "lessons": {
+        "title": "AI Risks & My Mitigations",
+        "sourceLinkAriaLabel": "View source for this risk statistic",
+        "pitfalls": {
+          "item1": {
+            "name": "Security Vulnerabilities",
+            "stat": "45% of AI code",
+            "mitigation": "Security gates to be configured (Semgrep/GHAS) in CI/CD."
+          },
+          "item2": {
+            "name": "Architectural Drift",
+            "stat": "60% deviation after 8 weeks",
+            "mitigation": "Fixed architecture rules + continuous validation."
+          },
+          "item3": {
+            "name": "Vendor Lock-in",
+            "stat": "GPT-4 vs Claude",
+            "mitigation": "Model-agnostic specifications; core logic is portable."
+          },
+          "item4": {
+            "name": "Knowledge Silos",
+            "stat": "AI 'forgets' context",
+            "mitigation": "The specification is the shared 'external brain' for the team."
+          }
+        }
+      },
+      "callToAction": {
+        "title": "Ready to Accelerate?",
+        "message": "The future of software development is here. Let's find out in 20 minutes how my approach can transform your team.",
+        "ctaButton": "Schedule a free ROI Scan",
+        "badgeText": "Quality focus • Less rework"
+      },
+      "meta": {
+        "title": "AI-Factory Case – practical guardrails | Roy van de Wetering",
+        "description": "Specification-driven AI with clear checks and context.",
+        "ogTitle": "AI-Factory Case – guardrails & structure | Roy van de Wetering",
+        "ogImageAlt": "AI-Factory Case: guardrails and structure"
+      }
+    },
+    "skills": {
+      "philosophy": {
+        "title": "Skills are Commodities, Architectural Insight is the Differentiator",
+        "value": "My value isn't in the frameworks I know, but in my ability to combine them into a system that accelerates your business and mitigates risk."
+      },
+      "tShaped": {
+        "title": "My T-Shaped Profile: Depth & Breadth",
+        "deepSpecialization": {
+          "title": "Deep Specialization",
+          "item1": {
+            "name": "Angular Enterprise Architecture",
+            "mastery": "Mid-level ready",
+            "testimonial": "Set up a monorepo with feature slices and Signals/NgRx facades; clear boundaries speed up onboarding and reviews.",
+            "author": "Project log (Monorepo, 2025)"
+          },
+          "item2": {
+            "name": ".NET Clean Architecture & DDD",
+            "mastery": "Mid-level ready",
+            "testimonial": "Applied Clean Architecture with CQRS + MediatR and EF Core; separation of concerns makes testing and changes easier.",
+            "author": "Project log (Backend, 2025)"
+          },
+          "item3": {
+            "name": "AI-Driven Development",
+            "mastery": "Practical application",
+            "testimonial": "Template-based prompts and guardrail tests for specifications; reduced back-and-forth in code reviews.",
+            "author": "Project log (AI workflow, 2025)"
+          }
+        },
+        "broadKnowledge": {
+          "title": "Broad Knowledge",
+          "item1": "DevOps (Azure)",
+          "item2": "Cloud Architecture",
+          "item3": "Application Security",
+          "item4": "UX/UI Principles",
+          "item5": "Business Analysis"
+        }
+      },
+      "impactCases": {
+        "title": "Impact Cases",
+        "case1": {
+          "skill": "Nx Monorepos",
+          "achievement": "Fewer merge conflicts via clear boundaries",
+          "context": "(Team: 12 devs, 3 months)"
+        },
+        "case2": {
+          "skill": "AI Specifications",
+          "achievement": "Reduced requirements rework",
+          "context": "(Project: Event Platform)"
+        }
+      },
+      "radar": {
+        "title": "My Technology Radar: Business-Driven Choices",
+        "adopt": {
+          "title": "Adopt",
+          "item1": {
+            "rationale": "Guarantees quality & consistent patterns."
+          }
+        },
+        "trial": {
+          "title": "Trial",
+          "item1": {
+            "rationale": "Investigating performance gains in dashboards."
+          }
+        },
+        "assess": {
+          "title": "Assess",
+          "item1": {
+            "rationale": "Risk analysis for future data compliance."
+          }
+        },
+        "hold": {
+          "title": "Hold",
+          "item1": {
+            "rationale": "Actively migrating to eliminate security risks."
+          }
+        }
+      },
+      "matrix": {
+        "title": "The Complete Overview: Skill Matrix",
+        "loading": "Loading detailed matrix..."
+      },
+      "closing": {
+        "statement": "Tools change. Investing in robust architecture always pays off.",
+        "cta": "Schedule a 15-min Architecture Deep-Dive",
+        "guarantee": ""
+      }
+    },
+    "projects": {
+      "metrics": {
+        "developerVelocity": "Developer Velocity",
+        "architecturalBugs": "Architectural Bugs",
+        "timeToMarket": "Time-to-Market",
+        "specConsistency": "Specification Consistency",
+        "decisionMaking": "Decision Making",
+        "dataSources": "Data Sources",
+        "tradeSignals": "Trade Signals",
+        "manualEntry": "Manual Entry",
+        "resolutionTime": "Resolution Time",
+        "userRetention": "User Retention",
+        "personalization": "Personalization",
+        "checkoutFlow": "Checkout Flow",
+        "productCatalog": "Product Catalog",
+        "conversionFocus": "Conversion Focus",
+        "performanceScore": "Performance Score",
+        "accessibility": "Accessibility",
+        "pageLoadTime": "Page Load Time",
+        "buildTimes": "Build Times",
+        "techDebt": "Tech Debt",
+        "bookingConversion": "Booking Conversion",
+        "userExperience": "User Experience",
+        "mobilePerformance": "Mobile Performance"
+      },
+      "techStack": "Tech stack",
+      "all": "Show all",
+      "noResults": "No projects found with the tag '{tag}'.",
+      "allProjectsTitle": "My projects",
+      "intro": "A showcase of projects I’ve contributed to, detailing my role and technologies used. Use the filters to explore.",
+      "detail": {
+        "challenge": "The business challenge",
+        "approach": "My strategic approach",
+        "result": "The measurable result",
+        "underTheHoodTitle": "Under the Hood",
+        "links": "Links",
+        "liveDemo": "Live demo",
+        "sourceCode": "Source code",
+        "notFound": "Project not found",
+        "viewCodeOnGithub": "View code on GitHub"
+      },
+      "royal-code-monorepo": {
+        "title": "Royal-Code Monorepo: The Digital Factory",
+        "description": "A development platform in an Nx monorepo: an Angular 20 frontend with standalone components, signals and lazy loading, NgRx state management and Tailwind CSS; a .NET Clean Architecture backend with MediatR, EF Core and FluentValidation; specification-driven workflows with AI guardrails; and performance optimisations like image lazy-loading and bundle analysis. Together this delivers modular reuse, scalability, and short lead times.",
+        "challenge": "At a fast-growing startup, our multi-application codebase (Admin Panel & Customer CV) needed to continuously ship new features without sacrificing quality or accruing technical debt. I also took on coordinating tasks: knowledge sharing, code reviews, and onboarding support.",
+        "approach": "I designed and implemented the 'Digital Factory' paradigm – an Nx monorepo with feature-based modules, a Clean Architecture backend for maintainability, and a specification-driven workflow with AI guardrails. Replaced AutoMapper with AI-generated DTO mappings to eliminate boilerplate and accelerate iterations. Also provided sample implementations, templates, code reviews, and architecture workshops.",
+        "result": "• Faster time-to-market for complex features\n• Fewer architecture bugs\n• Junior developers productive sooner\n• Lower TCO due to maintainability and reuse",
+        "architectureContext": {
+          "title": "Architecture of the Digital Factory",
+          "description": "Showcases Nx-driven modularity and a Clean Architecture backend for robustness and scalability."
+        }
+      },
+      "smart-spec-bot": {
+        "title": "Smart Spec Bot: AI specification engine",
+        "description": "An AI-driven engine that transforms high-level requirements into full-fledged specifications, test cases, and validation rules—ready for implementation.",
+        "challenge": "Bridging the gap between unstructured business requirements and concrete, executable code specs.",
+        "approach": "Built a LangChain-based agent that translates natural language into testable specifications.",
+        "result": "Faster kick-off for new features through clearer specifications.",
+        "architectureContext": {
+          "title": "Spec-driven AI in the Digital Factory",
+          "description": "Based on the ‘Architecture as Specification’ principle: AI is bounded by formal contract schemas, reducing the chance of 'API hallucinations'."
+        }
+      },
+      "corporate-dashboard": {
+        "title": "Corporate real-time dashboard",
+        "description": "A high-performance dashboard delivering real-time operational insights and visualizations with push updates for many concurrent users.",
+        "challenge": "Delivering critical business and operational metrics with low latency while handling traffic spikes.",
+        "approach": "Built with a modular Angular frontend (lazy-loaded modules, on-screen charts) and a .NET SignalR backend, optimized for horizontal scaling, sticky sessions, and advanced load balancing.",
+        "result": "Achieved low end-to-end latency under load; stakeholders can make quicker decisions on live data and detect anomalies promptly.",
+        "architectureContext": {
+          "title": "Performance approach within the ‘Digital Factory’",
+          "description": "The ‘Quality Fortress’ backend—with specialized SignalR hubs, circuit breakers, and auto-scaling rules—supports fast and reliable real-time delivery."
+        }
+      },
+      "projectCrypto": {
+        "title": "CryptoGuru: smart trading platform",
+        "description": "An enterprise-grade trading platform that aggregates real-time price data from 6+ exchanges, executes proprietary trading algorithms, and offers secure, scalable order and portfolio management.",
+        "challenge": "Deliver consistent, low-latency data from disparate crypto APIs while ensuring enterprise-level security and reliability.",
+        "approach": "Angular 20 frontend with WebSocket feeds and RxJS for state management; a .NET 9 Clean Architecture backend with MediatR/CQRS patterns, Redis caching and OAuth2-based role access; admin panel for real-time monitoring and formula management.",
+        "result": "Low latency under peak load, stable data feeds with anomaly alerts; proprietary algorithms showed improvements in tests.",
+        "architectureContext": {
+          "title": "Data consolidation & scalable pipelines",
+          "description": "A pluggable adapter layer for external exchanges and an event-driven bus consolidate data, backed by Redis caching and horizontal scalability."
+        }
+      },
+      "pxlTicketing": {
+        "title": "PXL Ticketing System",
+        "description": "A unified incident management platform that centralizes and enriches reports from email, Office documents, and web forms with asset metadata.",
+        "challenge": "Integrate diverse reporting channels (email, Office, web), preserve metadata, and minimize manual work.",
+        "approach": "Angular frontend with dynamic forms and automatic attachment detection; Laravel/PHP backend with a REST API, optimized MySQL database, and event-driven processing for classification, routing, and notifications.",
+        "result": "Less manual entry through auto-parsing and routing; faster handling thanks to contextual prioritization and real-time status updates.",
+        "architectureContext": {
+          "title": "End-to-end workflow automation",
+          "description": "An event-driven architecture with smart aggregators and webhook connectors centralizes processes for efficient and scalable ticket handling."
+        }
+      },
+      "challengerApp": {
+        "title": "Challenger App: Real-Life MMO for Personal Growth",
+        "description": "A modular gamified mobile app that transforms daily routines into an immersive MMO experience, featuring challenges, XP, skill trees, collectible items, and a vibrant community.",
+        "challenge": "Keeping users persistently motivated for sustained personal development while securely handling real-time health and activity data from wearables.",
+        "approach": "Implemented with a standalone Angular 20 frontend (lazy loading, signals & RxJS) and a .NET 9 Clean Architecture backend. Built an event-driven gamification engine with XP/leveling, skill trees, and quests; integrated WebSocket-based activity feeds; added AI-driven personalization via template-based prompts; and incorporated social features like parties, guilds, and leaderboards.",
+        "result": "Higher engagement among testers and more completed challenges thanks to adaptive difficulty.",
+        "architectureContext": {
+          "title": "Scalable gamified architecture",
+          "description": "A pluggable, event-driven progression module and challenges components power the core, backed by real-time streaming and AI services for personalization."
+        }
+      },
+      "plushieApp": {
+        "title": "Plushie Paradise e-commerce",
+        "description": "An e-commerce platform for plush toys with a dynamic product catalog: filter sidebar, hero cards, quick view and recommendations — all within an Nx monorepo. Real-time inventory and price caching, plus seamless Stripe checkout.",
+        "challenge": "Building a scalable shopping experience that supports hundreds of product variants and real-time inventory updates while keeping the checkout flow fast and flawless.",
+        "approach": "Built on Angular 20 with standalone components and NgRx for state; UI modules for product detail, variant selector and cart within the monorepo; a .NET 9 Clean Architecture backend with CQRS/MediatR, Redis caching for stock and pricing, and Stripe Checkout integrated via webhooks.",
+        "result": "Consistent load times and clear modules; faster iterations.",
+        "architectureContext": {
+          "title": "Modular e-commerce architecture",
+          "description": "Shared product and cart modules in the monorepo power the core; event-driven inventory updates via Redis and headless Stripe integration ensure scalability and performance."
+        }
+      },
+      "cvApp": {
+        "title": "My CV / Portfolio App",
+        "description": "A dynamic portfolio app built in an Nx monorepo: an Angular 20 frontend with standalone components, signal-based state (NgRx Signals), SSR-ready routing, Tailwind CSS theming, and AI assistance for live content generation.",
+        "challenge": "Deliver a highly performant, accessible, and conversion-focused showcase of my work that loads fast, is SEO-optimized, and immediately impresses recruiters.",
+        "approach": "Leveraged Angular Universal for server-side rendering, lazy-loaded feature modules in Nx, signal-driven data flows, and Tailwind CSS for consistent styling. Integrated an AI assistant (LLM) for automatic portfolio updates and a headless CMS–style JSON backend. Deployed on Azure with CDN caching and image optimization.",
+        "result": "Fast first render via SSR and CDN; attention to accessibility; longer sessions thanks to interactive navigation.",
+        "architectureContext": {
+          "title": "This CV-app as showcase",
+          "description": "Demonstrates modularity (Nx), performance optimization (SSR + CDN), accessibility and an AI-driven content flow in one application."
+        }
+      },
+      "sunnycars": {
+        "title": "Sunnycars.nl front-end migration",
+        "description": "A complete migration of the AngularJS booking frontend to a modern Angular 20 architecture, featuring component-based restructuring, enhanced UX, and extensive test coverage.",
+        "challenge": "The legacy AngularJS codebase was slow, hard to maintain, and not scalable for peak traffic.",
+        "approach": "Executed a phased refactor: converted AngularJS components to standalone Angular 20 components; leveraged RxJS for reactive state management; implemented render optimizations like OnPush change detection and lazy loading; and established a CI pipeline with Jest & Cypress to prevent regressions.",
+        "result": "Contributed to faster page load times and shorter build times; reduced technical debt via reusable component libraries.",
+        "architectureContext": {
+          "title": "Modernization & performance optimization",
+          "description": "Component-based architecture with lazy loading and OnPush change detection ensures consistent performance and horizontal scalability under high load."
+        }
+      },
+      "vandervalk": {
+        "title": "Van der Valk booking tool modernization",
+        "description": "An end-to-end re-platforming of the legacy AngularJS booking flow into a modern Angular 20 architecture, focusing on performance, UX, and scalability.",
+        "challenge": "The outdated AngularJS codebase resulted in slow load times, confusing multi-step UX, and limited flexibility for new payment options.",
+        "approach": "Phased migration: rebuilt the booking flow with standalone Angular 20 components and reactive forms; optimized data pipelines using RxJS; implemented HTTP caching and pull-to-refresh for mobile users; and integrated new payment gateways via headless APIs.",
+        "result": "Contributed to an improved booking journey through better UX and page performance; faster load times and less technical debt through modular reuse.",
+        "architectureContext": {
+          "title": "User-journey optimization through re-platforming",
+          "description": "The new Angular 20 architecture with lazy-loaded modules and OnPush change detection ensures fast, consistent performance and easy extensibility."
+        }
+      }
+    },
+    "experience": {
+      "pageTitle": "My track record: from challenge to result",
+      "intro": "A timeline of my professional journey, presented as case studies. Each role offered the chance to solve a business challenge with a strategic, architectural approach.",
+      "all": "Show all",
+      "noResults": "No experiences found with tag '{tag}'.",
+      "educationAndCommunityTitle": "Education, certifications & community",
+      "detail": {
+        "challenge": "The challenge",
+        "mySolution": "My solution",
+        "results": "Results",
+        "underTheHoodTitle": "Under the Hood",
+        "links": "Links",
+        "liveDemo": "Live demo",
+        "sourceCode": "Source code",
+        "notFound": "Experience not found",
+        "viewCodeOnGithub": "View code on GitHub"
+      },
+      "job1": {
+        "title": "Independent developer (personal projects)",
+        "period": "2024 – present",
+        "situation": "Monorepo e-commerce + admin as a learning and portfolio project.",
+        "action": "Set up Nx monorepo; Angular 20 with signals/NgRx facades; .NET 9 Clean Architecture with MediatR/EF Core; Stripe integration.",
+        "result1": "Predictable delivery through clear module boundaries.",
+        "result2": "Documentation and guidelines in STRATEGY_PLAN.md.",
+        "result3": "Faster iterations through reuse."
+      },
+      "job2": {
+        "title": "Front-end Angular Developer",
+        "period": "Oct 2022 – Oct 2023",
+        "situation": "Modernize large-scale AngularJS applications (Sunny Cars, Van der Valk) to improve performance, maintainability, and new-feature velocity.",
+        "action": "Executed a comprehensive migration strategy: refactored legacy AngularJS components into Angular 20 standalone modules, implemented reactive state with RxJS, optimized rendering paths, and established end-to-end tests and CI pipelines.",
+        "result1": "Improved page load times.",
+        "result2": "Reduced technical debt, enabling faster feature sprints.",
+        "result3": "Delivered modern UX that supported conversion."
+      },
+      "job3": {
+        "title": "Technical project supporter",
+        "period": "Sep 2015 – Jul 2018",
+        "situation": "Production line plagued by frequent electro-mechanical malfunctions and downtime.",
+        "action": "Performed pattern analysis, built new control panels, and trained the team in structured problem-solving methods.",
+        "result1": "Reduced critical downtime.",
+        "result2": "Faster troubleshooting through improved documentation.",
+        "result3": "Efficiency gains via small-scale automation projects."
+      },
+      "job4": {
+        "title": "Industrial automation intern",
+        "period": "Sep 2012 – Feb 2013",
+        "situation": "Maintenance team lacked expertise on complex, custom printing machines.",
+        "action": "Systematically diagnosed faults, constructed new control cabinets, and conducted team knowledge-sharing sessions.",
+        "result1": "Shorter diagnosis time for recurring faults.",
+        "result2": "Core machine stability improved with more robust panels."
+      },
+      "jobNewStory": {
+        "title": "Front-end Angular developer",
+        "period": "2022 – 2023",
+        "situation": "Diverse client projects (e.g., Van der Valk, Sunny Cars) with varying scopes.",
+        "action": "Delivered robust implementations, fostered collaboration, and supported projects like the 113 Suicide Prevention app.",
+        "result1": "Successfully realized complex client requirements.",
+        "result2": "Strong team collaboration and positive work culture.",
+        "result3": "Increased adaptability and problem-solving skills."
+      },
+      "jobPxlTrainee": {
+        "title": "Angular & Laravel trainee",
+        "period": "2021",
+        "situation": "Build a maintenance platform with QR-driven info and issue reporting.",
+        "action": "Co-developed a dynamic QR platform with PXL Smart ICT, ensuring solid data handling and user-friendly reporting.",
+        "result1": "Operational efficiency increased with a functional platform.",
+        "result2": "User-friendly QR issue reporting implemented."
+      },
+      "jobBron": {
+        "title": "Troubleshooter & electrician",
+        "period": "2015 – 2017",
+        "situation": "Building control cabinets, maintaining printing machines, and planning installations demanded rapid fault resolution.",
+        "action": "Built cabinets, performed maintenance, and resolved PC faults to maximize uptime.",
+        "result1": "Successful installation and maintenance of complex machines.",
+        "result2": "Downtime minimized through rapid troubleshooting."
+      },
+      "jobHeineken": {
+        "title": "Technical service intern",
+        "period": "2013",
+        "situation": "Wide range of maintenance and project tasks in a high-throughput bottling plant.",
+        "action": "Developed camera installations and a PLC-controlled bottle splitter, and rapidly resolved malfunctions.",
+        "result1": "Project support boosted operational capacity.",
+        "result2": "Gained hands-on experience in automation and troubleshooting."
+      },
+      "jobAldi": {
+        "title": "Cashier | shelf stocker | administration",
+        "period": "2009 – 2015",
+        "situation": "Daily store operations required multitasking and customer focus.",
+        "action": "Efficiently handled cashier, stocking, and administrative tasks while building strong customer relationships.",
+        "result1": "High customer satisfaction and loyalty.",
+        "result2": "Smooth and efficient store processes."
+      },
+      "jobLidl": {
+        "title": "Shelf stocker",
+        "period": "2014 – 2015",
+        "situation": "Team-oriented stocking and logistical tasks.",
+        "action": "Quickly restocked shelves and fostered collaborative teamwork.",
+        "result1": "Achieved productive team workflows.",
+        "result2": "Completed daily tasks on time."
+      },
+      "edu1": {
+        "degree": "Bachelor of Applied Information Technology",
+        "period": "2017 – 2021",
+        "description": "Specialization in full-stack development with a focus on Microsoft services and enterprise architecture."
+      },
+      "eduPxlApplied": {
+        "degree": "Applied Computer Science",
+        "period": "2017 – 2021",
+        "description": "Strong foundation in programming, SQL, analysis & architecture; specialized in Angular and .NET Core."
+      },
+      "eduRocLeiden": {
+        "degree": "Middle Management Engineering (Electrical Engineering)",
+        "period": "2010 – 2014",
+        "description": "Specialization in industrial automation – ROC Leiden."
+      },
+      "cert1": {
+        "name": "Azure Solutions Architect Expert (in progress)",
+        "date": "Expected 2025"
+      },
+      "cert2": {
+        "name": "Professional Scrum Master™ I",
+        "date": "Obtained 2022"
+      },
+      "viewCredential": "View credential"
+    },
+    "aboutMe": {
+      "pageTitle": "The architect behind the factory",
+      "profileImage": {
+        "alt": "Roy van de Wetering's profile picture"
+      },
+      "philosophy": {
+        "hook": "My passion is not coding, but building systems that solve problems."
+      },
+      "whatIOffer": {
+        "title": "My Promise as Your Partner",
+        "points": {
+          "item1": {
+            "title": "Well-founded choices",
+            "description": "",
+            "proof": {
+              "quote": "Working principle: substantiate choices, test assumptions.",
+              "author": "—"
+            }
+          },
+          "item2": {
+            "title": "Learning ability",
+            "description": "",
+            "proof": {
+              "quote": "Working principle: constantly learn and document what works.",
+              "author": "—"
+            }
+          },
+          "item3": {
+            "title": "Simplicity where possible",
+            "description": "",
+            "proof": {
+              "quote": "Working principle: simplicity where possible, complexity where necessary.",
+              "author": "—"
+            }
+          }
+        }
+      },
+      "failStories": {
+        "title": "Failures That Shaped Me",
+        "ariaLabelPrefix": "Read fail story: {{title}}",
+        "fixPrefix": "Fix",
+        "item1": {
+          "title": "Big-Bang Rewrite",
+          "problem": "6-month rewrite failed due to shifting requirements.",
+          "fix": "Now I design strictly iteratively.",
+          "impact": "Faster time-to-value"
+        },
+        "item2": {
+          "title": "Race Condition (WS)",
+          "problem": "Duplicate UI updates after reconnect.",
+          "fix": "exhaustMap + cancel tokens.",
+          "impact": "Lower error rate"
+        },
+        "item3": {
+          "title": "Enum Mismatch",
+          "problem": "PascalCase API vs camelCase frontend.",
+          "fix": "Global JsonNamingPolicy.",
+          "impact": "No mapping hacks"
+        },
+        "item4": {
+          "title": "Concurrency Error",
+          "problem": "DbUpdateConcurrencyException on votes.",
+          "fix": "Unit-of-Work orchestration.",
+          "impact": "More stable behavior"
+        },
+        "item5": {
+          "title": "Circular Dependency (NG0200)",
+          "problem": "NG0200: Circular dependency between NG_VALUE_ACCESSOR and NgControl blocks component instantiation.",
+          "fix": "Asynchronous NgControl injection in ngOnInit via Promise.resolve().then() to break the DI loop.",
+          "impact": "Eliminates the NG0200 error, allowing UiInputComponent to register properly as a ControlValueAccessor."
+        },
+        "item6": {
+          "title": "effect() outside context (NG0203)",
+          "problem": "NG0203: Calling effect() outside an injection context causes errors.",
+          "fix": "Move all effect() calls into the constructor, where the DI context is guaranteed.",
+          "impact": "No more NG0203 errors; Angular Signals run reliably."
+        },
+        "item7": {
+          "title": "Recursive Loop (too much recursion)",
+          "problem": "Infinite loop between writeValue(), valueChanges, and onChange(), resulting in a stack overflow.",
+          "fix": "Introduce a _isCvaWritingValue flag and use setValue({emitEvent:false}); reset the flag asynchronously.",
+          "impact": "Prevents recursive updates and runtime crashes."
+        },
+        "item8": {
+          "title": "Holistic Fix (v6.4.0)",
+          "problem": "Layered fixes required a combined approach to cover all edge cases.",
+          "fix": "Combine asynchronous NgControl injection, effect() in constructor, recursion guards, and an ngControlBound flag.",
+          "impact": "Robust UiInputComponent with no NG0200, NG0203, or recursion errors."
+        }
+      },
+      "mindset": {
+        "title": "My mindset: how I think",
+        "item1": {
+          "title": "System Builder (Factorio)",
+          "description": "I treat software like a modular production line: I break complex puzzles into manageable components, each with a clear purpose. Forward engineering instead of reverse engineering."
+        },
+        "item2": {
+          "title": "Iterative Problem Solver (Elden Ring)",
+          "description": "Failure is data. Complex challenges require perseverance and pattern recognition."
+        },
+        "item3": {
+          "title": "Perspective-shifter (FPV Drones)",
+          "description": "Constantly switching between the 'first-person' detail level and the 'top-down' overview."
+        }
+      },
+      "details": {
+        "title": "Beyond the Code",
+        "text": "FPV drone pilot, motorcyclist, gamer (Factorio, Elden Ring, Witcher), hiker and YouTube creator based in Katwijk. Graduate in Applied Computer Science from PXL University College.",
+        "location": "Katwijk (ZH) | Remote-first | ≤ 1h from Amsterdam/Rotterdam",
+        "cta": "Let’s spend 10 min discussing collaboration"
+      },
+      "meta": {
+        "description": "Discover the philosophy, lessons learned, and mindset behind my work as a software architect.",
+        "ogTitle": "About Me: Architect & Systems Thinker | Roy van de Wetering",
+        "ogImageAlt": "Roy van de Wetering – Architect behind the Digital Factory"
+      }
+    },
+    "contact": {
+      "pageTitle": "Let’s discuss your next challenge",
+      "intro": "Open for ambitious projects and innovative ideas. Discover how I add value to your team.",
+      "directContactTitle": "Direct contact",
+      "bookMeetingTitle": "Schedule an intro call",
+      "bookMeetingDesc": "Want to dive deeper? Pick a suitable time for an informal architectural call.",
+      "bookMeetingButton": "Book an intro call",
+      "formTitle": "Send me a message",
+      "form": {
+        "challengeLabel": "What's your team's biggest challenge right now?",
+        "challenges": {
+          "slowDev": "Slow feature development",
+          "legacy": "Modernizing legacy systems",
+          "scaling": "Scaling quality across teams",
+          "ai": "Implementing AI strategically"
+        },
+        "nameLabel": "Name",
+        "emailLabel": "Email",
+        "messageLabel": "Message",
+        "submitButton": "Send message",
+        "successMessage": "Thanks for your message! I’ll get back to you ASAP.",
+        "errorMessage": "Something went wrong. Please try again later."
+      }
+    },
+    "testimonials": {
+      "quote1": "Reference quote 1…",
+      "author1_title": "CTO",
+      "quote2": "Reference quote 2…",
+      "author2_title": "Product owner",
+      "quoteJasperKruit": "With Roy, I built a crypto app. He is very accessible – essential for the service I expect. The app was initially sluggish due to websockets; everything was resolved within a week, and the program now runs flawlessly. Very satisfied!",
+      "authorJasperKruit_title": "Client / Project owner"
+    }
+  }
+}

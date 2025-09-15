@@ -1,0 +1,107 @@
+{
+  "footer": {
+    "usp": {
+      "shipping": {
+        "title": "Free Shipping",
+        "text": "On all orders over €50."
+      },
+      "support": {
+        "title": "Top-Notch Support",
+        "text": "Our team of FPV experts is ready to help you."
+      },
+      "secure": {
+        "title": "Secure Payments",
+        "text": "100% secure transactions with all major payment methods."
+      }
+    },
+    "columns": {
+      "support": {
+        "title": "Customer Service"
+      },
+      "shop": {
+        "title": "Shop"
+      },
+      "company": {
+        "title": "Our Company"
+      },
+      "newsletter": {
+        "title": "Newsletter",
+        "text": "Sign up for exclusive offers and updates."
+      },
+      "newsletter.placeholder": "Enter your email address"
+    },
+    "links": {
+      "faq": "Frequently Asked Questions",
+      "shipping": "Shipping",
+      "returns": "Returns",
+      "orderStatus": "Order Status",
+      "contact": "Contact",
+      "about": "About Us",
+      "careers": "Careers",
+      "blog": "Blog"
+    }
+  },
+  "droneshop": {
+    "cart": { "pageTitle": "Shopping Cart", "emptyMessage": "Your shopping cart is currently empty." },
+    "products": { "pageTitle": "Products", "overviewMessage": "Browse our product range here." },
+    "navigation": {
+      "freestyleDrones": "Freestyle Drones",
+      "raceDrones": "Race Drones",
+      "parts": "Parts",
+      "gogglesAndRadios": "Goggles & Radios",
+      "onSale": "On Sale"
+    }
+  },
+  "navigation": {
+    "home": "Home"
+  },
+  "droneshopHome": {
+    "mainHero": {
+      "title": "Find Your Perfect FPV Drone",
+      "subtitle": "Start your FPV journey here. Discover a wide range of drones, kits, and accessories.",
+      "ctaRtf": "Ready-to-Fly Drones",
+      "ctaBuild": "DIY Drone Kits"
+    },
+    "avatarLoading": "Avatar loading...",
+    "avatarError": "Could not load avatar.",
+    "keyCategories": {
+      "rtf": { "title": "Ready-to-Fly Drones", "short_desc": "Out of the box and into the air." },
+      "build": { "title": "DIY Drone Kits", "short_desc": "Build your drone, your way." }
+    },
+    "serviceCards": {
+      "title": "Help & Service",
+      "support": { "title": "Customer Service", "subtitle": "Our team of experts is ready to help you with any question." },
+      "orders": { "title": "My Orders", "subtitle": "View your order status and purchase history." },
+      "shipping": { "title": "Shipping & Returns", "subtitle": "Everything you need to know about delivery and our return policy." },
+      "buyersGuide": { "title": "FPV Buyer's Guide", "subtitle": "Not sure where to start? Our guide helps you choose the perfect drone." }
+    },
+    "promoBlocks": {
+      "title": "Discover More Categories",
+      "starterKits": { "title": "FPV Starter Kits", "subtitle": "Everything you need, all in one box!" },
+      "cinematicDrones": { "title": "Cinematic Drones", "subtitle": "For breathtaking FPV footage." },
+      "spareParts": { "title": "Spare Parts", "subtitle": "Find spare parts and more for your FPV Drone!" },
+      "apparel": { "title": "Droneshop Apparel", "subtitle": "Wear the coolest brand in FPV!" },
+      "tuningSetup": { "title": "Tuning and Set Up", "subtitle": "Guides and Downloads for all of our drones." }
+    },
+    "discoverCards": {
+      "guides": {
+        "title": "Essential Build Guides & Tutorials",
+        "description": "From soldering your first ESC to flashing firmware, our guides will help you through every step of the process.",
+        "cta": "Read Our Guides"
+      },
+      "software": {
+        "title": "Software & Downloads",
+        "description": "Find the latest versions of Betaflight, configurators, and other essential tools to perfectly tune your drone.",
+        "cta": "View Downloads"
+      }
+    },
+    "featured": { "title": "Featured Products", "loading": "Featured products are loading..." },
+    "newArrivals": { "title": "New Arrivals", "loading": "New products are loading..." },
+    "hero": {
+      "title": "Ready for Liftoff?",
+      "subtitle": "From complete beginner sets to high-performance racing parts, we have everything your FPV heart desires.",
+      "cta": "Shop All Products"
+    },
+    "feed": { "title": "Latest Activity" }
+  }
+}

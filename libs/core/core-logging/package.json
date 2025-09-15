@@ -1,0 +1,7 @@
+{
+  "name": "@royal-code/core/core-logging",
+  "version": "0.0.1",
+  "sideEffects": false,
+  "type": "module",
+  "license": "MIT"
+}

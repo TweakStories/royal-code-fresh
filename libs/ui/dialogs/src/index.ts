@@ -1,0 +1,1 @@
+export * from './lib/components/validation-summary-dialog/validation-summary-dialog.component';

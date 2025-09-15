@@ -1,0 +1,14 @@
+{
+  "name": "profile-avatar-card-ui",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/ui/cards/profile-avatar-card/src",
+  "prefix": "royal-code",
+  "projectType": "library",
+  "tags": ["scope:shared", "type:ui", "context:profile"],
+  "implicitDependencies": ["media-ui", "title", "paragraph"],
+  "targets": {
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "navigation-data-access",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/core/navigation/data-access/src",
+  "prefix": "lib-royal-code",
+  "projectType": "library",
+  "tags": ["type:data-access", "scope:core-nav"],
+  "targets": {
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "libs/core/navigation/data-access/jest.config.ts"
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    }
+  }
+}

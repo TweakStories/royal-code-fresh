@@ -1,0 +1,27 @@
+{
+  "name": "shared/base-models",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/shared/base-models/src",
+  "prefix": "lib",
+  "projectType": "library",
+  "tags": ["type:domain", "scope:shared", "context:base"],
+   "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/shared/base-models", 
+        "main": "libs/shared/base-models/src/index.ts",
+        "tsConfig": "libs/shared/base-models/tsconfig.lib.json"
+      },
+      "configurations": {
+        "production": {
+          "declaration": true,
+          "declarationMap": true
+        },
+        "development": {}
+      },
+      "defaultConfiguration": "production" 
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "full-width-image-card-ui",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/ui/cards/full-width-image-card/src",
+  "prefix": "royal-code",
+  "projectType": "library",
+  "tags": ["scope:shared", "type:ui", "context:card"],
+  "implicitDependencies": ["button", "media-ui", "icon"],
+  "targets": {
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    }
+  }
+}

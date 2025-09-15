@@ -1,0 +1,14 @@
+{
+  "name": "story-card-ui",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/ui/cards/story-card/src",
+  "prefix": "royal-code",
+  "projectType": "library",
+  "tags": ["scope:shared", "type:ui", "context:story"],
+  "implicitDependencies": ["media-ui", "title", "paragraph", "button", "icon"],
+  "targets": {
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    }
+  }
+}

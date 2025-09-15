@@ -1,0 +1,6 @@
+{
+  "name": "@royal-code/ui/sticky-cta-bar",
+  "version": "0.0.1",
+  "sideEffects": false,
+  "type": "module"
+}

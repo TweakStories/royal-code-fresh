@@ -1,0 +1,1014 @@
+{
+  "common": {
+    "workInProgress": "Deze pagina is in ontwikkeling."
+  },
+  "faqPage": {
+    "title": "Veelgestelde Vragen",
+    "subtitle": "Vind hier antwoorden op de meest voorkomende vragen over onze producten, bestellingen en diensten.",
+    "q1": "Wat zijn de verzendkosten en levertijden?",
+    "a1": "Voor bestellingen boven de €50 is verzending binnen Nederland en België gratis. Bestellingen die op werkdagen voor 22:00 uur worden geplaatst, worden dezelfde dag nog verzonden en doorgaans de volgende dag geleverd.",
+    "q2": "Wat is jullie retourbeleid?",
+    "a2": "U kunt ongebruikte producten in de originele verpakking binnen 30 dagen na ontvangst retourneren. Neem contact op met onze klantenservice om uw retour aan te melden. Op maat gemaakte RTF (Ready-to-Fly) drones zijn uitgesloten van retour.",
+    "q3": "Heb ik een vlieglicentie nodig voor FPV drones?",
+    "a3": "Voor drones onder de 250 gram is in de EU doorgaans geen vlieglicentie vereist, hoewel registratie als operator wel verplicht is. Voor drones boven de 250 gram is een basislicentie (A1/A3) nodig. Wij adviseren u altijd de actuele lokale wet- en regelgeving te controleren.",
+    "q4": "Wat is het verschil tussen RTF, BNF en een Bouwpakket?",
+    "a4": "RTF (Ready-to-Fly) is een volledig gebouwde en geteste drone. BNF (Bind-and-Fly) is ook volledig gebouwd, maar u moet zelf nog een compatibele ontvanger installeren en 'binden' met uw zender. Een bouwpakket (DIY Kit) bevat alle losse onderdelen die u zelf moet solderen en assembleren.",
+    "q5": "Ik heb een technisch probleem met mijn drone, wat nu?",
+    "a5": "Geen probleem! Ons team van FPV-experts staat klaar om u te helpen. Neem contact op via e-mail of onze Discord-server met uw ordernummer en een duidelijke omschrijving van het probleem, dan helpen we u zo snel mogelijk verder."
+  },
+  "shippingPage": {
+    "title": "Verzendinformatie",
+    "subtitle": "Alles wat je moet weten over de levering van je bestelling.",
+    "domestic": {
+      "title": "Verzending Binnen Nederland & België",
+      "p1": "Bestellingen geplaatst op werkdagen <strong>vóór 22:00 uur</strong> worden dezelfde dag nog verzonden met PostNL. In 98% van de gevallen wordt je pakket de volgende dag al bezorgd.",
+      "p2": "De verzendkosten bedragen €5,95. Voor alle bestellingen met een waarde van €50,- of meer is de verzending volledig gratis."
+    },
+    "international": {
+      "title": "Internationale Verzending",
+      "p1": "We verzenden wereldwijd. De verzendkosten en levertijden voor internationale bestellingen zijn afhankelijk van de bestemming en worden automatisch berekend tijdens het afrekenen."
+    },
+    "tracking": {
+      "title": "Track & Trace",
+      "p1": "Zodra je bestelling is verzonden, ontvang je automatisch een e-mail met daarin een Track & Trace-code. Hiermee kun je de status van je pakket live volgen via de website van de vervoerder."
+    }
+  },
+  "aboutPage": {
+    "title": "Onze Passie, Jouw Vlucht",
+    "subtitle": "Gedreven door een passie voor FPV, streven we ernaar om de beste producten en expertise te leveren aan zowel beginnende als professionele piloten.",
+    "story": {
+      "p1": "Droneshop is ontstaan uit een pure, ongetemde passie voor de vrijheid en adrenaline van First-Person View (FPV) vliegen. Wat begon als een hobby in een garage, groeide al snel uit tot een missie: het toegankelijk maken van hoogwaardige FPV-drones en componenten voor iedereen.",
+      "p2": "We waren gefrustreerd door het gebrek aan betrouwbare, goed geteste apparatuur en de ondoorzichtige wereld van componentcompatibiliteit. Daarom besloten we het zelf te doen. Elke drone die we bouwen, elke kit die we samenstellen, en elk onderdeel dat we verkopen, is door ons team van experts uitvoerig getest en goedgekeurd.",
+      "p3": "Onze belofte is simpel: compromisloze kwaliteit, deskundig advies en een community waar je op kunt bouwen. Welkom bij Droneshop."
+    }
+  },
+  "careersPage": {
+    "title": "Join the Squadron",
+    "subtitle": "We hebben momenteel geen openstaande vacatures, maar we zijn altijd geïnteresseerd in getalenteerde en gepassioneerde FPV-enthousiastelingen. Denk je dat je een aanwinst zou zijn voor ons team? Stuur ons een open sollicitatie!",
+    "cta": "Stuur een Open Sollicitatie"
+  },
+  "navigation": {
+    "home": "Home"
+  },
+  "returnsPage": {
+    "title": "Retourbeleid",
+    "subtitle": "Niet helemaal tevreden? Geen probleem. Hier lees je alles over hoe je een product kunt retourneren.",
+    "conditions": {
+      "title": "Voorwaarden voor Retourneren",
+      "p1": "U kunt een product retourneren als het aan de volgende voorwaarden voldoet: <ul><li>De retour wordt binnen <strong>30 dagen</strong> na ontvangst aangemeld.</li><li>Het product is <strong>ongebruikt</strong> en in nieuwstaat.</li><li>Het product zit in de <strong>originele, onbeschadigde verpakking</strong>.</li></ul>"
+    },
+    "procedure": {
+      "title": "Hoe retourneer ik een product?",
+      "p1": "Volg deze eenvoudige stappen: <ol><li>Neem contact op met onze <strong>klantenservice</strong> via het contactformulier om uw retour aan te melden. Vermeld hierbij uw ordernummer.</li><li>U ontvangt van ons per e-mail de instructies en een retourlabel.</li><li>Verpak het product zorgvuldig en stuur het pakket naar ons op. Na ontvangst en inspectie storten wij het aankoopbedrag binnen 5 werkdagen terug.</li></ol>"
+    },
+    "exceptions": {
+      "title": "Uitzonderingen",
+      "p1": "Let op: op maat geassembleerde Ready-to-Fly (RTF) drones, geopende batterijen (LiPo's) en softwareproducten kunnen niet worden geretourneerd."
+    }
+  },
+  "footer": {
+    "legal": {
+      "terms": "Voorwaarden",
+      "privacy": "Privacybeleid"
+    },
+    "payments": "iDEAL, VISA, Mastercard, PayPal",
+    "copyright": "© 2025 Droneshop. Alle rechten voorbehouden.",
+    "usp": {
+      "shipping": {
+        "title": "Gratis Verzending",
+        "text": "Voor alle bestellingen boven de €50."
+      },
+      "support": {
+        "title": "Top-Notch Support",
+        "text": "Ons team van FPV-experts staat voor je klaar."
+      },
+      "secure": {
+        "title": "Veilig Betalen",
+        "text": "100% veilige transacties met iDEAL, Creditcard & PayPal."
+      }
+    },
+    "columns": {
+      "support": {
+        "title": "Klantenservice"
+      },
+      "shop": {
+        "title": "Winkel"
+      },
+      "company": {
+        "title": "Ons Bedrijf"
+      },
+      "newsletter": {
+        "title": "Nieuwsbrief",
+        "text": "Meld je aan voor exclusieve aanbiedingen en updates.",
+        "placeholder": "Voer je e-mailadres in"
+      }
+    },
+    "links": {
+      "faq": "Veelgestelde Vragen",
+      "shipping": "Verzending",
+      "returns": "Retouren",
+      "orderStatus": "Orderstatus",
+      "contact": "Contact",
+      "about": "Over Ons",
+      "careers": "Werken bij",
+      "blog": "Blog"
+    }
+  },
+  "droneshop": {
+    "contact": {
+      "title": "Neem Contact Op",
+      "subtitle": "Heb je een vraag of opmerking? We horen graag van je. Vul het formulier in of gebruik onderstaande gegevens.",
+      "addressTitle": "Adres",
+      "emailTitle": "E-mail",
+      "phoneTitle": "Telefoon",
+      "form": {
+        "nameLabel": "Volledige Naam",
+        "namePlaceholder": "Voer je naam in",
+        "emailLabel": "E-mailadres",
+        "emailPlaceholder": "jouw.email@voorbeeld.com",
+        "subjectLabel": "Onderwerp",
+        "subjectPlaceholder": "Waar gaat je bericht over?",
+        "messageLabel": "Bericht",
+        "messagePlaceholder": "Typ hier je vraag of opmerking...",
+        "submitButton": "Verstuur Bericht"
+      }
+    },
+    "cart": {
+      "pageTitle": "Winkelwagen",
+      "emptyMessage": "Je winkelwagen is momenteel leeg."
+    },
+    "products": {
+      "pageTitle": "Producten",
+      "overviewMessage": "Bekijk hier ons assortiment."
+    },
+    "product": {
+      "spec": {
+        "frameMaterial": "Frame Materiaal",
+        "propellerSize": "Propeller Grootte",
+        "batteryCompatibility": "Batterij Compatibiliteit",
+        "weight": "Gewicht (zonder batterij)",
+        "videoSystem": "Video Systeem"
+      }
+    },
+     "navigation": {
+      "home": "Home",
+      "orderStatus": "Bestelstatus",
+      "contact": "Contact",
+      "account": "Account",
+      "menu": {
+        "title": "Hoofdmenu"
+      }
+    },
+ "categories": {
+      "dronesAndKits": "Drones & Kits",
+      "rtfDrones": "Ready-to-Fly Drones",
+      "buildKits": "Bouwpakketten",
+      "parts": "Onderdelen",
+      "parts.flightControllers": "Elektronica (Flight Stack)",
+      "parts.escs": "ESCs (4-in-1 & Single)",
+      "parts.fcEscStacks": "FC & ESC Stacks",
+      "parts.pdbs": "Power Distribution Boards",
+      "parts.voltageRegulatorsBec": "Voltage Regulators (BEC)",
+      "parts.gpsCompassModules": "GPS & Kompas Modules",
+      "parts.sensorsBlackbox": "Sensoren & Blackbox",
+      "parts.buzzersLeds": "Buzzers & LEDs",
+      "parts.drivetrain": "Aandrijving",
+      "parts.motors": "Motors",
+      "parts.propellers": "Propellers",
+      "parts.motorHardware": "Motor Hardware",
+      "parts.framesHardware": "Frames & Hardware",
+      "parts.5InchFrames": "5 Inch Frames",
+      "parts.34InchFrames": "3-4 Inch Frames",
+      "parts.cinewhoopFrames": "Cinewhoop Frames",
+      "parts.microTinywhoopFrames": "Micro & Tinywhoop Frames",
+      "parts.framePartsReplacements": "Frame Onderdelen & Replacements",
+      "parts.generalHardware": "Algemene Hardware",
+      "parts.fpvSystemsDrone": "FPV Systemen (Drone)",
+      "parts.digitalFpvCombos": "Digitale FPV Combos",
+      "parts.digitalFpvCameras": "Digitale FPV Camera's",
+      "parts.analogFpvCameras": "Analoge FPV Camera's",
+      "parts.digitalVtx": "Digitale VTX'en",
+      "parts.analogVtx": "Analoge VTX'en",
+      "parts.fpvAntennasDrone": "FPV Antennes (Drone)",
+      "parts.fpvSystemAccessories": "FPV Systeem Accessoires",
+      "parts.3dPrintedPartsTpu": "3D Printed Parts (TPU)",
+      "parts.cameraMounts": "Camera Mounts",
+      "parts.antennaMounts": "Antenne Mounts",
+      "parts.motorSoftMountsGuards": "Motor Soft Mounts & Guards",
+      "parts.frameProtectors": "Frame Beschermers",
+      "parts.electronics": "Elektronica",
+      "radioControl": "Radio Control",
+      "radioControl.transmitters": "Radio Zenders (TX)",
+      "radioControl.multiProtocolTransmitters": "Multi-protocol Zenders",
+      "radioControl.elrsTransmitters": "ELRS Zenders",
+      "radioControl.crossfireTransmittersModules": "Crossfire Zenders & Modules",
+      "radioControl.transmitterAccessoriesUpgrades": "Zender Accessoires & Upgrades",
+      "radioControl.receivers": "RC Ontvangers (RX)",
+      "radioControl.elrsReceivers": "ELRS Ontvangers",
+      "radioControl.crossfireReceivers": "Crossfire Ontvangers",
+      "radioControl.frskyReceivers": "FrSky Ontvangers",
+      "radioControl.otherRcReceivers": "Overige RC Ontvangers",
+      "radioControl.externalRcModules": "Externe RC Modules",
+      "radioControl.elrsModules": "ELRS Modules",
+      "radioControl.crossfireModules": "Crossfire Modules",
+      "radioControl.multiProtocolModules": "Multi-protocol Modules",
+      "radioControl.rcAntennas": "RC Antennes",
+      "radioControl.gimbalsSwitches": "Gimbals & Schakelaars",
+      "fpvGear": "FPV Gear",
+      "fpvGear.goggles": "FPV Brillen",
+      "fpvGear.digitalGoggles": "Digitale FPV Brillen",
+      "fpvGear.analogGoggles": "Analoge FPV Brillen",
+      "fpvGear.goggleAccessories": "Bril Accessoires & Onderdelen",
+      "fpvGear.receiverModules": "FPV Ontvangermodules",
+      "fpvGear.analogReceiverModules": "Analoge Ontvangermodules",
+      "fpvGear.digitalReceiverModules": "Digitale Ontvangermodules (Add-on)",
+      "fpvGear.videoTransmitters": "Video Transmitters (VTX)",
+      "fpvGear.digitalVtx": "Digitale VTX'en",
+      "fpvGear.analogVtx": "Analoge VTX'en",
+      "fpvGear.fpvCameras": "FPV Camera's",
+      "fpvGear.digitalFpvCameras": "Digitale FPV Camera's",
+      "fpvGear.analogFpvCameras": "Analoge FPV Camera's",
+      "fpvGear.fpvAntennas": "FPV Antennes",
+      "fpvGear.goggleAntennas": "Bril Antennes",
+      "fpvGear.droneVideoAntennas": "Drone Video Antennes",
+      "fpvGear.monitorsDvrs": "Monitoren & DVR's",
+      "workshopField": "Werkplaats & Veld",
+      "workshopField.powerSupply": "Stroomvoorziening",
+      "workshopField.lipoBatterijen": "LiPo Batterijen",
+      "workshopField.lipoChargersPowerSupplies": "LiPo Laders & Voedingen",
+      "workshopField.batteryAccessories": "Accu Accessoires",
+      "workshopField.toolsBuildingSupplies": "Gereedschap & Bouwbenodigdheden",
+      "workshopField.solderingIronsAccessories": "Soldeerbouten & Accessoires",
+      "workshopField.handTools": "Handgereedschap",
+      "workshopField.wiresConnectorsHeatShrink": "Draden, Connectoren & Krimpkous",
+      "workshopField.fasteners": "Bevestigingsmaterialen",
+      "workshopField.tapeGlue": "Tape & Lijm",
+      "workshopField.transportStorage": "Transport & Opslag",
+      "workshopField.backpacksCases": "Backpacks & Koffers",
+      "workshopField.storageBoxesOrganizers": "Opbergdozen & Organizers",
+      "workshopField.landingPads": "Landing Pads",
+      "workshopField.simulatorsTraining": "Simulatoren & Training",
+      "workshopField.fpvSimulators": "FPV Simulatoren",
+      "workshopField.simulatorControllers": "Simulator Controllers",
+      "chargersAndLipos": "Laders & Lipo's",
+      "chargersAndLipos.lipos.title": "LiPo Batterijen",
+      "chargersAndLipos.lipos.description": "Vind de perfecte krachtbron voor jouw FPV drone. Van 1S tot 8S.",
+      "chargersAndLipos.lipos.s1": "1S LiPo Batterijen",
+      "chargersAndLipos.lipos.s2": "2S LiPo Batterijen",
+      "chargersAndLipos.lipos.s3": "3S LiPo Batterijen",
+      "chargersAndLipos.lipos.s4": "4S LiPo Batterijen",
+      "chargersAndLipos.lipos.s6": "6S LiPo Batterijen",
+      "chargersAndLipos.lipos.s8": "8S LiPo Batterijen",
+      "chargersAndLipos.chargers.title": "Laders",
+      "chargersAndLipos.chargers.description": "Krachtige en betrouwbare laders voor al je accu's. Geschikt voor 1S tot 8S.",
+      "chargersAndLipos.chargers.hota": "Hota Laders",
+      "chargersAndLipos.chargers.isdt": "ISDT Laders",
+      "chargersAndLipos.chargers.acdc": "AC/DC Laders",
+      "chargersAndLipos.chargers.dc": "DC Laders",
+      "chargersAndLipos.chargers.psu": "Voedingen"
+    },
+    "megaMenu": {
+      "drones": {
+        "title": "Drones",
+        "cinematic": "Cinematic Drones",
+        "micro": "Micro Drones"
+      },
+      "parts": {
+        "title": "Onderdelen",
+        "frames": "Frames",
+        "motors": "Motoren",
+        "escs": "ESCs",
+        "flightControllers": "Flight Controllers"
+      },
+      "fpv": {
+        "title": "FPV Apparatuur",
+        "goggles": "Goggles",
+        "antennas": "Antennes",
+        "vtx": "Video Transmitters"
+      }
+    },
+    "search": {
+      "placeholder": "Zoeken naar producten...",
+      "submit": "Zoekopdracht uitvoeren"
+    },
+    "sirenF35": {
+      "shortDescription": "De Siren F3.5 ontketent jouw potentieel. Ultralicht. Uiterst Wendbaar. Ultiem Freestyle.",
+      "hero": {
+        "title": "Ervaar Grenzeloze Vrijheid: De Siren F3.5 Ontketent Jouw Potentieel",
+        "subtitle": "Jouw sleutel tot grenzeloze freestyle-vrijheid zonder concessies. Ontdek ongekende 6S kracht onder 250 gram.",
+        "ctaConfigure": "Configureer Jouw Siren F3.5"
+      },
+      "promise": {
+        "components": {
+          "label": "Superieure Krachtbronnen",
+          "value": "Alleen het beste: Met top-tier componenten van Foxeer, RCINPOWER en RadioMaster garanderen wij ongekende prestaties."
+        },
+        "assembly": {
+          "label": "Meest Verfijnde Afwerking",
+          "value": "Elke drone is met obsessieve precisie geassembleerd, met nette bedrading, waterdichte conformal coating en stevige solderingen."
+        },
+        "tested": {
+          "label": "Vliegklaar & Geperfectioneerd",
+          "value": "Elke drone krijgt een basis-tune en wordt uitvoerig getest voor verzending, zodat jij je kunt focussen op vliegen."
+        }
+      },
+      "longDescription": {
+        "mainTitle": "De Siren F3.5: Gebouwd voor Uitmuntendheid",
+        "p1": "De Droneshop RTF Siren F3.5 is gebouwd voor ongekende freestyle prestaties. Dit ultralichte 3.5 inch platform combineert de duurzaamheid van het Quadmula Siren F3.5 split-deck frame met de explosieve kracht van AOS 1404 4600KV motoren en de precisie van een Foxeer F722 V4 Mini stack. Ervaar grenzeloze vrijheid en domineer de kleinste gaps met een wendbaarheid die opnieuw gedefinieerd is.",
+        "highlightsTitle": "Onmisbare Hoogtepunten:",
+        "highlight1": "Bliksemsnelle Respons: Directe controle, ongeacht de manoeuvre.",
+        "highlight2": "Vederlichte Constructie: Maximale wendbaarheid onder 250 gram.",
+        "highlight3": "Onbreekbaar Chassis: Gebouwd om de meest extreme crashes te weerstaan.",
+        "highlight4": "Rotsvaste Connectiviteit: Minimale latency, maximaal bereik.",
+        "p2": "Elke drone wordt professioneel geassembleerd, getuned en getest door onze FPV-experts, zodat jij direct de lucht in kunt zonder gedoe. Dit is de perfecte keuze voor de veeleisende piloot die geen compromissen sluit op het gebied van kwaliteit en prestaties.",
+        "customerQuote": "\"Deze Siren F3.5 is de beste 3.5 inch die ik ooit gevlogen heb. De controle is absurd, en hij kan echt een stootje hebben!\""
+      },
+      "story": {
+        "frame": {
+          "title": "De Onverwoestbare Danspartner: Quadmula Siren F3.5",
+          "subtitle": "Dit ultralichte frame geeft jou de vrijheid om grenzen te verleggen, keer op keer.",
+          "details": {
+            "p1_short": "Het innovatieve split-deck design van Quadmula biedt een ongeëvenaarde combinatie van duurzaamheid en wendbaarheid, essentieel voor agressieve freestyle. Lichtgewicht, maar toch extreem robuust om de impact van de meest spectaculaire crashes te weerstaan.",
+            "highlightsTitle": "Kernkwaliteiten:",
+            "highlight1": "Extreme Duurzaamheid: Sterk carbon fiber voor maximale levensduur.",
+            "highlight2": "Optimaal Gewicht: Perfect gebalanceerd voor precieze manoeuvres.",
+            "highlight3": "Innovatief Design: Vermindert resonantie voor vloeiendere vluchten."
+          },
+          "cta": "Meer over het Frame"
+        },
+        "stack": {
+          "title": "Hittebestendige Precisie: De Onwrikbare Kern van Foxeer",
+          "subtitle": "Een bewezen combinatie van een krachtige F7 Flight Controller en een robuuste 45A BL32 ESC.",
+          "details": {
+            "p1_short": "De Foxeer F722 V4 Mini Flight Controller en Mini Reaper 45A BL32 ESC vormen het onwrikbare hart van de Siren F3.5. Deze hardware staat bekend om zijn betrouwbaarheid en ongeëvenaarde hittebestendigheid, zelfs tijdens de meest intense vluchten.",
+            "highlightsTitle": "Voordelen van Foxeer:",
+            "highlight1": "Ongevoelig voor Extreme Hitte: Consistente prestaties onder druk.",
+            "highlight2": "Bliksemsnelle F7 Processor: Voor vloeiende en responsieve vluchtcontrole.",
+            "highlight3": "Bewezen Betrouwbaarheid: Vertrouw op hardware die is ontworpen om te presteren."
+          },
+          "cta": "Bekijk Foxeer Hardware"
+        },
+        "motors": {
+          "title": "De Kracht van Stilte: RCINPOWER 8S Motoren Dominatie",
+          "subtitle": "Ervaar ongekende brute kracht en een fluisterstille werking met de RCINPOWER 1404 4600KV motoren.",
+          "details": {
+            "p1_short": "De RCINPOWER 1404 4600KV motoren zijn de spierbundels van de Siren F3.5. Deze motoren leveren niet alleen explosieve 8S kracht, maar doen dit met een fluisterstille werking, waardoor jouw vluchten soepeler en discreter zijn.",
+            "highlightsTitle": "RCINPOWER Voordelen:",
+            "highlight1": "Ontketen Brute 8S Kracht: Maximale acceleratie en topsnelheid.",
+            "highlight2": "Fluisterstil, voor Ongehinderde Vluchten: Geniet van de pure klank van de wind.",
+            "highlight3": "Gebouwd voor Toekomstige Upgrades: Klaar voor jouw creatieve aanpassingen."
+          },
+          "cta": "Meer over RCINPOWER Motoren"
+        },
+        "radio": {
+          "title": "Rotsvaste Connectiviteit: RadioMaster ELRS",
+          "subtitle": "Met ExpressLRS geniet je van ongeëvenaard bereik en minimale latency, voor maximale controle.",
+          "details": {
+            "p1_short": "De RadioMaster ELRS-ontvanger zorgt voor een rotsvaste verbinding tussen jou en je drone. De toonaangevende ExpressLRS-technologie garandeert minimale latency en een ongeëvenaard bereik.",
+            "highlightsTitle": "ELRS Voordelen:",
+            "highlight1": "Ongeëvenaard Bereik: Vlieg verder en met meer vertrouwen.",
+            "highlight2": "Minimale Latency: Directe controle, geen vertraging.",
+            "highlight3": "Rotsvaste Verbinding: Nooit meer signaalverlies."
+          },
+          "cta": "Ontdek RadioMaster ELRS"
+        },
+        "djiO4": {
+          "title": "De Wereld in HD: Ervaar Ongeëvenaarde DJI O4 Immersie",
+          "subtitle": "Transformeer je FPV-ervaring met kristalheldere HD-beelden en een breed dynamisch bereik.",
+          "details": {
+            "p1_short": "De optionele DJI O4 Air Unit tilt jouw FPV-ervaring naar een geheel nieuw niveau. Geniet van kristalheldere HD-beelden met een breed dynamisch bereik.",
+            "highlightsTitle": "DJI O4 Voordelen:",
+            "highlight1": "Kristalheldere HD-Beelden: Zie de wereld door de ogen van je drone in ongekende details.",
+            "highlight2": "Verbreed Je Horizon met Ultiem Bereik: Ervaar stabiele video over lange afstanden.",
+            "highlight3": "Elk Detail Zichtbaar: Voor Uitmuntende Controle en Immersie."
+          },
+          "cta": "Meer over DJI O4"
+        }
+      },
+      "priceDisclaimer": "Basisprijs, exclusief optionele VTX en ontvanger.",
+      "ctaLink": "Configureer Jouw Drone",
+      "inTheBox": {
+        "drone": "1x Droneshop RTF Quadmula Siren F3.5 Drone",
+        "lipoStrap": "2x Droneshop Lipo Strap",
+        "propellers": "2x Set HQProp 3.5 Inch Propellers",
+        "quickstart": "1x Quickstart Gids & QC Checklist",
+        "betaflightTune": "Professionele Droneshop 6S Tune (voorgeïnstalleerd)",
+        "qcReport": "Gedetailleerd Kwaliteitscontrole Rapport"
+      },
+      "faq": {
+        "title": "Veelgestelde Vragen over de Siren F3.5",
+        "q1": "Waarom is de Siren F3.5 zo licht?",
+        "a1": "De Siren F3.5 is geoptimaliseerd voor een gewicht van minder dan 250 gram, wat in veel regio's betekent dat je geen vlieglicentie nodig hebt. Dit ultralichte design draagt ook bij aan de ongeëvenaarde wendbaarheid en responsiviteit.",
+        "q2": "Kan ik mijn eigen FPV-goggles en zender gebruiken?",
+        "a2": "Absoluut! Onze RTF-drones zijn compatibel met de meeste populaire FPV-goggles en zenders. De RadioMaster ELRS-ontvanger zorgt voor een brede compatibiliteit. We helpen je graag met het 'binden' van je apparatuur.",
+        "q3": "Hoe lang kan ik vliegen met de Siren F3.5?",
+        "a3": "De vliegtijd is afhankelijk van je batterijkeuze en vliegstijl. Met een aanbevolen 6S 850mAh - 1100mAh LiPo-batterij kun je doorgaans 3 tot 6 minuten freestyle vliegen. Efficiënter cruisen levert langere tijden op."
+      }
+    },
+    "sirenF5": {
+      "shortDescription": "De Siren F5 is pure, ongetemde 8S-kracht. Gebouwd voor extreme freestyle en cinematische precisie.",
+      "hero": {
+        "title": "Domineer het Luchtruim: De Siren F5 (8S) Wacht Op Niemand",
+        "subtitle": "Voor de piloot die geen compromissen sluit. Ervaar de explosieve acceleratie van 8S en een onverwoestbaar chassis, gebouwd voor de meest veeleisende manoeuvres.",
+        "ctaConfigure": "Ontketen de Kracht"
+      },
+      "promise": {
+        "components": {
+          "label": "Competitie-Grade Componenten",
+          "value": "Uitgerust met de beste hardware, zoals de Foxeer Reaper 65A 8S stack en RCINPOWER GTS V4 motoren, voor maximale betrouwbaarheid en prestaties."
+        },
+        "assembly": {
+          "label": "Gebouwd als een Tank",
+          "value": "Elke verbinding is versterkt, elke component is beschermd. Deze drone is ontworpen om de zwaarste crashes te doorstaan en door te vliegen."
+        },
+        "tested": {
+          "label": "Pro-Tuned voor Maximale Respons",
+          "value": "Onze FPV-experts hebben een agressieve, maar soepele tune ontwikkeld die het volledige potentieel van de 8S-setup benut, direct uit de doos."
+        }
+      },
+      "longDescription": {
+        "mainTitle": "De Siren F5: De Standaard voor 8S Freestyle",
+        "p1": "De Droneshop RTF Siren F5 is niet zomaar een drone; het is een statement. Gebouwd rond het legendarische Quadmula Siren F5 frame, levert dit 5-inch beest de brute kracht van 8S. Gecombineerd met de top-tier Foxeer Reaper F7 65A stack en de efficiënte RCINPOWER GTS V4 1600KV motoren, is dit het ultieme platform voor piloten die de grenzen van freestyle en cinematic FPV willen verleggen.",
+        "highlightsTitle": "Belangrijkste Kenmerken:",
+        "highlight1": "Explosieve 8S Kracht: Ongeëvenaarde acceleratie en 'hang-time'.",
+        "highlight2": "Onverwoestbaar Frame: Ontworpen voor maximale impact-resistentie.",
+        "highlight3": "Perfect voor HD-camera's: Stabiel en krachtig genoeg voor professionele cinematic shots.",
+        "highlight4": "Onderhoudsvriendelijk: Slim ontwerp voor snelle reparaties in het veld.",
+        "p2": "Dit is de keuze voor de serieuze piloot. Elke Siren F5 wordt door ons met de hand gebouwd en pro-getuned, zodat jij je kunt concentreren op het perfectioneren van je lijnen. Geen compromissen, alleen pure prestaties.",
+        "customerQuote": "\"Ik heb nog nooit zoiets gevoeld. De punch-out op 8S is onwerkelijk. Droneshop heeft een meesterwerk gebouwd.\""
+      },
+      "story": {
+        "frame": {
+          "title": "Het Chassis: Quadmula Siren F5",
+          "subtitle": "De ruggengraat van een kampioen, ontworpen voor duurzaamheid en precisie.",
+          "details": {
+            "p1_short": "Het Quadmula Siren F5 frame staat bekend om zijn robuustheid en slimme ontwerp. De unieke arm-structuur minimaliseert resonantie en biedt superieure bescherming voor de core-elektronica, wat essentieel is voor een betrouwbaar 8S-platform.",
+            "highlightsTitle": "Kernkwaliteiten:",
+            "highlight1": "Maximale Duurzaamheid: Gebouwd om de meest extreme crashes te weerstaan.",
+            "highlight2": "Geoptimaliseerde Geometrie: Voor een perfect uitgebalanceerd zwaartepunt.",
+            "highlight3": "Ruimte voor Componenten: Genoeg plek voor een robuuste stack en DJI O4."
+          },
+          "cta": "Ontdek het F5 Frame"
+        },
+        "stack": {
+          "title": "Het Hart: Foxeer Reaper F7 65A 8S",
+          "subtitle": "De betrouwbare krachtcentrale die 8S-voltage met gemak aankan.",
+          "details": {
+            "p1_short": "Voor een 8S-setup is een betrouwbare FC/ESC-stack cruciaal. De Foxeer Reaper F7 65A is de gouden standaard, bekend om zijn robuuste stroomverwerking en uitstekende warmteafvoer.",
+            "highlightsTitle": "Voordelen:",
+            "highlight1": "8S LiPo Compatibel: Ontworpen voor hoogspanning en extreme prestaties.",
+            "highlight2": "Krachtige F7 Processor: Vloeiende, responsieve vluchtcontrole zonder compromissen.",
+            "highlight3": "Bewezen Betrouwbaarheid: Vertrouw op hardware die is ontworpen om te presteren."
+          },
+          "cta": "Bekijk de Foxeer Stack"
+        },
+        "motors": {
+          "title": "De Motoren: RCINPOWER GTS V4 1600KV",
+          "subtitle": "Efficiëntie en brute kracht, perfect in balans voor 8S.",
+          "details": {
+            "p1_short": "De RCINPOWER GTS V4 motoren zijn de spierbundels van de Siren F3.5. Deze motoren leveren niet alleen explosieve 8S kracht, maar doen dit met een fluisterstille werking, waardoor jouw vluchten soepeler en discreter zijn.",
+            "highlightsTitle": "RCINPOWER Voordelen:",
+            "highlight1": "Ontketen Brute 8S Kracht: Maximale acceleratie en topsnelheid.",
+            "highlight2": "Fluisterstil, voor Ongehinderde Vluchten: Geniet van de pure klank van de wind.",
+            "highlight3": "Gebouwd voor Toekomstige Upgrades: Klaar voor jouw creatieve aanpassingen."
+          },
+          "cta": "Meer over de GTS V4 Motoren"
+        }
+      },
+      "priceDisclaimer": "Basisprijs, exclusief optionele VTX en ontvanger.",
+      "ctaLink": "Configureer Jouw 8S Beest",
+      "inTheBox": {
+          "drone": "1x Droneshop RTF Quadmula Siren F5 Drone (8S)",
+          "lipoStrap": "2x Droneshop Lipo Strap",
+          "propellers": "2x Set HQProp 5.1 Inch Propellers",
+          "quickstart": "1x Quickstart Gids & QC Checklist",
+          "betaflightTune": "Professionele Droneshop 8S Tune (voorgeïnstalleerd)",
+          "qcReport": "Gedetailleerd Kwaliteitscontrole Rapport"
+      },
+      "faq": {
+        "title": "Veelgestelde Vragen over de Siren F5",
+        "q1": "Is deze 8S drone geschikt voor beginners?",
+        "a1": "Eerlijk? Nee. De Siren F5 is een extreem krachtige drone ontworpen voor ervaren piloten. De acceleratie op 8S is zeer direct en kan overweldigend zijn. We raden beginners aan te starten met een 6S drone zoals de Siren F3.5.",
+        "q2": "Welke batterijen heb ik nodig voor deze drone?",
+        "a2": "Deze drone is specifiek gebouwd en getuned voor 8S LiPo batterijen. We raden een capaciteit aan tussen 1100mAh en 1300mAh met een hoge C-rating (120C of hoger) voor de beste prestaties.",
+        "q3": "Kan ik een GoPro op deze drone monteren?",
+        "a3": "Absoluut. Het Siren F5 frame en de krachtige motoren zijn meer dan capabel om een volledige GoPro of vergelijkbare HD-camera te dragen zonder significante prestatieverlies, wat het een uitstekende keuze maakt voor cinematic FPV."
+      }
+    },
+    "rtfDronesOverview": {
+      "productCta": "Configureer Drone",
+      "hero": {
+        "title": "Ongekende Vrijheid: Ready-to-Fly Drones van Droneshop",
+        "subtitle": "Jouw avontuur in de wereld van FPV begint hier. Professioneel gebouwd, uitvoerig getest, direct klaar voor de start.",
+        "cta": "Ontdek Onze Builds"
+      },
+      "valueProp": {
+        "title": "Gebouwd om te Presteren. Gebouwd om Lang Mee te Gaan.",
+        "description": "Elke Droneshop RTF drone is het resultaat van talloze uren expertise. We selecteren alleen de beste componenten en assembleren elke drone met een obsessie voor detail, zodat jij je kunt focussen op wat echt telt: vliegen.",
+        "stats": {
+          "components": {
+            "label": "Premium Componenten",
+            "value": "Bewezen hardware van de beste merken."
+          },
+          "assembly": {
+            "label": "Professionele Assemblage",
+            "value": "Nette bedrading en duurzame solderingen."
+          },
+          "tested": {
+            "label": "Getest & Getuned",
+            "value": "Elke drone uitvoerig getest voor verzending."
+          }
+        }
+      },
+      "quiz": {
+        "title": "Niet zeker waar je moet beginnen?",
+        "subtitle": "Onze Drone Finder helpt je in 30 seconden de perfecte match te vinden.",
+        "cta": "Start de Drone Finder"
+      },
+      "techHighlights": {
+        "title": "De Anatomie van een Kampioen: Onze Technologiekeuzes",
+        "rcinpower": {
+          "title": "RCINPOWER Motoren: Brute Kracht, Fluisterstil",
+          "description": "Ontketen 8S pure kracht met motoren die bekend staan om hun vermogen én onverwachte stilte. Gemaakt voor de meest veeleisende freestyle en klaar voor jouw upgrades."
+        },
+        "foxeer": {
+          "title": "Foxeer Hardware: Onwrikbare Betrouwbaarheid",
+          "description": "Kies voor bewezen Foxeer flight controllers en ESC's. Hittebestendig, stabiel en ontworpen om te presteren onder de meest extreme omstandigheden. De kern van elke betrouwbare build."
+        },
+        "djiO4": {
+          "title": "DJI O4 Air Unit: Jouw Oog in de Lucht",
+          "description": "Ervaar kristalheldere HD-beelden en ongekend bereik met de DJI O4 Air Unit. Duik diep in de immersieve FPV-wereld met stabiliteit en precisie die de ervaring verrijken."
+        },
+        "frameChoice": {
+          "title": "Superieure Frame Keuze: De Basis van Elke Build",
+          "description": "Wij selecteren frames zoals de Quadmula Siren voor hun ongeëvenaarde duurzaamheid en wendbaarheid. De basis voor een drone die elke crash overleeft en elke manoeuvre domineert."
+        },
+        "radiomaster": {
+          "title": "RadioMaster TX/RX: Totale Controle",
+          "description": "Vertrouw op de rotsvaste ExpressLRS-verbindingen van RadioMaster. Minimale latency en maximaal bereik voor absolute controle, zelfs op de meest kritieke momenten. Vlieg met vertrouwen."
+        },
+        "djiO4ProVideoTx": {
+          "title": "DJI O4 Pro Video Transmissie",
+          "description": "Ervaar de ultieme betrouwbaarheid en beeldkwaliteit met DJI's geavanceerde O4 Pro transmissie."
+        }
+      },
+      "testimonials": {
+        "title": "Wat Onze Piloten Zeggen",
+        "t1": {
+          "quote": "De Siren F3.5 die ik hier heb gekocht is de best afgestelde drone die ik ooit heb gevlogen. Je merkt dat er echte experts aan hebben gewerkt."
+        },
+        "t2": {
+          "quote": "Ik had een vraag over de setup en kreeg binnen een uur een super gedetailleerd antwoord. Topservice!"
+        },
+        "t3": {
+          "quote": "Als beginner was dit de perfecte start. Uitpakken, batterij erin en vliegen. Geen gedoe, gewoon pure FPV-fun."
+        }
+      },
+      "midFunnelCta": {
+        "sub250g": "Bekijk Sub-250g Drones",
+        "fiveInch": "Bekijk 5-Inch Drones"
+      },
+      "sub250g": {
+        "title": "De Sub-250g Revolutie",
+        "subtitle": "Ongekende 6S kracht in een ultralicht pakket. Vlieg overal, domineer de kleinste gaps. Wendbaarheid opnieuw gedefinieerd.",
+        "cardTitle": "Verleg je Grenzen: Vlieg Overal met Sub-250g Kracht",
+        "cardSubtitle": "Onze Sub-250g drones bieden de perfecte balans tussen compactheid en rauwe kracht, voor ongekende wendbaarheid."
+      },
+      "sirenF35": {
+        "name": "Droneshop RTF - Quadmula Siren F3.5",
+        "description": "Een ultralicht en duurzaam split-deck frame, gebouwd voor precisie en crashes.",
+        "specs": {
+          "frame": "Frame: Quadmula Siren F3.5",
+          "stack": "Stack: Foxeer F722 V4 Mini 45A",
+          "motors": "Motoren: AOS 1404 4600KV (6S)",
+          "rx": "RX: RadioMaster ELRS"
+        }
+      },
+      "aos35v5": {
+        "name": "Droneshop RTF - AOS 3.5 V5",
+        "description": "Ontworpen voor minimale resonantie en maximale performance, de gouden standaard voor 3.5 inch.",
+        "specs": {
+          "frame": "Frame: AOS 3.5 V5",
+          "stack": "Stack: Foxeer F722 V4 Mini 45A",
+          "motors": "Motoren: AOS 1806 3200KV (6S)",
+          "rx": "RX: RadioMaster ELRS"
+        }
+      },
+      "fiveInch": {
+        "title": "De Koningsklasse: 5 Inch Freestyle",
+        "subtitle": "Maximale power-to-weight. Volledige controle voor de meest extreme acro-manoeuvres. Dit is waar FPV legendes worden gemaakt.",
+        "cardTitle": "De Ultieme Sensatie: Domineer het Luchtruim met 5 Inch Freestyle",
+        "cardSubtitle": "Voor de piloot die geen compromissen sluit. Ervaar maximale kracht, controle en snelheid."
+      },
+      "sourceOneV6": {
+        "name": "Droneshop RTF - TBS Source One V6",
+        "description": "Een onverwoestbaar open-source werkpaard. De perfecte drone om zonder zorgen je skills te pushen.",
+        "specs": {
+          "frame": "Frame: TBS Source One V6",
+          "stack": "Stack: Foxeer Reaper F4 65A (8S)",
+          "motors": "Motoren: Budget 2207 1950KV (6S)",
+          "rx": "RX: RadioMaster ELRS"
+        }
+      },
+      "sirenF5": {
+        "name": "Droneshop RTF - Quadmula Siren F5",
+        "description": "Het ultieme 8S freestyle frame voor de meest veeleisende piloot die geen compromissen sluit.",
+        "specs": {
+          "frame": "Frame: Quadmula Siren F5",
+          "stack": "Stack: Foxeer Reaper F7 65A (8S)",
+          "motors": "Motoren: RCINPOWER GTS V4 1600KV (8S)",
+          "rx": "RX: RadioMaster ELRS"
+        }
+      },
+      "qavS2JB": {
+        "name": "Droneshop RTF - Lumenier QAV-S 2 JB SE",
+        "description": "Ontworpen door Joshua Bardwell. Een perfect gebalanceerd en trillingsvrij platform voor de soepelste beelden.",
+        "specs": {
+          "frame": "Frame: Lumenier QAV-S 2 JB SE",
+          "stack": "Stack: Foxeer Reaper F7 65A (8S)",
+          "motors": "Motoren: RCINPOWER GTS V4 1600KV (8S)",
+          "rx": "RX: RadioMaster ELRS"
+        }
+      },
+      "faq": {
+        "title": "Veelgestelde Vragen",
+        "q1": "Wat betekent 'Ready-to-Fly' (RTF) precies?",
+        "a1": "RTF betekent dat de drone volledig geassembleerd, geconfigureerd en getest is door onze experts. Je hoeft alleen je eigen zender en FPV-bril te koppelen ('binden'), de batterij op te laden en je bent klaar om te vliegen.",
+        "q2": "Heb ik een vlieglicentie nodig voor deze drones?",
+        "a2": "Voor drones onder de 250 gram, zoals onze Sub-250g modellen, is in de EU doorgaans geen vlieglicentie vereist, hoewel je je wel als operator moet registreren. Voor drones boven de 250 gram is een basislicentie (A1/A3) verplicht. Controleer altijd de lokale wetgeving.",
+        "q3": "Wat als ik crash? Bieden jullie reparaties aan?",
+        "a3": "Absoluut! Een crash hoort erbij in FPV. We bieden een volledige reparatieservice aan. Daarnaast verkopen we alle losse onderdelen zodat je, als je dat wilt, ook zelf kunt leren repareren. Onze gidsen kunnen je daarbij helpen."
+      }
+    },
+    "carousel": {
+      "essentialAccessories": "Essentiële Accessoires"
+    },
+    "team": {
+      "sectionTitle": "Ons Team",
+      "sectionSubtitle": "Ontmoet de gepassioneerde FPV-enthousiastelingen die Droneshop tot leven brengen.",
+      "role": {
+        "founder": "Oprichter",
+        "leadEngineer": "Hoofdingenieur",
+        "marketingSpecialist": "Marketing Specialist",
+        "fpvExpert": "FPV-Expert"
+      },
+      "title": "Ontmoet Jouw Droneshop Bouw-Experts",
+      "subtitle": "Ons team is net zo gepassioneerd over FPV als jij. We zijn hier om je te begeleiden bij elke stap van je bouw- en vliegavontuur.",
+      "bio": {
+        "jasper": "Jasper is de drijvende kracht achter Droneshop. Met jarenlange ervaring in drone-bouw en FPV-vliegen, zorgt hij ervoor dat elke kit en RTF drone voldoet aan de hoogste standaarden.",
+        "sophie": "Sophie is jouw eerste aanspreekpunt voor alle vragen. Of het nu gaat om een lastige soldeerverbinding of een Betaflight-tune, ze staat klaar om je te helpen met haar ongekende geduld en kennis.",
+        "mark": "Mark is onze technische wizard. Hij ademt FPV-componenten en -schema's. Als er een complex probleem is, vind je hem met een multimeter in de hand, klaar om het op te lossen."
+      }
+    },
+    "general": {
+      "chat.aiCoachDefaultName": "AI Coach",
+      "startingFrom": "Vanaf"
+    },
+    "social": {
+      "feed": {
+        "level": "Niveau",
+        "reputation": "Reputatie"
+      }
+    },
+    "home": {
+      "mainHero": {
+        "title": "Jouw Ultimatum in de Lucht",
+        "subtitle": "De nieuwste generatie FPV drones en accessoires, voor beginners en professionals.",
+        "ctaRtf": "Ontdek RTF Drones",
+        "ctaKits": "Bekijk Bouwpakketten"
+      },
+      "featured": {
+        "title": "Uitgelichte Producten"
+      },
+      "newArrivals": {
+        "title": "Nieuwe Aanwinsten"
+      },
+      "feed": {
+        "title": "Social Feed"
+      },
+      "promoBlocks": {
+        "title": "Ontdek Onze Categorieën",
+        "starterKits": {
+          "title": "Starter Kits",
+          "subtitle": "Begin je FPV avontuur."
+        },
+        "cinematicDrones": {
+          "title": "Cinematische Drones",
+          "subtitle": "Vang verbluffende beelden."
+        },
+        "spareParts": {
+          "title": "Reserveonderdelen",
+          "subtitle": "Houd je drone in topconditie."
+        },
+        "apparel": {
+          "title": "Kleding & Merchandise",
+          "subtitle": "Toon je passie voor FPV."
+        },
+        "tuningSetup": {
+          "title": "Tuning & Setup",
+          "subtitle": "Optimaliseer je vluchtprestaties."
+        }
+      },
+      "discoverCards": {
+        "guides": {
+          "title": "Handleidingen",
+          "description": "Gedetailleerde gidsen voor bouw en configuratie."
+        },
+        "software": {
+          "title": "Software & Tools",
+          "description": "De essentiële tools voor elke piloot."
+        }
+      },
+      "serviceCards": {
+        "title": "Klantenservice",
+        "support": {
+          "title": "Support",
+          "subtitle": "Hulp nodig? Wij staan klaar."
+        },
+        "orders": {
+          "title": "Bestellingen",
+          "subtitle": "Volg je order of bekijk je geschiedenis."
+        },
+        "shipping": {
+          "title": "Verzending",
+          "subtitle": "Alles over bezorgopties en kosten."
+        },
+        "buyersGuide": {
+          "title": "Kopersgids",
+          "subtitle": "Vind de perfecte drone voor jou."
+        }
+      }
+    },
+    "diyKitsOverview": {
+      "hero": {
+        "title": "Jouw Meesterwerk. Jouw Vlucht. Bouw Het Zelf.",
+        "subtitle": "Ontdek onze zorgvuldig samengestelde FPV bouwpakketten, compleet met gedetailleerde handleidingen en de beste componenten voor een onvergetelijke bouw- en vliegervaring.",
+        "ctaBeginner": "Start Je Eerste Build",
+        "ctaExpert": "Ontdek High-Performance Kits"
+      },
+      "valueProp": {
+        "title": "De Voorsprong van de Bouwer",
+        "cards": {
+          "compatibility": {
+            "title": "Component Compatibiliteit Garantie",
+            "description": "Al onze kits bevatten onderdelen die 100% gegarandeerd met elkaar werken. Geen gedoe met zoektochten of compatibiliteitsproblemen."
+          },
+          "guides": {
+            "title": "Stap-voor-Stap Videogidsen",
+            "description": "Elke kit komt met een complete, easy-to-follow videogids die je door het hele bouwproces loodst, van solderen tot de eerste tune."
+          },
+          "support": {
+            "title": "Expert Ondersteuning",
+            "description": "Loop je vast? Ons team van ervaren bouwers helpt je verder via chat, e-mail of Discord. Je bent niet alleen!"
+          },
+          "components": {
+            "title": "Top-Tier Componenten",
+            "description": "Alleen A-merk onderdelen van topfabrikanten voor maximale prestaties, betrouwbaarheid en duurzaamheid. Bouw met vertrouwen."
+          },
+          "seamlessBuild": {
+            "title": "Zorgeloos Bouwen met Complete Gidsen",
+            "description": "Elke kit wordt geleverd met een volledige stap-voor-stap videogids en vooraf geladen Betaflight tunes. Focus op bouwen en vliegen, wij doen de rest."
+          }
+        }
+      },
+      "kitFinder": {
+        "title": "Niet Zeker Welk Bouwpakket Past Bij Jou?",
+        "subtitle": "Onze interactieve Kit Finder helpt je in minder dan een minuut de ideale bouwkit te vinden op basis van je ervaring, budget en vliegdoelen.",
+        "cta": "Start de Kit Finder Quiz"
+      },
+      "sub250gKits": {
+        "title": "De Sub-250g Klasse (Legaal & Wendbaar)"
+      },
+      "fiveInchKits": {
+        "title": "De 5-Inch Performance Klasse"
+      },
+      "productCardCta": "Stel Jouw Build Kit Samen",
+      "componentDeepDive": {
+        "title": "Elke Component Telt: Jouw Keuzes, Onze Expertise.",
+        "subtitle": "Duik dieper in de componenten die het hart vormen van jouw FPV-drone en begrijp waarom kwaliteit het verschil maakt in prestaties, duurzaamheid en vliegplezier.",
+        "frames": {
+          "description": "Kies een frame dat past bij jouw vliegstijl – van ultralicht freestyle tot robuuste cinematic builds. Essentieel voor duurzaamheid en handling."
+        },
+        "stacks": {
+          "description": "De hersenen en spieren van je drone. Leer over F4, F7, F722 stacks en de kracht van 4-in-1 ESC's voor stabiele en responsieve vluchtcontrole."
+        },
+        "motors": {
+          "description": "Ontdek het verschil tussen KV, stator-grootte en hoe dit de stuwkracht en efficiëntie beïnvloedt. De krachtbron van je drone."
+        },
+        "vtx": {
+          "description": "Digitale of analoge video? Welke camera biedt het beste beeld voor jouw vlucht en opnamekwaliteit?"
+        }
+      },
+      "guides": {
+        "title": "Van Schroef tot Wolken: Onze Complete Kennisbank",
+        "subtitle": "Droneshop biedt je toegang tot de meest uitgebreide verzameling van bouw- en configuratiegidsen, tips en troubleshooting-artikelen om jouw bouwproject tot een succes te maken.",
+        "video": {
+          "title": "Video Build Gidsen",
+          "description": "Volg onze experts stap-voor-stap bij elke build. Visueel, duidelijk en compleet."
+        },
+        "soldering": {
+          "title": "De Complete Soldeergids",
+          "description": "Leer de fijne kneepjes van het vak. Perfecte verbindingen, elke keer weer. Voor beginners én gevorderden."
+        },
+        "betaflight": {
+          "title": "Betaflight Configurator Gids",
+          "description": "Tune je drone voor maximale prestaties. Van PIDs tot filters, alles wat je moet weten."
+        }
+      },
+      "techHighlights": {
+        "title": "De Anatomie van een Kampioen: Onze Componentenkeuzes"
+      },
+      "testimonials": {
+        "title": "Wat Onze Bouwers Zeggen",
+        "t1": {
+          "quote": "De videogids voor de Siren F5 was super duidelijk, zelfs voor een beginner als ik! Elke stap werd perfect uitgelegd.",
+          "author": "Mark V. - Eerste keer bouwer"
+        },
+        "t2": {
+          "quote": "Ik liep vast met een Betaflight-instelling en de support op Discord heeft me binnen een uur geholpen. Ongekende service!",
+          "author": "Jessica de G. - Hobbyist"
+        }
+      },
+      "faq": {
+        "title": "Veelgestelde Vragen voor Bouwers",
+        "q1": "Hoe moeilijk is solderen voor een beginner?",
+        "a1": "Solderen kan intimiderend lijken, maar met onze videogidsen en een beetje oefening is het een vaardigheid die iedereen kan leren. We raden aan om te starten met onze 'Leer Solderen' kit voor je aan de drone begint.",
+        "q2": "Welke gereedschappen heb ik absoluut nodig?",
+        "a2": "Een basis soldeerstation, kwaliteit soldeertin, een hex driver set en een smokestopper zijn essentieel. Raadpleeg onze 'Gereedschapsgids' voor de complete lijst.",
+        "q3": "Wat als ik een onderdeel kapot maak tijdens de bouw?",
+        "a3": "Dat gebeurt de besten! Omdat je een kit bouwt, zijn alle onderdelen los verkrijgbaar in onze webshop. Je vervangt eenvoudig het specifieke onderdeel, wat op de lange termijn veel goedkoper is dan een hele RTF-drone repareren.",
+        "q3": "Bieden jullie ondersteuning als ik vastloop?",
+        "a3": "Absoluut. Dit is onze belofte. Je kunt contact opnemen met ons team van experts via chat, e-mail of onze exclusieve Discord-community voor bouwers. We helpen je door elke uitdaging heen."
+      },
+      "stickyCta": {
+        "text": "Bekijk Alle Bouwpakketten"
+      },
+      "seamlessBuildGuide": {
+        "title": "Zorgeloos Bouwen: Jouw Ultieme Gids voor Succes",
+        "subtitle": "Volg onze heldere videogidsen, leer solderen als een pro, en profiteer van onze geoptimaliseerde Betaflight tunes. Wij elimineren de complexiteit, jij geniet van het proces.",
+        "cta": "Bekijk Alle Bouwgidsen"
+      },
+      "sirenF35Kit": {
+        "name": "Quadmula Siren F3.5 Kit",
+        "description": "Ultralichte sub-250g freestyle build met perfect op elkaar afgestemde componenten en stap-voor-stap videogids.",
+        "features": {
+          "0": "Sub-250g wendbaarheid met 6S performance",
+          "1": "Siren F3.5 split-deck frame: sterk en licht",
+          "2": "Foxeer F722 Mini + 45A 4-in-1 ESC",
+          "3": "AOS 1404 4600KV & ELRS-ready"
+        },
+        "hero": {
+          "title": "Jouw Meesterwerk Begint Hier: Bouw de Siren F3.5.",
+          "subtitle": "Alle prestaties, geen giswerk. Ervaar de trots van het bouwen met een kit waarin elk component perfect is afgestemd, ondersteund door onze stap-voor-stap videogidsen.",
+          "cta": "Start Jouw Build Avontuur"
+        },
+        "promise": {
+          "compatibility": {
+            "label": "Gegarandeerde Harmonie",
+            "value": "Al onze kits bevatten onderdelen die perfect op elkaar afgestemd zijn. Geen verrassingen, alleen een vlekkeloze bouw."
+          },
+          "guides": {
+            "label": "Stap-voor-Stap Videogidsen",
+            "value": "Van de eerste soldeerpunt tot de definitieve tune: onze gidsen loodsen je door elk aspect van de bouw. Bekijk de F3.5 Bouwgids Nu >"
+          },
+          "support": {
+            "label": "Jouw Digitale Pitcrew",
+            "value": "Vragen tijdens het bouwen? Ons toegewijde team van bouw-experts staat klaar om je te helpen via chat of Discord."
+          }
+        },
+        "longDescription": {
+          "p1": "De Quadmula Siren F3.5 BYS Kit is de perfecte instap in de wereld van DIY FPV. Deze complete set bevat elk essentieel onderdeel dat je nodig hebt om een high-performance freestyle drone onder de 250 gram te assembleren. Leer de fijne kneepjes van solderen, bedrading en Betaflight-tuning met onze exclusieve, uitgebreide gidsen.",
+          "highlightsTitle": "Kit Hoogtepunten:",
+          "highlight1": "Alle Benodigde Componenten In Eén Pakket",
+          "highlight2": "Leer Solderen & Tunen als een Pro",
+          "highlight3": "Repareer Zelf, Upgrade Eindeloos",
+          "highlight4": "Volledige Betaflight Configuratievrijheid",
+          "p2_details": "Dit kit is meer dan alleen onderdelen; het is een leermeester. De voldoening van het vliegen met een drone die je zelf hebt gebouwd, is ongeëvenaard. En met Droneshop aan je zijde, is succes gegarandeerd.",
+          "customerQuote": "\"Ik heb nog nooit eerder gesoldeerd, maar met de gidsen van Droneshop was het bouwen van mijn F3.5 een fantastische ervaring!\" - Sarah K."
+        },
+        "story": {
+          "frame": {
+            "title": "Het Chassis: Quadmula Siren F3.5 Frame - Jouw Canvas voor Controle",
+            "subtitle": "Leer waarom de structuur van je drone cruciaal is. Begrijp de carbon lay-up en de voordelen van het split-deck design."
+          },
+          "stack": {
+            "title": "Het Brein: Foxeer F722 V4 Mini Stack - De Precisie van Jouw Vlucht",
+            "subtitle": "Installeer en configureer de flight controller en ESC. Duik in de firmware-opties en leer tunen."
+          },
+          "motors": {
+            "title": "De Spierkracht: AOS 1404 4600KV Motoren - Kracht en Efficiëntie",
+            "subtitle": "Monteer je motoren perfect. Ontdek het belang van KV en propellerkeuze voor jouw vliegervaring."
+          },
+          "radio": {
+            "title": "De Verbinding: RadioMaster ELRS Ontvanger - Rotsvaste Controle",
+            "subtitle": "Leer hoe je jouw ontvanger bindt en integreert in Betaflight. Maximale betrouwbaarheid voor jouw commando's."
+          },
+          "djiO4": {
+            "title": "Jouw Oog in de Lucht: DJI O4 Air Unit - HD Video Transmissie",
+            "subtitle": "Installeer de DJI O4 Air Unit voor kristalheldere HD-beelden. Begrijp de integratie met de stack en je FPV-goggles."
+          }
+        },
+        "priceDisclaimer": "Basisprijs, exclusief optionele VTX en ontvanger.",
+        "stickyCta": {
+          "text": "Koop Jouw F3.5 Build Kit"
+        },
+        "inTheBox": {
+          "frame": "1x Quadmula Siren F3.5 Frame Kit (Carbon Fiber)",
+          "stack": "1x Foxeer F722 V4 Mini Flight Controller + 45A BL32 4-in-1 ESC",
+          "motors": "4x AOS 1404 4600KV Motoren",
+          "rx": "1x RadioMaster ELRS Nano Ontvanger",
+          "propellers": "2x Set HQProp 3.5 Inch Propellers",
+          "hardware": "Complete Bevestigingshardware & Draden",
+          "guides": "Toegang tot Online Videobouwgids & Betaflight Tune Handleiding",
+          "qcReport": "Droneshop Kwaliteitscontrole Rapport (voor Componenten)"
+        },
+        "faq": {
+          "q1": "Hoeveel bouwervaring heb ik nodig voor deze kit?",
+          "a1": "Deze kit is ontworpen voor beginners. Onze gedetailleerde videogidsen nemen je stap-voor-stap mee, waardoor het een ideaal eerste bouwproject is.",
+          "q2": "Welke gereedschappen heb ik absoluut nodig?",
+          "a2": "Een basis soldeerstation, kwaliteit soldeertin, een hex driver set en een smokestopper zijn essentieel. Raadpleeg onze 'Gereedschapsgids' voor de complete lijst.",
+          "q3": "Wat als ik een onderdeel kapot maak tijdens de bouw?",
+          "a3": "Geen paniek! Alle onderdelen zijn los verkrijgbaar in onze webshop. Je vervangt eenvoudig het specifieke onderdeel, wat op de lange termijn veel goedkoper is dan een hele RTF-drone repareren."
+        }
+      },
+      "sirenF5Kit": {
+        "name": "Quadmula Siren F5 (8S) Kit",
+        "description": "High-performance 5-inch 8S freestyle/cinematic build voor de ervaren bouwer, inclusief geavanceerde tuninggids.",
+        "features": {
+          "0": "Explosieve 8S kracht en controle",
+          "1": "Siren F5 frame: robuust en onderhoudsvriendelijk",
+          "2": "Foxeer Reaper F7 65A 8S stack",
+          "3": "RCINPOWER GTS V4 1600KV & DJI O4-klaar"
+        },
+        "hero": {
+          "title": "Bouw de Ongetemde Kracht: Siren F5 (8S) Kit.",
+          "subtitle": "Voor de ervaren bouwer die het maximale uit zijn FPV-ervaring wil halen. Assembleer dit 8S-beest en domineer het luchtruim met ongeëvenaarde prestaties.",
+          "cta": "Ontketen de 8S Kracht"
+        },
+        "promise": {
+          "compatibility": {
+            "label": "Competitie-Grade Componenten",
+            "value": "Alleen de crème de la crème. Ontworpen voor 8S en extreme condities."
+          },
+          "guides": {
+            "label": "Geavanceerde Bouw- & Tuninggidsen",
+            "value": "Diepgaande handleidingen voor complexe builds en geoptimaliseerde 8S tunes."
+          },
+          "support": {
+            "label": "Jouw Digitale Pitcrew",
+            "value": "Ons team van pro-bouwers staat paraat voor al je diepgaande technische vragen."
+          }
+        },
+        "longDescription": {
+          "p1": "De Quadmula Siren F5 BYS Kit is het ultieme bouwproject voor de ervaren FPV-piloot. Deze kit levert de brute kracht van 8S en is gebouwd rond het legendarische Quadmula Siren F5 frame. Met top-tier componenten en de vrijheid om jouw perfecte tune te creëren, is dit jouw ticket naar ongeëvenaarde prestaties en controle.",
+          "highlightsTitle": "Kit Hoogtepunten:",
+          "highlight1": "Ontworpen voor Explosieve 8S Kracht",
+          "highlight2": "Robuust en Aerodynamisch 5-inch Frame",
+          "highlight3": "Ruimte voor Full-Size HD Camera's",
+          "highlight4": "Volledige Configuratievrijheid",
+          "p2_details": "Dit is de keuze voor de serieuze piloot die elke nuance van zijn drone wil begrijpen en optimaliseren. Bereid je voor op een bouwervaring die net zo belonend is als de eerste adrenaline-kick van je 8S-vlucht.",
+          "customerQuote": "\"Het bouwen van de Siren F5 met de Droneshop kit gaf me een ongekende controle over mijn setup. De 8S-kracht is onwerkelijk!\" - Mark V."
+        },
+        "story": {
+          "frame": {
+            "title": "Het Chassis: Quadmula Siren F5 Frame - Robuustheid Ontmoet Precisie",
+            "subtitle": "Verken de geoptimaliseerde geometrie en duurzaamheid van het F5 frame. Essentieel voor high-impact freestyle."
+          },
+          "stack": {
+            "title": "Het Hart: Foxeer Reaper F7 65A 8S Stack - De Krachtcentrale",
+            "subtitle": "Integreer deze krachtige 8S-compatibele stack. Leer hoe je de vluchtparameters kalibreert voor maximale responsiviteit."
+          },
+          "motors": {
+            "title": "De Motoren: RCINPOWER GTS V4 1600KV - Efficiëntie en Brute Kracht",
+            "subtitle": "Monteer je GTS V4 motoren. Begrijp het belang van KV en de balans tussen stuwkracht en efficiëntie voor 8S builds."
+          },
+          "batteries": {
+            "title": "De Levensader: Optimale 8S LiPo Keuzes",
+            "subtitle": "Selecteer de juiste 8S LiPo batterijen. Leer over C-ratings, capaciteit en veilig opladen voor maximale vliegtijden en levensduur."
+          }
+        },
+        "priceDisclaimer": "Basisprijs, exclusief optionele VTX en ontvanger.",
+        "stickyCta": {
+          "text": "Koop Jouw F5 Build Kit"
+        },
+        "inTheBox": {
+          "frame": "1x Quadmula Siren F5 Frame Kit (Carbon Fiber)",
+          "stack": "1x Foxeer Reaper F7 65A 8S Stack",
+          "motors": "4x RCINPOWER GTS V4 1600KV Motoren",
+          "propellers": "2x Set HQProp 5.1 Inch Propellers",
+          "hardware": "Complete Bevestigingshardware & Draden",
+          "guides": "Toegang tot Online Geavanceerde Bouw- & Tuninggidsen",
+          "qcReport": "Droneshop Kwaliteitscontrole Rapport (voor Componenten)"
+        },
+        "faq": {
+          "q1": "Is deze 8S kit geschikt voor een beginner?",
+          "a1": "De Siren F5 8S kit is ontworpen voor ervaren bouwers en piloten. De kracht en complexiteit van een 8S-systeem vereisen gevorderde soldeer- en tuningvaardigheden. We raden beginners aan te starten met een 6S kit zoals de Siren F3.5.",
+          "q2": "Welke batterijen zijn aanbevolen?",
+          "a2": "Voor deze 8S kit adviseren wij 8S LiPo batterijen met een capaciteit tussen 1100mAh en 1300mAh, en een hoge C-rating (minimaal 120C) voor optimale prestaties.",
+          "q3": "Kan ik een GoPro op deze drone monteren?",
+          "a3": "Absoluut. Het robuuste Siren F5 frame en de krachtige 8S motoren zijn perfect geschikt om een volledige GoPro of vergelijkbare HD-camera te dragen zonder significante prestatieverlies, wat het een uitstekende keuze maakt voor cinematic FPV."
+        }
+      }
+    }
+  }
+}

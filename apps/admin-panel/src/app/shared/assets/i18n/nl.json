@@ -1,0 +1,570 @@
+{
+  "admin": {
+    "dashboard": {
+      "title": "Dashboard",
+      "chart": {
+        "noData": "Geen omzetdata beschikbaar voor deze periode."
+      }
+    },
+    "products": {
+      "title": "Producten",
+      "createTitle": "Nieuw Product Aanmaken",
+      "editTitle": "Product Bewerken",
+      "form": {
+        "cancel": "Annuleren",
+        "save": "Opslaan",
+        "saving": "Opslaan...",
+        "basicInfo": "Basis Informatie",
+        "productName": "Product Naam",
+        "shortSummary": "Korte Samenvatting",
+        "fullDescription": "Volledige Beschrijving",
+        "media": "Media",
+        "featuredImage": "Uitgelichte Afbeelding",
+        "setAsFeatured": "Instellen als uitgelichte afbeelding",
+        "featured": "Uitgelicht",
+        "noMedia": "Nog geen media geüpload.",
+        "variants": "Varianten",
+        "addAttribute": "Attribuut Toevoegen",
+        "loadingAttributes": "Attributen laden...",
+        "errorLoadingAttributes": "Fout bij laden attributen",
+        "chooseExistingAttribute": "Kies bestaand attribuut",
+        "isRequired": "Is Verplicht",
+        "removeAttribute": "Attribuut Verwijderen",
+        "chooseValue": "Kies waarde",
+        "selectExisting": "Selecteer bestaand...",
+        "createNewValue": "Nieuwe waarde aanmaken",
+        "displayNameNew": "Weergavenaam (Nieuw)",
+        "colorHexOptional": "Kleur (Hex, optioneel)",
+        "priceModifierOptional": "Prijsaanpassing (optioneel)",
+        "displayName": "Weergavenaam",
+        "linkedMedia": "Gekoppelde Media",
+        "noLinkedMedia": "Geen media gekoppeld.",
+        "addValue": "Waarde Toevoegen",
+        "combinations": "Combinaties",
+        "tableHeaders": {
+          "SKU": "SKU",
+          "Price": "Prijs",
+          "Original Price": "Originele Prijs",
+          "Stock": "Voorraad",
+          "Status": "Status",
+          "Media": "Media",
+          "Default": "Standaard",
+          "Active": "Actief"
+        },
+        "duplicateSku": "Deze SKU bestaat al.",
+        "noDefaultVariant": "Eén variant moet als standaard worden ingesteld.",
+        "noCombinationsGenerated": "Voeg attributen toe om combinaties te genereren.",
+        "addAttributesToGenerate": "Voeg variant attributen toe om combinaties te genereren.",
+        "propertiesAndQualities": "Eigenschappen & Kwaliteiten",
+        "errorLoadingProperties": "Fout bij laden eigenschappen en kwaliteiten.",
+        "otherGroup": "Overig",
+        "noCustomProperties": "Geen aangepaste eigenschappen gedefinieerd voor producten.",
+        "displaySpecifications": "Weergavespecificaties",
+        "addSpec": "Specificatie Toevoegen",
+        "specKeyInternal": "Specificatiesleutel (Intern)",
+        "displayValue": "Weergavewaarde",
+        "groupOptional": "Groep (optioneel)",
+        "addSpecsHelp": "Voeg weergavespecificaties toe om gedetailleerde productinformatie te tonen.",
+        "organizationAndStatus": "Organisatie & Status",
+        "status": "Status",
+        "isActive": "Is Actief",
+        "isFeatured": "Is Uitgelicht",
+        "currency": "Valuta",
+        "tags": "Tags",
+        "categories": "Categorieën",
+        "physicalConfig": "Fysieke Product Configuratie",
+        "price": "Prijs",
+        "originalPriceOptional": "Originele Prijs (optioneel)",
+        "priceCannotBeHigherThanOriginal": "Prijs kan niet hoger zijn dan de originele prijs.",
+        "skuOptional": "SKU (optioneel)",
+        "brandOptional": "Merk (optioneel)",
+        "manageStock": "Voorraad Beheren",
+        "stockQuantity": "Voorraad Aantal",
+        "stockQuantityRequired": "Voorraad aantal is verplicht wanneer voorraadbeheer is ingeschakeld.",
+        "allowBackorders": "Backorders Toestaan",
+        "lowStockThreshold": "Lage Voorraad Drempel",
+        "seo": "SEO",
+        "seoTitle": "SEO Titel",
+        "seoDescription": "SEO Beschrijving",
+        "seoKeywordsCommaSeparated": "SEO Trefwoorden (komma gescheiden)",
+        "seoImageUrlOptional": "SEO Afbeeldings-URL (optioneel)"
+      },
+      "notifications": {
+        "formInvalid": "Corrigeer de fouten in het formulier."
+      }
+    },
+    "orders": {
+      "title": "Orders",
+      "createTitle": "Nieuwe Order Maken",
+      "detail": {
+        "titlePrefix": "Order Details",
+        "loadingOrderDetails": "Orderdetails laden...",
+        "orderNotFound": "Order niet gevonden.",
+        "notes": "Notities",
+        "customerNotes": "Klantnotities",
+        "noNotes": "Geen klantnotities.",
+        "internalNotes": "Interne Notities",
+        "saveNotes": "Notities Opslaan",
+        "actionsAndDocuments": "Acties & Documenten",
+        "downloadInvoice": "Factuur Downloaden",
+        "exportOrder": "Order Exporteren",
+        "saveStatus": "Status & Tracking Opslaan",
+        "financialSummary": "Financieel Overzicht",
+        "paymentDetails": "Betaalgegevens",
+        "customerAndAddresses": "Klant & Adressen",
+        "saveAddress": "Adres Opslaan",
+        "confirmRemoveItem": "Weet u zeker dat u dit item uit de order wilt verwijderen?",
+        "confirmCancelOrder": "Weet u zeker dat u deze order wilt annuleren?",
+        "refundAmountPrompt": "Voer restitutiebedrag in:",
+        "invalidRefundAmount": "Ongeldig restitutiebedrag.",
+        "refundReasonPrompt": "Voer reden voor restitutie in (optioneel):",
+        "invoiceNotFound": "Factuur niet beschikbaar om te downloaden.",
+        "exportNotImplemented": "Export functionaliteit is nog niet geïmplementeerd.",
+        "addProducts": "Producten Toevoegen",
+        "formInvalid": "Corrigeer de fouten in de orderitems.",
+        "noChanges": "Geen wijzigingen gedetecteerd.",
+        "status": "Status",
+        "orderNumber": "Ordernummer",
+        "products": "Producten",        
+        "pricePerItem": "Prijs per Item",
+        "quantity": "Aantal",
+        "total": "Totaal",
+        "orderCancel": "Order Annuleren",
+        "refund": "Restitutie",
+        "contactName": "Contactnaam",
+        "street": "Straat",
+        "houseNumber": "Huisnummer",
+        "postalCode": "Postcode",
+        "city": "Plaats",
+        "countryCode": "Landcode",
+        "customerName": "Klantnaam",
+        "customerEmail": "Klant E-mail",
+        "shippingAddress": "Verzendadres",
+        "billingAddress": "Factuuradres"
+      },
+      "fulfillment": {
+        "products": "Producten",
+        "trackingNumber": "Trackingnummer",
+        "trackingUrlOptional": "Tracking URL (optioneel)"
+      }
+    },
+    "users": {
+      "title": "Gebruikers",
+      "createTitle": "Nieuwe Gebruiker Aanmaken",
+      "editTitle": "Gebruiker Bewerken",
+      "management": {
+        "title": "Gebruikersbeheer",
+        "newUser": "Nieuwe Gebruiker",
+        "confirmDeleteUser": "Weet u zeker dat u deze gebruiker wilt verwijderen? Deze actie kan niet ongedaan worden gemaakt."
+      },
+      "form": {
+        "accountInfo": "Account Informatie",
+        "email": "E-mail",
+        "displayName": "Weergavenaam",
+        "profileInfo": "Profiel Informatie",
+        "firstName": "Voornaam",
+        "middleName": "Tussenvoegsel",
+        "lastName": "Achternaam",
+        "bio": "Biografie",
+        "roles": "Rollen",
+        "password": "Wachtwoord",
+        "newPassword": "Nieuw Wachtwoord",
+        "setPasswordButton": "Wachtwoord Instellen",
+        "lockedOut": "Gebruiker is vergrendeld",
+        "unlockAccount": "Account Ontgrendelen",
+        "lockAccount": "Account Vergrendelen"
+      }
+    },
+    "roles": {
+      "manageRoles": "Rollenbeheer",
+      "prompts": {
+        "newRoleName": "Nieuwe rolnaam invoeren:",
+        "newNameForRole": "Voer nieuwe naam in voor rol '{roleName}':",
+        "confirmDeleteRole": "Weet u zeker dat u rol '{roleName}' wilt verwijderen? Deze actie kan niet ongedaan worden gemaakt."
+      },
+      "messages": {
+        "invalidRoleName": "Rolnaam mag niet leeg zijn.",
+        "noRolesAvailable": "Geen rollen beschikbaar."
+      },
+      "newRolePlaceholder": "Voer nieuwe rolnaam in",
+      "createButton": "Creëer Rol"
+    },
+    "settings": {
+      "title": "Instellingen"
+    },
+    "errors": {
+      "loadingOrderFailed": "Fout bij het laden van orderdetails.",
+      "loadingUserFailed": "Fout bij het laden van gebruikersdetails."
+    },
+    "reviews": {
+      "title": "Reviews",
+      "list": {
+        "author": "Auteur",
+        "rating": "Beoordeling",
+        "title": "Titel",
+        "status": "Status",
+        "date": "Datum",
+        "actions": "Acties",
+        "noTitle": "Geen titel",
+        "noReviewsFound": "Geen reviews gevonden.",
+        "statusPending": "In behandeling",
+        "statusApproved": "Goedgekeurd",
+        "statusRejected": "Afgewezen",
+        "statusFlagged": "Gevlagd"
+      },
+      "filter": {
+        "searchPlaceholder": "Zoek op product ID of auteur ID...",
+        "allStatuses": "Alle statussen",
+        "sortByNewest": "Nieuwste eerst",
+        "sortByOldest": "Oudste eerst",
+        "sortByHighest": "Hoogste beoordeling eerst",
+        "sortByLowest": "Laagste beoordeling eerst",
+        "sortByMostHelpful": "Meest behulpzaam eerst"
+      },
+      "editTitle": "Review Bewerken: {reviewId}",
+      "form": {
+        "reviewContent": "Review Inhoud",
+        "rating": "Beoordeling",
+        "title": "Titel",
+        "reviewText": "Review Tekst",
+        "verifiedPurchase": "Geverifieerde aankoop",
+        "notVerifiedPurchase": "Geen geverifieerde aankoop",
+        "authorInfo": "Auteur Informatie",
+        "author": "Auteur",
+        "authorId": "Auteur ID",
+        "submittedOn": "Verzonden op",
+        "moderation": "Moderatie",
+        "status": "Status",
+        "moderatorNoteOptional": "Moderator Opmerking (optioneel)",
+        "updateStatus": "Status Bijwerken",
+        "deleteReview": "Review Verwijderen"
+      }
+    }
+  },
+  "product": {
+    "quality": {
+      "cuddleFactor": "Knuffel Factor",
+      "durability": "Duurzaamheid",
+      "fluffiness": "Zachtheid",
+      "adventureSpirit": "Avontuurlijke Geest",
+      "dreamGuard": "Droombewaker",
+      "washable": "Wasbaar",
+      "cheerfulness": "Vrolijkheid",
+      "comfortLevel": "Comfortniveau",
+      "rarityScore": "Zeldzaamheidsscore"
+    },
+    "spec": {
+      "size": "Afmetingen",
+      "weight": "Gewicht",
+      "material": "Materiaal",
+      "filling": "Vulling",
+      "certification": "Certificering",
+      "origin": "Herkomst",
+      "washable": "Wasvoorschriften"
+    },
+    "image": {
+      "alt": {
+        "verfijnd-verse-worstjes.ongelooflijk": "Verfijnde verse worstjes. Ongelooflijk",
+        "klein-ijzeren-toetsenbord.algemeen": "Klein ijzeren toetsenbord. Algemeen",
+        "merkloos-ijzeren-tafel.ambachtelijk": "Merkloze ijzeren tafel. Ambachtelijk",
+        "fantastisch-staal-chips.merkloos": "Fantastische staalchips. Merkloos",
+        "verantwoord-rubberen-zeep.slank": "Verantwoord rubberen zeep. Slank",
+        "prachtig-staal-tafel.ergonomisch": "Prachtige stalen tafel. Ergonomisch",
+        "rustiek-zachte-schoenen.geweldig": "Rustieke zachte schoenen. Geweldig",
+        "algemeen-granieten-leunstoel.merkloos": "Algemene granieten leunstoel. Merkloos"
+      }
+    },
+    "detail": {
+      "outOfStock": "Niet op Voorraad",
+      "onBackorder": "In Backorder",
+      "availableFrom": "beschikbaar vanaf {date}",
+      "preOrder": "Pre-order",
+      "comingSoon": "Binnenkort Verkrijgbaar",
+      "discontinued": "Niet meer Leverbaar",
+      "onlyXLeft": "Nog {quantity} over!",
+      "almostSoldOut": "Bijna uitverkocht",
+      "inStock": "Op Voorraad"
+    }
+  },
+  "reviews": {
+    "summary": {
+      "totalReviews": "{count, plural, one {1 review} other {{count} reviews}}",
+      "averageRating": "Gemiddelde beoordeling",
+      "noReviews": "Nog geen reviews voor dit product."
+    },
+    "stars": {
+      "1star": "1 Ster",
+      "2stars": "2 Sterren",
+      "3stars": "3 Sterren",
+      "4stars": "4 Sterren",
+      "5stars": "5 Sterren"
+    }
+  },
+  "features": {
+    "shoppingCart": {
+      "overview": {
+        "title": "Winkelwagen",
+        "emptyCartTitle": "Je winkelwagen is leeg",
+        "emptyCartDescription": "Het lijkt erop dat je nog geen items aan je winkelwagen hebt toegevoegd. Ontdek onze producten!",
+        "continueShopping": "Verder winkelen",
+        "viewCart": "Winkelwagen bekijken",
+        "checkout": "Afrekenen"
+      },
+      "headers": {
+        "product": "Product",
+        "quantity": "Aantal",
+        "total": "Totaal"
+      },
+      "item": {
+        "removeAriaLabel": "Verwijder item uit winkelwagen"
+      },
+      "notifications": {
+        "itemAddedSuccess": "Product toegevoegd aan winkelwagen."
+      },
+      "errors": {
+        "itemRemoveFailed": "Verwijderen van item mislukt. Probeer opnieuw.",
+        "quantityUpdateFailed": "Hoeveelheid bijwerken mislukt. Probeer opnieuw.",
+        "clearCartFailed": "Winkelwagen legen mislukt. Probeer opnieuw."
+      }
+    },
+    "orders": {
+      "overview": {
+        "title": "Mijn Bestellingen",
+        "allOrders": "Alle Bestellingen",
+        "unshipped": "Nog niet Verzonden",
+        "cancelled": "Geannuleerd",
+        "noOrders": "Je hebt nog geen bestellingen geplaatst.",
+        "startShopping": "Begin met winkelen!"
+      },
+      "card": {
+        "placed": "Geplaatst op",
+        "total": "Totaal",
+        "shipTo": "Verzonden naar",
+        "viewDetails": "Details bekijken",
+        "downloadInvoice": "Factuur downloaden",
+        "deliveredOn": "Geleverd op {date}",
+        "returnWindow": "Retourneren mogelijk tot {date}",
+        "buyAgain": "Opnieuw kopen",
+        "viewItem": "Item bekijken",
+        "trackPackage": "Pakket volgen",
+        "writeReview": "Review schrijven"
+      },
+      "status": {
+        "pendingPayment": "Wachten op betaling",
+        "paymentFailed": "Betaling mislukt",
+        "awaitingFulfillment": "Wachten op afhandeling",
+        "processing": "Verwerken",
+        "shipped": "Verzonden",
+        "inTransit": "Onderweg",
+        "delivered": "Geleverd",
+        "completed": "Voltooid",
+        "cancelled": "Geannuleerd",
+        "refundPending": "Restitutie aangevraagd",
+        "partiallyRefunded": "Gedeeltelijk terugbetaald",
+        "fullyRefunded": "Volledig terugbetaald",
+        "onHold": "In de wacht",
+        "unknown": "Onbekend"
+      },
+      "detail": {
+        "title": "Besteldetails",
+        "notes": "Notities",
+        "customerNotes": "Klantnotities",
+        "noNotes": "Geen klantnotities.",
+        "internalNotes": "Interne Notities",
+        "saveNotes": "Notities Opslaan",
+        "actionsAndDocuments": "Acties & Documenten",
+        "downloadInvoice": "Factuur Downloaden",
+        "exportOrder": "Order Exporteren",
+        "saveStatus": "Status & Tracking Opslaan",
+        "financialSummary": "Financieel Overzicht",
+        "paymentDetails": "Betaalgegevens",
+        "customerAndAddresses": "Klant & Adressen",
+        "saveAddress": "Adres Opslaan",
+        "confirmRemoveItem": "Weet u zeker dat u dit item uit de order wilt verwijderen?",
+        "confirmCancelOrder": "Weet u zeker dat u deze order wilt annuleren?",
+        "refundAmountPrompt": "Voer restitutiebedrag in:",
+        "invalidRefundAmount": "Ongeldig restitutiebedrag.",
+        "refundReasonPrompt": "Voer reden voor restitutie in (optioneel):",
+        "invoiceNotFound": "Factuur niet beschikbaar om te downloaden.",
+        "exportNotImplemented": "Export functionaliteit is nog niet geïmplementeerd.",
+        "addProducts": "Producten Toevoegen",
+        "formInvalid": "Corrigeer de fouten in de orderitems.",
+        "noChanges": "Geen wijzigingen gedetecteerd.",
+        "status": "Status",
+        "orderNumber": "Ordernummer",
+        "products": "Producten",        
+        "pricePerItem": "Prijs per Item",
+        "quantity": "Aantal",
+        "total": "Totaal",
+        "orderCancel": "Order Annuleren",
+        "refund": "Restitutie",
+        "contactName": "Contactnaam",
+        "street": "Straat",
+        "houseNumber": "Huisnummer",
+        "postalCode": "Postcode",
+        "city": "Plaats",
+        "countryCode": "Landcode",
+        "customerName": "Klantnaam",
+        "customerEmail": "Klant E-mail",
+        "shippingAddress": "Verzendadres",
+        "billingAddress": "Factuuradres"
+      },
+      "fulfillment": {
+        "products": "Producten",
+        "trackingNumber": "Trackingnummer",
+        "trackingUrlOptional": "Tracking URL (optioneel)"
+      }
+    }
+  },
+  "chat": {
+    "overlay": {
+      "title": "Chat met Support"
+    },
+    "aiCoachDefaultName": "Plushie Pal",
+    "input": {
+      "typeYourQuestion": "Typ je vraag...",
+      "placeholderDefault": "Stuur een bericht...",
+      "addEmoji": "Emoji toevoegen",
+      "addGif": "GIF toevoegen",
+      "addPhoto": "Foto toevoegen",
+      "send": "Verzenden"
+    },
+    "messages": {
+      "loading": "Laden...",
+      "selectConversationPrompt": "Selecteer een conversatie om te beginnen."
+    },
+    "errors": {
+      "messageLimitReached": "Je hebt de berichtlimiet bereikt. Log in om verder te chatten."
+    }
+  },
+   "checkout": {
+    "shipping": {
+      "title": "Verzendadres",
+      "description": "Selecteer een bestaand adres of voer een nieuw adres in voor verzending.",
+      "selectSavedAddress": "Selecteer een opgeslagen adres:",
+      "addNewAddress": "Nieuw adres toevoegen",
+      "registration": {
+        "title": "Account aanmaken voor extra voordelen",
+        "description": "Maak een account aan om je adressen op te slaan en sneller af te rekenen.",
+        "button": "Account aanmaken",
+        "formTitle": "Account gegevens",
+        "addressWillBeSaved": "Je adres wordt opgeslagen zodra je account is aangemaakt.",
+        "success": "Account succesvol aangemaakt! Je adres is opgeslagen."
+      },
+      "methods": {
+        "title": "Verzendmethode",
+        "selectAddressFirst": "Selecteer eerst een verzendadres om beschikbare verzendmethoden te zien.",
+        "loading": "Verzendmethoden laden...",
+        "noMethods": "Geen verzendmethoden beschikbaar voor dit adres."
+      },
+      "form": {
+        "recipientName": "Naam ontvanger",
+        "street": "Straat",
+        "houseNumber": "Huisnummer",
+        "addressAddition": "Toevoeging",
+        "postalCode": "Postcode",
+        "city": "Plaats",
+        "country": "Land",
+        "phoneNumber": "Telefoonnummer",
+        "email": "E-mailadres",
+        "companyName": "Bedrijfsnaam",
+        "deliveryInstructions": "Bezorgnotities",
+        "saveAddress": "Adres opslaan voor volgende keer",
+        "saveAddressForLoggedInUsers": "Meld je aan om adressen op te slaan",
+        "saveAddressButton": "Adres opslaan",
+        "selectAddressButton": "Adres selecteren",
+        "continueButton": "Doorgaan naar betaling"
+      },
+      "notifications": {
+        "selectAddress": "Selecteer eerst een verzendadres",
+        "selectShippingMethod": "Selecteer een verzendmethode"
+      },
+      "addressSavedAfterRegistration": "Je adres is opgeslagen na het aanmaken van je account.",
+      "addAddressTitle": "Nieuw adres toevoegen",
+      "editAddressTitle": "Adres bewerken",
+      "delete": {
+        "title": "Adres verwijderen",
+        "message": "Weet je zeker dat je dit adres wilt verwijderen?"
+      }
+    },
+    "notifications": {
+      "selectAddress": "Selecteer eerst een verzendadres",
+      "selectShippingMethod": "Selecteer een verzendmethode"
+    }
+  },
+  "navigation": {
+    "home": "Home"
+  },
+  "auth": {
+    "register": {
+      "firstName": "Voornaam",
+      "lastName": "Achternaam", 
+      "email": "E-mailadres",
+      "password": "Wachtwoord",
+      "submit": "Account aanmaken"
+    }
+  },
+  "features": {
+    "account": {
+      "addresses": {
+        "addAddressTitle": "Nieuw adres",
+        "addAddressDescription": "Voeg een nieuw adres toe"
+      }
+    }
+  },
+  "common": {
+    "or": "of",
+    "buttons": {
+      "save": "Opslaan",
+      "cancel": "Annuleren",
+      "delete": "Verwijderen"
+    },
+    "messages": {
+      "error": "Er is een fout opgetreden. Controleer je invoer."
+    },
+    "payment": {
+      "title": "Betaalmethode",
+      "description": "Kies hoe u wilt betalen voor uw bestelling.",
+      "methods": {
+        "ideal": {
+          "name": "iDEAL",
+          "description": "Veilig betalen via uw eigen bank."
+        },
+        "creditcard": {
+          "name": "Creditcard",
+          "description": "Betaal veilig met Visa, MasterCard of American Express."
+        },
+        "paypal": {
+          "name": "PayPal",
+          "description": "Betaal snel en veilig met uw PayPal-account."
+        }
+      },
+      "continueButton": "Doorgaan naar overzicht"
+    },
+    "review": {
+      "title": "Overzicht & Bevestiging",
+      "noShippingAddress": "Geen verzendadres geselecteerd.",
+      "noPaymentMethod": "Geen betaalmethode geselecteerd.",
+      "confirmAndPayButton": "Bevestigen & Betalen"
+    },
+    "orderSummary": {
+      "title": "Uw Bestelling",
+      "loading": "Besteloverzicht laden...",
+      "subtotal": "Subtotaal",
+      "discount": "Korting",
+      "shippingCosts": "Verzendkosten",
+      "freeShipping": "Gratis verzending!",
+      "total": "Totaal",
+      "includingVat": "incl. BTW",
+      "product": "Product",
+      "quantity": "Aantal"
+    },
+    "success": {
+      "title": "Bedankt voor uw bestelling!",
+      "description": "Uw bestelling is succesvol geplaatst en wordt zo snel mogelijk verwerkt.",
+      "orderNumber": "Uw ordernummer:"
+    },
+    "previousStep": "Vorige stap",
+    "backToCart": "Terug naar winkelwagen"
+  }
+}

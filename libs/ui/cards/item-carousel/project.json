@@ -1,0 +1,14 @@
+{
+  "name": "item-carousel-ui",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/ui/cards/item-carousel/src",
+  "prefix": "royal-code",
+  "projectType": "library",
+  "tags": ["scope:shared", "type:ui", "context:carousel"],
+  "implicitDependencies": ["title", "media-ui", "paragraph"],
+  "targets": {
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    }
+  }
+}

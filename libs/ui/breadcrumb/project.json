@@ -1,0 +1,14 @@
+{
+  "name": "breadcrumb",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/ui/breadcrumb/src",
+  "prefix": "royal-code",
+  "projectType": "library",
+  "tags": ["scope:shared-ui", "type:ui"],
+  "implicitDependencies": ["button", "icon", "paragraph"],
+  "targets": {
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    }
+  }
+}

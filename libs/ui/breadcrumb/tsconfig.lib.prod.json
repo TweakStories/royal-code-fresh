@@ -1,0 +1,12 @@
+﻿{
+  "extends": "./tsconfig.lib.json",
+  "compilerOptions": {
+    "rootDir": "../../../",
+    "declarationMap": false,
+    "moduleResolution": "node"
+  },
+  "angularCompilerOptions": {
+    "compilationMode": "full"
+  }
+}
+

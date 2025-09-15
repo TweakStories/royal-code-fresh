@@ -1,0 +1,30 @@
+{
+  "name": "features-checkout-core",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/features/checkout/core/src",
+  "prefix": "royal-code",
+  "projectType": "library",
+  "tags": ["scope:checkout", "type:feature-core"],
+  "implicitDependencies": [
+    "checkout-domain",
+    "features-cart-core",
+    "orders-domain",
+    "orders-core",
+    "user",
+    "storage",
+    "core-logging",
+    "ui-notifications"
+  ],
+  "targets": {
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "libs/features/checkout/core/jest.config.ts"
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    }
+  }
+}

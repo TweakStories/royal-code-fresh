@@ -1,0 +1,9 @@
+{
+  "name": "plushie-paradise-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/plushie-paradise-e2e/src",
+  "implicitDependencies": ["plushie-paradise"],
+  "// targets": "to see all targets run: nx show project plushie-paradise-e2e --web",
+  "targets": {}
+}

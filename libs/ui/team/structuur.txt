@@ -1,0 +1,34 @@
+Folder PATH listing
+Volume serial number is FAB3-2228
+C:\REPOS\TWEAKSTORIES\CRYPTO-GURU-KING\FE\ROYAL-CODE\LIBS\UI\BUTTON
+|   eslint.config.mjs
+|   jest.config.ts
+|   ng-package.json
+|   package.json
+|   project.json
+|   README.md
+|   structuur.txt
+|   tsconfig.json
+|   tsconfig.lib.json
+|   tsconfig.lib.prod.json
+|   tsconfig.spec.json
+|   
+\---src
+    |   index.ts
+    |   test-setup.ts
+    |   
+    \---lib
+        |   dialog.model.ts
+        |   
+        +---button
+        |       ui-button.component.spec.ts
+        |       ui-button.component.ts
+        |       
+        +---toggle-button
+        |       toggle-button.component.spec.ts
+        |       toggle-button.component.ts
+        |       
+        \---wishlist-button
+                wishlist-button.component.spec.ts
+                wishlist-button.component.ts
+                

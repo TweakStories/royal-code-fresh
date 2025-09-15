@@ -1,0 +1,20 @@
+{
+  "name": "admin-orders-data-access",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/features/admin-orders/data-access/src",
+  "prefix": "royal-code",
+  "projectType": "library",
+  "tags": ["scope:admin", "type:data-access", "context:orders"],
+  "targets": {
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "libs/features/admin-orders/data-access/jest.config.ts"
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    }
+  }
+}

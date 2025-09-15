@@ -1,0 +1,842 @@
+{
+  "common": {
+    "buttons": {
+      "downloadCv": "CV downloaden",
+      "viewDetails": "Bekijk details",
+      "viewAllSkills": "Bekijk alle vaardigheden",
+      "viewAllProjects": "Bekijk alle projecten",
+      "backToOverview": "Terug naar overzicht",
+      "ok": "OK",
+      "cancel": "Annuleren",
+      "confirm": "Bevestigen",
+      "close": "Sluiten"
+    },
+    "forms": {
+      "errors": {
+        "requiredField": "Dit veld is verplicht.",
+        "invalidEmail": "Voer een geldig e-mailadres in."
+      }
+    },
+    "messages": {
+      "noData": "Geen gegevens beschikbaar."
+    }
+  },
+  "footer": {
+    "columns": {
+      "support": {
+        "title": "Ondersteuning"
+      },
+      "shop": {
+        "title": "Mijn Werk"
+      },
+      "company": {
+        "title": "Filosofie"
+      },
+      "newsletter": {
+        "title": "Nieuwsbrief",
+        "text": "Blijf op de hoogte van mijn laatste projecten en inzichten.",
+        "placeholder": "Your email address"
+      }
+    }
+  },
+  "cv": {
+    "hero": {
+      "name": "Roy van de Wetering"
+    },
+    "navigation": {
+      "home": "Home",
+      "architecture": "Architectuur",
+      "aiWorkflow": "AI",
+      "skills": "Vaardigheden",
+      "projects": "Projecten",
+      "experience": "Ervaring",
+      "aboutMe": "Over mij",
+      "contact": "Contact",
+      "openMenu": "Open hoofdmenu",
+      "menu": {
+        "title": "Menu",
+        "close": "Sluit menu"
+      }
+    },
+    "home": {
+      "hero": {
+        "headline": "Verander bug-fix-weken in feature-dagen.",
+        "subheadline": "Mijn ‘Digitale Fabriek’ helpt teams sneller en stabieler leveren – al binnen één sprint.",
+        "proofPoint": "Meerdere releases · focus op stabiliteit · kostenbewust",
+        "proofPointContext": "Gebaseerd op eigen projecten (2024–2025)",
+        "cta": "Ontvang jouw gratis 20-min ROI-scan",
+        "ctaSecondary": "Lees hoe het werkt",
+        "riskReversal": "Kennismaking is vrijblijvend."
+      },
+      "socialProof": {
+        "trustedBy": "Aanpak geïnspireerd door best-practices uit toonaangevende teams"
+      },
+      "problemISolve": {
+        "title": "Herkent u dit?",
+        "problems": {
+          "item1": "Development team zit vast in legacy code",
+          "item2": "Features duren weken in plaats van dagen",
+          "item3": "Nieuwe developers zijn maanden niet productief",
+          "item4": "AI tools leveren meer chaos dan waarde"
+        },
+        "solution": "Ik los dit op met een bewezen architectuur & AI-orkestratie.",
+        "cta": "Zie mijn aanpak →"
+      },
+      "aiDemo": {
+        "title": "Work in progress! Ervaar Mijn Aanpak Live",
+        "subtitle": "Typ je grootste knelpunt en zie hoe mijn workflow dat oplost – live.",
+        "prompts": {
+          "prompt1": "Hoe reduceer je bug-fix tijd?",
+          "prompt2": "Toon de folder-structuur",
+          "prompt3": "Wat is 'Clean Architecture'?"
+        },
+        "loading": "Chat AI wordt geladen..."
+      },
+      "availability": {
+        "title": "Status Update: Beschikbaar voor een Nieuwe Uitdaging",
+        "line1": "Momenteel beschikbaar voor een medior rol op het snijvlak van AI, systeemarchitectuur en complexe probleemoplossing.",
+        "line2": "Mijn kernexpertise ligt in Angular en ASP.NET Core (C#). Daarnaast wil ik mijn vaardigheden uitbreiden met Rust (API’s bouwen) en mogelijk ook Go, om in te zetten in domeinen zoals energiemanagement, logistiek of high-performance systemen."
+      }
+    },
+    "architecture": {
+      "philosophy": {
+        "title": "Mijn Engineering Filosofie: De Digitale Fabriek",
+        "hook": "Ik heb het te vaak gezien: een project start met de beste intenties. Na 6 maanden is het een onontwarbare knoop van dependencies. Dit is geen onvermijdelijkheid; dit is een architectuur-probleem.",
+        "solution": "Deze architectuur is mijn antwoord: een blauwdruk voor een 'Digitale Fabriek' die voorspelbaarheid, kwaliteit en snelheid garandeert."
+      },
+      "blueprintTitle": "De Blauwdruk: Twee Productielijnen voor Kwaliteit & Snelheid",
+      "pillar1": {
+        "title": "De Frontend Assemblagelijn (Nx)",
+        "description": "Mijn 'Feature Slice'-architectuur binnen Nx dwingt een strikte scheiding af, waardoor elke feature een onafhankelijke, testbare 'module' wordt. Dit maakt parallelle ontwikkeling en onderhoud drastisch eenvoudiger."
+      },
+      "pillar2": {
+        "title": "De Kwaliteitsvesting (.NET)",
+        "description": "Door de businesslogica volledig te isoleren (Clean Architecture) is de kern sterk gericht op testbaarheid en kunnen technologiekeuzes worden vervangen met minimale impact op de businesslogica. Dit beperkt het risico op 'vendor lock-in'."
+      },
+      "tradeOffs": {
+        "title": "De Trade-Offs: Wat je Wint, Wat je Investeert",
+        "wins": {
+          "title": "Wat je Wint",
+          "item1": "Drastisch lagere onderhoudskosten",
+          "item2": "Hogere ontwikkelingssnelheid (na setup)",
+          "item3": "Minder architecturale bugs",
+          "item4": "Snellere onboarding van nieuwe developers"
+        },
+        "investments": {
+          "title": "Wat je Investeert",
+          "item1": "Hogere initiële setup-tijd voor de 'fabriek'",
+          "item2": "Discipline van het team om de regels te volgen",
+          "item3": "Leercurve voor de monorepo-structuur"
+        }
+      },
+      "aiConnection": {
+        "title": "Hoe Architectuur de AI Dwingt tot Excellentie",
+        "description": "Deze architectuur is een afdwingbaar contract voor de AI. De strikte regels en schone interfaces verkleinen de kans op 'spaghetti-code' en 'API Hallucinaties'."
+      },
+      "businessImpact": {
+        "title": "De Business Impact van Deze Architectuur",
+        "chaosTitle": "De Kosten van Chaos",
+        "structureTitle": "De Winst van Structuur",
+        "chaosPoints": {
+          "bugFix": "Bug Fix Tijd: hoger",
+          "onboarding": "Onboarding: langer",
+          "debt": "Technische Schuld: sneller groeiend"
+        },
+        "structurePoints": {
+          "bugFix": "Bug Fix Tijd: korter",
+          "onboarding": "Onboarding: sneller",
+          "debt": "Technische Schuld: beter beheersbaar"
+        },
+        "miniCaseStudy": {
+          "title": "Voorbeeldcase",
+          "quote": "Duidelijke structuur hielp onboarding versnellen en features voorspelbaarder opleveren.",
+          "author": ""
+        },
+        "points": {
+          "item1": {
+            "title": "Velocity & Time-to-Market",
+            "description": "Nieuwe features kunnen sneller worden ontwikkeld."
+          },
+          "item2": {
+            "title": "Team Enablement",
+            "description": "Juniors zijn eerder productief; seniors kunnen meer business value leveren."
+          },
+          "item3": {
+            "title": "Kwaliteit & Security",
+            "description": "Security by design, niet als afterthought. Input validatie op domain niveau en role-based authorization zijn standaard."
+          },
+          "item4": {
+            "title": "Lagere TCO",
+            "description": "Dankzij de strikte scheiding van lagen worden bugs sneller gevonden en kunnen technologieën worden vervangen met minimale impact."
+          }
+        }
+      },
+      "hiringManager": {
+        "title": "Wat Dit Voor U Betekent als Hiring Manager",
+        "points": {
+          "item1": "Minder escalaties",
+          "item2": "Snellere board-buy-in",
+          "item3": "Minder afhankelijkheid van 'hero-coders'"
+        }
+      },
+      "closing": {
+        "statement": "De Keuze Is Simpel",
+        "message": "Zoekt u een ontwikkelaar die code schrijft, of een architect die een systeem ontwerpt dat zichzelf terugverdient? Deze architectuur is een investering in de toekomst van uw codebase en uw team.",
+        "savingsHint": "",
+        "cta": "Laten we uw architectuur bespreken",
+        "guarantee": ""
+      },
+      "folderTree": {
+        "frontend": {
+          "features": {
+            "products": {
+              "description": "Business-logica per functionaliteit.",
+              "domain": {
+                "description": "De Waarheid: TypeScript interfaces."
+              },
+              "core": {
+                "description": "De Machinekamer: NgRx State & Abstracte API."
+              },
+              "dataAccessPlushie": {
+                "description": "Connector voor App A."
+              },
+              "ui": {
+                "description": "Gedeelde, app-agnostische ProductCard."
+              },
+              "uiPlushie": {
+                "description": "De Etalage: Smart components voor App A."
+              }
+            }
+          },
+          "ui": {
+            "description": "De Algemene Lego-set: Buttons, Cards, etc."
+          },
+          "core": {
+            "description": "De Nutsvoorzieningen: Logging, Error Handling, etc."
+          }
+        },
+        "backend": {
+          "domain": {
+            "description": "Het Hart: Entiteiten & Business Logic."
+          },
+          "application": {
+            "description": "De Dirigent: Use cases & Interfaces."
+          },
+          "infrastructure": {
+            "description": "De Werkers: Implementeert Interfaces (EF Core)."
+          },
+          "webApi": {
+            "description": "De Poort: ASP.NET Core Endpoints."
+          }
+        }
+      },
+      "meta": {
+        "description": "Ontdek mijn architectuurfilosofie, van monorepo-structuur tot Clean Architecture en AI-gedreven ontwikkelpraktijken.",
+        "ogTitle": "Architectuur: De Digitale Fabriek | Roy van de Wetering",
+        "ogImageAlt": "Architectuurblauwdruk van de Digitale Fabriek"
+      }
+    },
+    "aiWorkflow": {
+      "manifesto": {
+        "title": "Ik Ontwerp Systemen die Zichzelf Bouwen",
+        "hook": "Mijn 'Specification-Driven' methodologie helpt AI te bewegen van een onvoorspelbare assistent naar een meer voorspelbare productielijn voor software, met kortere doorlooptijden en betere codekwaliteit als doel."
+      },
+      "caseStudy": {
+        "title": "Case Study: Van Weken naar Dagen",
+        "subheadline": "Kleine POC, echte lessen",
+        "project": "Enterprise Event-Driven Microservice Platform",
+        "teamContext": "Team: klein team (2025)",
+        "traditional": {
+          "title": "Voor Mijn Aanpak",
+          "timeline": "Lang traject zonder duidelijke kaders",
+          "bugs": "Architectuur-issues door impliciete aannames",
+          "cost": ""
+        },
+        "myApproach": {
+          "title": "Na Mijn Aanpak",
+          "timeline": "Kortere iteraties met heldere specificaties",
+          "bugs": "Minder issues (edge cases gedocumenteerd)",
+          "savings": ""
+        },
+        "metrics": {
+          "leadTime": "Lead Time",
+          "bugs": "Bugs (1e sprint)",
+          "annualCost": "Jaarlijkse Kosten",
+          "annualSavings": "Jaarlijkse Besparing"
+        },
+        "viewEvidence": "Bekijk Datadog dashboard screenshot"
+      },
+      "video": {
+        "title": "Deterministische Generatie in 45 Seconden"
+      },
+      "differentiators": {
+        "title": "Mijn 2025 Edge: Verder dan Standaard AI",
+        "item1": {
+          "title": "Self-Healing Agents",
+          "detail": "Ik ontwerp systemen waar AI niet alleen code schrijft, maar ook de kwaliteit bewaakt en zichzelf corrigeert op basis van guardrail-tests."
+        },
+        "item2": {
+          "title": "Structured-RAG",
+          "detail": "Ik gebruik vector-commit hooks om te garanderen dat de AI altijd werkt met de meest actuele en relevante architecturale context."
+        },
+        "item3": {
+          "title": "Model-Eval Pipelines",
+          "detail": "Ik implementeer geautomatiseerde pipelines om de output van LLM's te valideren op performance en richtlijnen."
+        }
+      },
+      "lessons": {
+        "title": "AI Risico's & Mijn Mitigaties",
+        "sourceLinkAriaLabel": "Bekijk bron van deze risicostatistiek",
+        "pitfalls": {
+          "item1": {
+            "name": "Security Vulnerabilities",
+            "stat": "",
+            "mitigation": "In te richten security-gates (Semgrep/GHAS) in CI/CD."
+          },
+          "item2": {
+            "name": "Architectural Drift",
+            "stat": "",
+            "mitigation": "Vaste architectuurregels + continue validatie."
+          },
+          "item3": {
+            "name": "Vendor Lock-in",
+            "stat": "",
+            "mitigation": "Model-agnostische specificaties; kernlogica is overdraagbaar."
+          },
+          "item4": {
+            "name": "Knowledge Silos",
+            "stat": "",
+            "mitigation": "De specificatie is de gedeelde 'externe hersenen' voor het team."
+          }
+        }
+      },
+      "callToAction": {
+        "title": "Klaar om te Versnellen?",
+        "message": "De toekomst van softwareontwikkeling is hier. Laten we in 20 minuten ontdekken hoe mijn aanpak uw team kan transformeren.",
+        "ctaButton": "Plan een vrijblijvende ROI Scan",
+        "badgeText": "Focus op kwaliteit • Minder herwerk"
+      },
+      "meta": {
+        "title": "AI-Factory Case – pragmatische guardrails | Roy van de Wetering",
+        "description": "Specification-driven AI met duidelijke checks en context.",
+        "ogTitle": "AI-Factory Case – guardrails en structuur | Roy van de Wetering",
+        "ogImageAlt": "AI-Factory Case: guardrails en structuur"
+      }
+    },
+    "skills": {
+      "philosophy": {
+        "title": "Skills Zijn Commodities, Architecturaal Inzicht is de Differentiator",
+        "value": "Mijn waarde ligt niet in de frameworks die ik ken, maar in mijn vermogen om ze te combineren tot een systeem dat uw business versnelt en risico's verlaagt."
+      },
+      "tShaped": {
+        "title": "Mijn T-Shaped Profiel: Diepte & Breedte",
+        "deepSpecialization": {
+          "title": "Diepe Specialisatie",
+          "item1": {
+            "name": "Angular Enterprise Architectuur",
+            "mastery": "Medior-ready",
+            "testimonial": "Monorepo opgezet met feature-slices en Signals/NgRx-facades; duidelijke grenzen versnellen onboarding en reviews.",
+            "author": "Projectlog (Monorepo, 2025)"
+          },
+          "item2": {
+            "name": ".NET Clean Architecture & DDD",
+            "mastery": "Medior-ready",
+            "testimonial": "Clean Architecture toegepast met CQRS + MediatR en EF Core; scheiding van verantwoordelijkheden maakt testen en wijzigingen eenvoudiger.",
+            "author": "Projectlog (Backend, 2025)"
+          },
+          "item3": {
+            "name": "AI-Driven Development",
+            "mastery": "Pragmatisch toepassen",
+            "testimonial": "Template-gestuurde prompts en guardrail-tests voor specificaties; minder heen-en-weer in code reviews.",
+            "author": "Projectlog (AI-workflow, 2025)"
+          }
+        },
+        "broadKnowledge": {
+          "title": "Brede Kennis",
+          "item1": "DevOps (Azure)",
+          "item2": "Cloud Architectuur",
+          "item3": "Applicatiebeveiliging",
+          "item4": "UX/UI Principes",
+          "item5": "Business Analyse"
+        }
+      },
+      "impactCases": {
+        "title": "Impact Cases",
+        "case1": {
+          "skill": "Nx Monorepos",
+          "achievement": "Merge conflicts verminderd",
+          "context": "(Team: 12 devs, 3 maanden)"
+        },
+        "case2": {
+          "skill": "AI-Specificaties",
+          "achievement": "Minder requirements-rework",
+          "context": "(Project: Event-Platform)"
+        }
+      },
+      "radar": {
+        "title": "Mijn Technology Radar: Business-Gedreven Keuzes",
+        "adopt": {
+          "title": "Adopt",
+          "item1": {
+            "rationale": "Garandeert kwaliteit & consistente patronen."
+          }
+        },
+        "trial": {
+          "title": "Trial",
+          "item1": {
+            "rationale": "Onderzoek naar performancewinst in dashboards."
+          }
+        },
+        "assess": {
+          "title": "Assess",
+          "item1": {
+            "rationale": "Risico-analyse voor toekomstige data-compliance."
+          }
+        },
+        "hold": {
+          "title": "Hold",
+          "item1": {
+            "rationale": "Actieve migratie om security-risico's te elimineren."
+          }
+        }
+      },
+      "matrix": {
+        "title": "Het Volledige Overzicht: Skill Matrix",
+        "loading": "Gedetailleerde matrix wordt geladen..."
+      },
+      "closing": {
+        "statement": "Tools veranderen. Investeren in robuuste architectuur betaalt zich altijd terug.",
+        "cta": "Plan een 15-min Architectuur Deep-Dive",
+        "guarantee": ""
+      }
+    },
+    "projects": {
+      "metrics": {
+        "developerVelocity": "Ontwikkelsnelheid",
+        "architecturalBugs": "Architectuurfouten",
+        "timeToMarket": "Time-to-Market",
+        "specConsistency": "Specificatie Consistentie",
+        "decisionMaking": "Besluitvorming",
+        "dataSources": "Databronnen",
+        "tradeSignals": "Handelssignalen",
+        "manualEntry": "Handmatige Invoer",
+        "resolutionTime": "Oplostijd",
+        "userRetention": "Gebruikersretentie",
+        "personalization": "Personalisatie",
+        "checkoutFlow": "Checkout Flow",
+        "productCatalog": "Productcatalogus",
+        "conversionFocus": "Conversiefocus",
+        "performanceScore": "Performancescore",
+        "accessibility": "Toegankelijkheid",
+        "pageLoadTime": "Pagina Laadtijd",
+        "buildTimes": "Buildtijden",
+        "techDebt": "Tech Schuld",
+        "bookingConversion": "Boekingsconversie",
+        "userExperience": "Gebruikerservaring",
+        "mobilePerformance": "Mobiele Prestaties"
+      },
+      "techStack": "Techstack",
+      "all": "Alles tonen",
+      "noResults": "Geen projecten gevonden met de tag '{tag}'.",
+      "allProjectsTitle": "Mijn projecten",
+      "intro": "Een overzicht van projecten waaraan ik heb bijgedragen, met mijn rol en gebruikte technologieën. Gebruik de filters om te verkennen.",
+      "detail": {
+        "challenge": "De business­uitdaging",
+        "approach": "Mijn strategische aanpak",
+        "result": "Het meetbare resultaat",
+        "underTheHoodTitle": "Onder de Motorkap",
+        "links": "Links",
+        "liveDemo": "Live-demo",
+        "sourceCode": "Broncode",
+        "notFound": "Project niet gevonden",
+        "viewCodeOnGithub": "Bekijk code op GitHub"
+      },
+      "royal-code-monorepo": {
+        "title": "Royal-Code Monorepo: de Digitale Fabriek",
+        "description": "Samen levert dit modulair hergebruik, schaalbaarheid en korte doorlooptijden.",
+        "challenge": "Tegelijk nam ik coördinerende taken op me: kennisdeling, code-reviews en ondersteuning bij onboarding.",
+        "approach": "Ontwierp en realiseerde het ‘Digitale Fabriek’-principe – een Nx-monorepo met feature-modules voor herbruikbaarheid, een Clean Architecture-backend voor onderhoudbaarheid en een specification-driven workflow met AI-guardrails. AutoMapper verruild voor AI-gegenereerde DTO-mappings, waardoor iteraties versneld en boilerplate gereduceerd werden. Daarnaast voorbeeldimplementaties, templates, code-reviews en architectuursessies opgezet.",
+        "result": "• Snellere time-to-market voor complexe features\n• Minder architectuurfouten\n• Snellere onboarding van junior-developers\n• Lagere TCO dankzij onderhoudbaarheid en hergebruik",
+        "architectureContext": {
+          "title": "Architectuur van de Digitale Fabriek",
+          "description": "Visualiseert Nx-modulariteit en een Clean Architecture-backend voor maximale robuustheid en schaalbaarheid."
+        }
+      },
+      "smart-spec-bot": {
+        "title": "Smart Spec Bot: AI-specificatie-engine",
+        "description": "AI-tool die productieklare specificaties en tests genereert uit high-level requirements.",
+        "challenge": "De kloof dichten tussen business­eisen en uitvoerbare code.",
+        "approach": "LangChain-agent ontwikkeld die natuurlijke taal naar testbare specificaties vertaalt.",
+        "result": "Snellere start van nieuwe features door duidelijkere specificaties.",
+        "architectureContext": {
+          "title": "Hoe de ‘Digitale Fabriek’ AI mogelijk maakte",
+          "description": "Dankzij ‘Architecture as Specification’ werd de AI begrensd door een technisch contract en werd de kans op ‘API-hallucinaties’ verkleind."
+        }
+      },
+      "corporate-dashboard": {
+        "title": "Corporate real-time dashboard",
+        "description": "Een dashboard dat real-time operationele inzichten en visualisaties biedt met push-updates voor veel gelijktijdige gebruikers.",
+        "challenge": "Kritieke bedrijfs- en operationele metrics met lage latency leveren, terwijl piekverkeer wordt opgevangen.",
+        "approach": "Ontwikkeld met een modular Angular-frontend (lazy loaded modules, onscreen-grafieken) en een .NET-SignalR backend, geoptimaliseerd voor horizontale schaalbaarheid, sticky sessions en geavanceerde load-balancing.",
+        "result": "Behaalde lage end-to-end latency onder belasting; stakeholders kunnen sneller beslissen op live data en afwijkingen direct detecteren.",
+        "architectureContext": {
+          "title": "Performance-aanpak binnen de ‘Digitale Fabriek’",
+          "description": "Het ‘Quality Fortress’-backend – met gespecialiseerde SignalR-hubs, circuit breakers en automatische scaling-rules – ondersteunt snelle en betrouwbare real-time datalevering."
+        }
+      },
+      "projectCrypto": {
+        "title": "CryptoGuru: slim tradingplatform",
+        "description": "Een enterprise-grade tradingplatform dat realtime koersdata uit 6+ beurzen aggregeert, eigen trading­algoritmen uitvoert en gebruikers een veilig, schaalbaar order- en portfolio­beheer biedt.",
+        "challenge": "Consistente, laag-latente data leveren vanuit uiteenlopende crypto-API’s, terwijl veiligheid en betrouwbaarheid op bedrijfsniveau gewaarborgd blijven.",
+        "approach": "Angular 20 frontend met WebSocket-feeds en RxJS voor state-management; een Clean Architecture .NET 9 backend met MediatR/CQRS-patronen, Redis caching en OAuth2-gebaseerde rol­toegang; admin-panel voor real-time monitoring en formule-beheer.",
+        "result": "Lage latency onder piekbelasting, stabiele data-feeds en meldingen bij afwijkingen; eigen algoritmen toonden verbeteringen in tests.",
+        "architectureContext": {
+          "title": "Data-consolidatie & schaalbare pipelines",
+          "description": "Een pluggable adapterlaag voor externe beurzen en een event-driven bus consolideren gegevens, ondersteund door Redis caching en horizontale schaalbaarheid voor enterprise-grade betrouwbaarheid."
+        }
+      },
+      "pxlTicketing": {
+        "title": "PXL-ticketingsysteem",
+        "description": "Een uniform incidentmanagementplatform dat meldingen uit e-mail, Office-documenten en webformulieren centraliseert en verrijkt met asset-metadata.",
+        "challenge": "Diverse meldingskanalen (e-mail, Office, web) integreren, metadata behouden en handmatig werk minimaliseren.",
+        "approach": "Angular-frontend met dynamische formulieren en automatische bijlage-detectie; Laravel/PHP-backend met REST-API, geoptimaliseerde MySQL-database en event-gedreven verwerking voor classificatie, routering en notificaties.",
+        "result": "Minder handmatige invoer door auto-parsing en routering; snellere afhandeling dankzij contextuele prioritering en real-time statusupdates.",
+        "architectureContext": {
+          "title": "End-to-end workflow-automatisering",
+          "description": "Een event-gedreven architectuur met slimme aggregators en webhook-connectors centraliseert processen voor efficiënte en schaalbare ticketafhandeling."
+        }
+      },
+      "challengerApp": {
+        "title": "Challenger App: Real-Life MMO voor Persoonlijke Groei",
+        "description": "Een modulair ontworpen gamified mobiele app die dagelijkse routines omzet in een meeslepende MMO-ervaring, met uitdagingen, XP, skill trees, verzamelbare items en een levendige community.",
+        "challenge": "Gebruikers langdurig gemotiveerd houden voor duurzame persoonlijke ontwikkeling, terwijl real-time gezondheids- en activiteitsdata van wearables veilig wordt verwerkt.",
+        "approach": "Gebouwd met een standalone Angular 20 frontend (lazy loading, signals & RxJS) en een .NET 9 Clean Architecture backend. Ontwikkelde een event-driven gamification engine met XP/leveling, skill trees en quests; integreerde WebSocket-gebaseerde activity feeds; voegde AI-gestuurde personalisatie toe via template-gebaseerde prompts; en implementeerde sociale features zoals parties, guilds en leaderboards.",
+        "result": "Hogere betrokkenheid bij testers en meer voltooide challenges dankzij adaptieve moeilijkheidsgraad.",
+        "architectureContext": {
+          "title": "Schaalbare gamified architectuur",
+          "description": "Een pluggable, event-driven progression-module en challenges-componenten vormen de kern van de gamification engine, ondersteund door real-time streaming en AI-services voor personalisatie."
+        }
+      },
+      "plushieApp": {
+        "title": "Plushie Paradise e-commerce",
+        "description": "Een e-commerceplatform voor pluchen knuffels met een dynamische productcatalogus: filter-sidebar, product-hero-cards, quick-view en aanbevelingen, allemaal in een Nx-monorepo. Real-time voorraad- en prijscaching, plus een naadloze Stripe-checkout.",
+        "challenge": "Een schaalbare winkelervaring neerzetten die honderden productvarianten en real-time voorraadupdates ondersteunt, terwijl de checkout flow vlekkeloos en snel blijft.",
+        "approach": "Gebaseerd op Angular 20 met standalone componenten en NgRx voor state management; UI-modules voor productdetail, variant-selector en winkelwagen in de monorepo; .NET 9 Clean Architecture backend met CQRS/MediatR, Redis caching voor voorraad en prijsdata, en Stripe Checkout via webhooks geïntegreerd.",
+        "result": "Consistente laadtijden en duidelijke modules; snellere iteraties.",
+        "architectureContext": {
+          "title": "Modulaire e-commerce architectuur",
+          "description": "De shared product- en cart-modules in de monorepo vormen de kern; event-driven voorraad-updates via Redis en headless Stripe-integratie ondersteunen schaalbaarheid en performance."
+        }
+      },
+      "cvApp": {
+        "title": "Mijn CV-/portfolio-app",
+        "description": "Een dynamische portfolio-app gebouwd in een Nx-monorepo: een Angular 20 frontend met standalone componenten, signal-based state (NgRx Signals), SSR-ready routing, Tailwind CSS-theming en AI-assistentie voor live contentgeneratie.",
+        "challenge": "Een uiterst performante, toegankelijke en conversiegerichte presentatie van mijn werk neerzetten, die snel laadt, SEO-vriendelijk is en recruiters direct overtuigt.",
+        "approach": "Opgezet met Angular Universal voor server-side rendering, lazy loaded feature-modules in Nx, signal-gebaseerde data-flows en Tailwind CSS voor consistente styling. Integratie van een AI-assistent (LLM) voor automatische portfolio-updates en een headless CMS-achtige JSON-drive. Gehost in Azure met CDN-caching en image optimization.",
+        "result": "Snelle eerste render via SSR en CDN; aandacht voor toegankelijkheid; langere sessieduur door interactieve navigatie.",
+        "architectureContext": {
+          "title": "Deze CV-app als showcase",
+          "description": "Demonstratie van modulariteit (Nx), performance-optimalisatie (SSR + CDN), accessibility en AI-flow voor content-generatie binnen één applicatie."
+        }
+      },
+      "sunnycars": {
+        "title": "Sunnycars.nl front-end migratie",
+        "description": "Een volledige migratie van de AngularJS booking-frontend naar een moderne Angular 20-architectuur, met component-gebaseerde herstructurering, verbeterde UX en uitgebreide testcoverage.",
+        "challenge": "Legacy AngularJS-code was traag, moeilijk te onderhouden en onvoldoende schaalbaar voor piekverkeer.",
+        "approach": "Fasegewijze refactor: bestaande AngularJS-componenten omgezet naar standalone Angular 20-componenten; RxJS ingezet voor reactief state-management; render-optimalisaties zoals OnPush change detection en lazy loading toegepast; en een CI-pipeline met Jest & Cypress opgezet om regressies uit te sluiten.",
+        "result": "Bijgedragen aan snellere pagina-laadtijden en kortere buildtijden; technische schuld verminderd door herbruikbare component-libraries.",
+        "architectureContext": {
+          "title": "Modernisering & performance-optimalisatie",
+          "description": "Component-gebaseerde architectuur met lazy loading en OnPush change detection verzekert consistente performance en horizontale schaalbaarheid onder hoge load."
+        }
+      },
+      "vandervalk": {
+        "title": "Van der Valk-bookingtool modernisering",
+        "description": "Een end-to-end re-platforming van de legacy AngularJS bookingflow naar een moderne Angular 20-architectuur, met een focus op performance, UX en schaalbaarheid.",
+        "challenge": "Oudere AngularJS-code leidde tot trage laadtijden, verwarrende multi-step UX en beperkte flexibiliteit voor nieuwe betalingsopties.",
+        "approach": "Gefaseerde migratie: herbouw van de bookingflow met standalone Angular 20-componenten en reactive forms; optimalisatie van data-pijplijnen met RxJS; implementatie van HTTP-caching en pull-to-refresh voor mobiele gebruikers; en integratie van nieuwe payment gateways via headless API’s.",
+        "result": "Bijgedragen aan een verbeterde booking-journey door betere UX en paginaprestaties; snellere laadtijden en minder technische schuld door modulair hergebruik.",
+        "architectureContext": {
+          "title": "User-journey optimalisatie door re-platforming",
+          "description": "De nieuwe Angular 20-architectuur met lazy loaded modules en OnPush change detection garandeert snelle, consistente performance en eenvoudige uitbreidbaarheid."
+        }
+      }
+    },
+    "experience": {
+      "pageTitle": "Mijn trackrecord: van uitdaging naar resultaat",
+      "intro": "Case-based tijdlijn van mijn professionele reis, gepresenteerd als case-studies. Elke rol bood de kans om een businessuitdaging met een strategische, architecturale aanpak op te lossen.",
+      "all": "Alles tonen",
+      "noResults": "Geen ervaringen gevonden met tag '{tag}'.",
+      "educationAndCommunityTitle": "Opleiding, certificeringen & community",
+      "detail": {
+        "challenge": "De Uitdaging",
+        "mySolution": "Mijn oplossing",
+        "results": "Resultaten",
+        "underTheHoodTitle": "Onder de motorkap",
+        "links": "Links",
+        "liveDemo": "Live-demo",
+        "sourceCode": "Broncode",
+        "notFound": "Ervaring niet gevonden",
+        "viewCodeOnGithub": "Bekijk code op GitHub"
+      },
+      "job1": {
+        "title": "Zelfstandig ontwikkelaar (eigen projecten)",
+        "period": "2024 – heden",
+        "situation": "Complex project met meerdere applicaties (Admin-panel & Customer-CV) vereiste continue feature-levering zonder kwaliteitsverlies of extra technische schuld.",
+        "action": "Het concept ‘Digitale Fabriek’ toegepast: Nx-monorepo + Clean-Architecture-backend en een specification-driven workflow met AI-guardrails.",
+        "result1": "Voorspelbare doorlooptijd voor complexe features.",
+        "result2": "Minder architectuurfouten door duidelijke grenzen.",
+        "result3": "Snellere onboarding door herbruikbare patronen.",
+        "result4": "Lagere TCO door onderhoudbaarheid en hergebruik."
+      },
+      "job2": {
+        "title": "Front-end Angular Developer",
+        "period": "okt 2022 – okt 2023",
+        "situation": "Moderniseren van grootschalige AngularJS-apps (Sunny Cars, Van der Valk) om performance, onderhoudbaarheid en feature-snelheid te verbeteren.",
+        "action": "Omvangrijke migratie uitgevoerd: legacy AngularJS-componenten omgezet naar Angular 20-standalone modules, RxJS-reactiviteit toegevoegd, rendering geoptimaliseerd en end-to-end tests + CI-pipeline ingericht.",
+        "result1": "Pagina-laadtijden verbeterd.",
+        "result2": "Technische schuld verminderd; snellere feature-sprints mogelijk.",
+        "result3": "Moderne UX geleverd die conversie ondersteunt."
+      },
+      "job3": {
+        "title": "Technisch project-supporter",
+        "period": "sep 2015 – jul 2018",
+        "situation": "Productielijn kampte met frequente elektro-mechanische storingen en stilstand.",
+        "action": "Patroonanalyse uitgevoerd, nieuwe bedienpanelen gebouwd en team getraind in structureel probleemoplossen.",
+        "result1": "Kritische downtime gereduceerd.",
+        "result2": "Snellere troubleshooting dankzij verbeterde documentatie.",
+        "result3": "Efficiëntie verhoogd door kleine automatiseringsprojecten."
+      },
+      "job4": {
+        "title": "Stagiair industriële automatisering",
+        "period": "sep 2012 – feb 2013",
+        "situation": "Onderhoudsteam miste kennis van complexe, maatwerk drukmachines.",
+        "action": "Systematisch fouten gediagnosticeerd, besturingskasten gebouwd en kennis gedeeld.",
+        "result1": "Diagnosetijd bij terugkerende fouten korter.",
+        "result2": "Stabiliteit kernmachines verbeterd dankzij robuustere panelen."
+      },
+      "jobNewStory": {
+        "title": "Front-end Angular developer",
+        "period": "2022 – 2023",
+        "situation": "Diverse klantprojecten (o.a. Van der Valk, Sunny Cars) met uiteenlopende scopes.",
+        "action": "Robuuste implementaties geleverd, samenwerking gefaciliteerd en projecten zoals de 113 Suicide Prevention-app ondersteund.",
+        "result1": "Complexe klantwensen succesvol gerealiseerd.",
+        "result2": "Sterke teamsamenwerking en positieve werksfeer.",
+        "result3": "Adaptiviteit en probleemoplossend vermogen vergroot."
+      },
+      "jobPxlTrainee": {
+        "title": "Angular & Laravel-stagiair",
+        "period": "2021",
+        "situation": "Platform voor gebouwonderhoud moest QR-gestuurde info en issue-melding ondersteunen.",
+        "action": "Samen met PXL Smart ICT een dynamisch QR-platform ontwikkeld met solide data-afhandeling.",
+        "result1": "Operationele efficiëntie verhoogd met functioneel platform.",
+        "result2": "Gebruiksvriendelijke QR-issue-melding gerealiseerd."
+      },
+      "jobBron": {
+        "title": "Storingsoplosser & elektromonteur",
+        "period": "2015 – 2017",
+        "situation": "Control-kasten bouwen en drukmachines onderhouden vergde snelle storingsanalyse.",
+        "action": "Kasten gebouwd, onderhoud uitgevoerd en pc-storingen opgelost voor maximale uptime.",
+        "result1": "Succesvolle installatie en onderhoud van complexe machines.",
+        "result2": "Downtime geminimaliseerd door snelle probleemoplossing."
+      },
+      "jobHeineken": {
+        "title": "Technische dienst (stage)",
+        "period": "2013",
+        "situation": "Breed scala onderhouds- en projecttaken in bottelarij.",
+        "action": "Camera-installaties en PLC-gestuurde flessensplitser ontwikkeld en storingen opgelost.",
+        "result1": "Projectondersteuning verbeterde operationele capaciteit.",
+        "result2": "Praktische ervaring in automatisering en storingsoplossing opgedaan."
+      },
+      "jobAldi": {
+        "title": "Kassamedewerker | vakkenvuller | administratie",
+        "period": "2009 – 2015",
+        "situation": "Dagelijkse winkel­operatie vereiste klantgerichtheid en veelzijdigheid.",
+        "action": "Efficiënt kassa- en vulwerk verricht en administratieve taken beheerd; sterke klantrelaties opgebouwd.",
+        "result1": "Hoge klanttevredenheid en loyaliteit.",
+        "result2": "Soepel draaiende winkelprocessen ondersteund."
+      },
+      "jobLidl": {
+        "title": "Vakkenvuller",
+        "period": "2014 – 2015",
+        "situation": "Teamgerichte vul- en logistieke taken binnen strakke tijdschema’s.",
+        "action": "Efficiënt schappen gevuld en collegiale samenwerking bevorderd.",
+        "result1": "Productieve teamwerkflow gerealiseerd.",
+        "result2": "Dagelijkse taken tijdig afgerond."
+      },
+      "edu1": {
+        "degree": "Bachelor Applied IT",
+        "period": "2017 – 2021",
+        "description": "Full-stack-specialisatie met focus op Microsoft-diensten en enterprise-architectuur."
+      },
+      "eduPxlApplied": {
+        "degree": "Toegepaste informatica",
+        "period": "2017 – 2021",
+        "description": "Grondige basis in programmeren, SQL, analyse & architectuur; specialisatie in Angular en .NET Core."
+      },
+      "eduRocLeiden": {
+        "degree": "Middenkader Engineering (elektro-techniek)",
+        "period": "2010 – 2014",
+        "description": "Specialisatie industriële automatisering – ROC Leiden."
+      },
+      "cert1": {
+        "name": "Azure Solutions Architect Expert (in opleiding)",
+        "date": "verwacht 2025"
+      },
+      "cert2": {
+        "name": "Professional Scrum Master™ I",
+        "date": "behaald 2022"
+      },
+      "viewCredential": "Bekijk certificaat"
+    },
+    "aboutMe": {
+      "pageTitle": "De architect achter de fabriek",
+      "profileImage": {
+        "alt": "Profielfoto van Roy van de Wetering"
+      },
+      "philosophy": {
+        "hook": "Mijn passie is niet coderen, maar het bouwen van systemen die problemen oplossen."
+      },
+      "whatIOffer": {
+        "title": "Mijn Belofte als Uw Partner",
+        "points": {
+          "item1": {
+            "title": "Onderbouwde keuzes",
+            "description": "",
+            "proof": {
+              "quote": "Werkprincipe: keuzes onderbouwen, aannames testen.",
+              "author": "—"
+            }
+          },
+          "item2": {
+            "title": "Lerend vermogen",
+            "description": "",
+            "proof": {
+              "quote": "Werkprincipe: constant leren en documenteren wat werkt.",
+              "author": "—"
+            }
+          },
+          "item3": {
+            "title": "Eenvoud waar mogelijk",
+            "description": "",
+            "proof": {
+              "quote": "Werkprincipe: eenvoud waar mogelijk, complexiteit waar nodig.",
+              "author": "—"
+            }
+          }
+        }
+      },
+      "failStories": {
+        "title": "Fouten die mij vormden",
+        "ariaLabelPrefix": "Lees fail-story: {{title}}",
+        "fixPrefix": "Fix",
+        "item1": {
+          "title": "Big-Bang Rewrite",
+          "problem": "6 maanden rewrite faalde door verschuivende requirements.",
+          "fix": "Nu ontwerp ik uitsluitend iteratief.",
+          "impact": "Snellere Time-to-Value"
+        },
+        "item2": {
+          "title": "Race Condition (WS)",
+          "problem": "Dubbele UI-updates na reconnect.",
+          "fix": "exhaustMap + cancel tokens.",
+          "impact": "Lagere error rate"
+        },
+        "item3": {
+          "title": "Enum Mismatch",
+          "problem": "PascalCase API vs camelCase front-end.",
+          "fix": "Globale JsonNamingPolicy.",
+          "impact": "Geen mapping hacks nodig"
+        },
+        "item4": {
+          "title": "Concurrency Fout",
+          "problem": "DbUpdateConcurrencyException bij votes.",
+          "fix": "Unit-of-Work orchestration.",
+          "impact": "Stabieler gedrag"
+        },
+        "item5": {
+          "title": "Circulaire afhankelijkheid (NG0200)",
+          "problem": "NG0200: Circular dependency tussen NG_VALUE_ACCESSOR en NgControl blokkeert component-instantie.",
+          "fix": "Asynchrone NgControl-injectie in ngOnInit via Promise.resolve().then() om de DI-lus te doorbreken.",
+          "impact": "Elimineert de NG0200-fout en laat UiInputComponent correct registreren als ControlValueAccessor."
+        },
+        "item6": {
+          "title": "effect() buiten context (NG0203)",
+          "problem": "NG0203: effect() aangeroepen buiten injection context leidt tot fouten.",
+          "fix": "Verhuis alle effect()-aanroepen naar de constructor, waar de DI-context gegarandeerd is.",
+          "impact": "Geen NG0203-fouten meer; Angular Signals werken stabiel."
+        },
+        "item7": {
+          "title": "Recursieve lus (too much recursion)",
+          "problem": "Oneindige lus tussen writeValue(), valueChanges en onChange(), resulterend in stack overflow.",
+          "fix": "Introduceer vlag _isCvaWritingValue en gebruik setValue({emitEvent:false}); reset de vlag asynchroon.",
+          "impact": "Voorkomt recursieve updates en crashes."
+        },
+        "item8": {
+          "title": "Holistische fix (v6.4.0)",
+          "problem": "Gelaagde fixes vereisten een gecombineerde aanpak om alle edge-cases te dekken.",
+          "fix": "Combineer asynchrone NgControl-injectie, effect() in constructor, recursion guards en een ngControlBound-vlag.",
+          "impact": "Robuuste UiInputComponent zonder NG0200, NG0203 of recursion-fouten."
+        }
+      },
+      "mindset": {
+        "title": "Mijn mindset: hoe ik denk",
+        "item1": {
+          "title": "Systeembouwer (Factorio)",
+          "description": "Ik zie software als een modulaire productielijn: complexe puzzels splits ik op in beheersbare onderdelen, elk met een duidelijk doel. Forward engineering in plaats van reverse engineering."
+        },
+        "item2": {
+          "title": "Iteratieve Probleemoplosser (Elden Ring)",
+          "description": "Mislukken is data. Complexe uitdagingen vragen om doorzettingsvermogen en patroonherkenning."
+        },
+        "item3": {
+          "title": "Perspectiefwisselaar (FPV Drones)",
+          "description": "Constant wisselen tussen het 'first-person' detailniveau en het 'top-down' overzicht."
+        }
+      },
+      "details": {
+        "title": "Buiten de Code",
+        "text": "FPV-dronepiloot, motorrijder, gamer (Factorio, Elden Ring, Witcher), wandelaar en YouTube-creator, woonachtig in Katwijk. Afgestudeerd in Toegepaste Informatica aan Hogeschool PXL.",
+        "location": "Katwijk (ZH) | Remote-first | ≤ 1u van Amsterdam/Rotterdam",
+        "cta": "Laten we 10 min. samenwerken bespreken"
+      },
+      "meta": {
+        "description": "Ontdek de filosofie, geleerde lessen en mindset achter mijn werk als software architect.",
+        "ogTitle": "Over Mij: Architect & Systeemdenker | Roy van de Wetering",
+        "ogImageAlt": "Roy van de Wetering – Architect achter de Digitale Fabriek"
+      }
+    },
+    "contact": {
+      "pageTitle": "Laten we jouw volgende uitdaging bespreken",
+      "intro": "Open voor ambitieuze projecten en innovatieve ideeën. Ontdek hoe ik waarde toevoeg aan jouw team.",
+      "directContactTitle": "Direct contact",
+      "bookMeetingTitle": "Plan een kennismaking",
+      "bookMeetingDesc": "Wil je dieper ingaan? Kies een geschikt moment voor een informele architecturale call.",
+      "bookMeetingButton": "Boek een kennismakingscall",
+      "formTitle": "Stuur mij een bericht",
+      "form": {
+        "challengeLabel": "Wat is momenteel de grootste uitdaging van je team?",
+        "challenges": {
+          "slowDev": "Trage feature-ontwikkeling",
+          "legacy": "Legacy-systemen moderniseren",
+          "scaling": "Kwaliteit opschalen over teams",
+          "ai": "AI strategisch inzetten"
+        },
+        "nameLabel": "Naam",
+        "emailLabel": "E-mail",
+        "messageLabel": "Bericht",
+        "submitButton": "Verstuur bericht",
+        "successMessage": "Bedankt voor je bericht! Ik reageer zo snel mogelijk.",
+        "errorMessage": "Er ging iets mis. Probeer het later opnieuw."
+      }
+    },
+    "testimonials": {
+      "quote1": "Referentie-quote 1…",
+      "author1_title": "CTO",
+      "quote2": "Referentie-quote 2…",
+      "author2_title": "Product-owner",
+      "quoteJasperKruit": "Met Roy heb ik een crypto-app gebouwd. Hij is enorm toegankelijk – essentieel voor de service die ik verwacht. De app was aanvankelijk traag door websockets; binnen een week was alles opgelost en draait het programma vlekkeloos. Erg tevreden!",
+      "authorJasperKruit_title": "Opdrachtgever"
+    }
+  }
+}

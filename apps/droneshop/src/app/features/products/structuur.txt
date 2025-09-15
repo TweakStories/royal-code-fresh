@@ -1,0 +1,47 @@
+Folder PATH listing
+Volume serial number is FAB3-2228
+C:\REPOS\TWEAKSTORIES\CRYPTO-GURU-KING\FE\ROYAL-CODE\APPS\DRONESHOP\SRC\APP\FEATURES\PRODUCTS
+|   structuur.txt
+|   
++---diy-kits-page
+|   |   diy-kits-page.component.spec.ts
+|   |   diy-kits-page.component.ts
+|   |   diy-kits-page.data.ts
+|   |   
+|   +---components
+|   +---data
+|   |       siren-f35-build-kit.data.ts
+|   |       siren-f5-build-kit.data.ts
+|   |       
+|   \---pages
+|       +---siren-f35-build-kit-detail
+|       |       siren-f35-build-kit-detail.component.css
+|       |       siren-f35-build-kit-detail.component.html
+|       |       siren-f35-build-kit-detail.component.spec.ts
+|       |       siren-f35-build-kit-detail.component.ts
+|       |       
+|       \---siren-f5-build-kit-detail
+|               siren-f5-build-kit-detail.component.css
+|               siren-f5-build-kit-detail.component.html
+|               siren-f5-build-kit-detail.component.spec.ts
+|               siren-f5-build-kit-detail.component.ts
+|               
++---products-overview
+|       droneshop-products-overview.component.spec.ts
+|       droneshop-products-overview.component.ts
+|       
++---rtf-drones-page
+|       rtf-drones-page.component.spec.ts
+|       rtf-drones-page.component.ts
+|       
++---siren-f35-detail
+|       siren-f35-detail.component.spec.ts
+|       siren-f35-detail.component.ts
+|       siren-f35-explanation.data.interface.ts
+|       siren-f35-explanation.data.ts
+|       
+\---siren-f5-detail
+        siren-f5-detail-page.component.spec.ts
+        siren-f5-detail-page.component.ts
+        siren-f5-explanation.data.ts
+        

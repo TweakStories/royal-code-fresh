@@ -1,0 +1,26 @@
+{
+  "name": "ui-accordion",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "library",
+  "sourceRoot": "libs/ui/accordion/src",
+  "prefix": "lib",
+  "tags": ["ui"],
+  "targets": {
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/libs/ui/accordion"],
+      "options": {
+        "jestConfig": "libs/ui/accordion/jest.config.ts"
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/ui/accordion/**/*.ts",
+          "libs/ui/accordion/**/*.html"
+        ]
+      }
+    }
+  }
+}

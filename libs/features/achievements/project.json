@@ -1,0 +1,20 @@
+{
+  "name": "achievements",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/features/achievements/src",
+  "prefix": "royal-code",
+  "projectType": "library",
+  "tags": ["scope:feature", "type:feature", "domain:gamification"],
+  "targets": {
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "libs/features/achievements/jest.config.ts"
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    }
+  }
+}

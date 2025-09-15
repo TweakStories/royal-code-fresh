@@ -1,0 +1,20 @@
+{
+  "name": "data-access-challenger",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/features/products/data-access-challenger/src",
+  "prefix": "challenger",
+  "projectType": "library",
+  "tags": ["scope:challenger", "type:data-access", "context:products"],
+  "targets": {
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "libs/features/products/data-access-challenger/jest.config.ts"
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    }
+  }
+}

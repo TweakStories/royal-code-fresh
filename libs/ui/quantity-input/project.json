@@ -1,0 +1,29 @@
+{
+  "name": "quantity-input",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/ui/quantity-input/src",
+  "prefix": "royal-code",
+  "projectType": "library",
+  "tags": ["scope:shared-ui", "type:ui", "context:forms"],
+  "implicitDependencies": ["button", "icon"],
+  "targets": {
+    "build": {
+      "executor": "@nx/angular:ng-packagr-lite",
+      "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+      "options": {
+        "project": "libs/ui/quantity-input/ng-package.json",
+        "tsConfig": "libs/ui/quantity-input/tsconfig.lib.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/ui/quantity-input/tsconfig.lib.prod.json"
+        },
+        "development": {}
+      },
+      "defaultConfiguration": "production"
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    }
+  }
+}

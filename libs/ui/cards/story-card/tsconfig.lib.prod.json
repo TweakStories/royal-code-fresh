@@ -1,0 +1,21 @@
+{
+  "extends": "./tsconfig.lib.json",
+  "compilerOptions": {
+    "paths": {
+      "@royal-code/ui/media": ["dist/libs/ui/media/public-api.d.ts"],
+      "@royal-code/core/logging": ["dist/libs/core/core-logging/public-api.d.ts"],
+      "@royal-code/core/config": ["dist/libs/core/config/public-api.d.ts"],
+      "@royal-code/shared/ui/gestures": ["dist/libs/shared/ui/gestures/public-api.d.ts"]
+    },
+    "declarationMap": false,
+    "moduleResolution": "node",
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": false,
+    "strict": false,
+    "noImplicitAny": false,
+    "strictNullChecks": false
+  },
+  "angularCompilerOptions": {
+    "compilationMode": "full"
+  }
+}

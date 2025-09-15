@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Example achievements icon -->
+  <circle cx="32" cy="32" r="14" fill="currentColor"/>
+  <polygon points="32,12 36,28 32,24 28,28" fill="white"/>
+</svg>
