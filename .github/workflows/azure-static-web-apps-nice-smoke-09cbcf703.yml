@@ -62,8 +62,8 @@ jobs:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           action: "upload"
           skip_app_build: true
-          app_location: "dist/apps/droneshop/browser"
-          output_location: ""
+          app_location: "/"
+          output_location: "dist/apps/droneshop/browser"
           api_location: ""
 
   close_pull_request_job:
