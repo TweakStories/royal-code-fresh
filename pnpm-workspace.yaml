@@ -1,0 +1,12 @@
+packages:
+  - 'libs/*'
+  - 'libs/*/*'
+  - 'libs/*/*/*'
+  - 'libs/*/*/*/*'
+  - 'apps/*'
+
+prefer-workspace-packages: true
+shared-workspace-lockfile: true
+
+ignoredBuiltDependencies:
+  - nx
