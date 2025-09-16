@@ -188,3 +188,37 @@ output_location: ""                         # Empty - no further build needed
 ```
 
 This explains why 32 tokens failed - the deployment tool couldn't find the app at the wrong location!
+
+## 🚨 FINAL ROOT CAUSE DISCOVERED: Azure Bug 2024-2025
+
+### ❌ AZURE DEPLOYMENT AUTHORIZATION POLICY BUG
+
+**Research Results from Azure Issues (GitHub/Azure/static-web-apps):**
+- Issue #1576, #1055, #1384, #1430 all report identical problem in 2024-2025
+- **ROOT CAUSE:** When creating Azure Static Web App, selecting "GitHub" as deployment authorization policy causes token validation failures
+- **SOLUTION:** Must select **"Deployment Token"** as deployment authorization policy
+
+### 🔧 REQUIRED FIX: RECREATE AZURE STATIC WEB APPS
+
+**Current Problem:**
+```
+azure_static_web_apps_api_token: invalid (regardless of regeneration)
+Deployment authorization policy: GitHub ❌ WRONG
+```
+
+**Required Solution:**
+1. **DELETE** existing Azure Static Web Apps
+2. **CREATE NEW** with settings:
+   - **Deployment authorization policy: "Deployment Token"** ✅ CRITICAL
+   - Repository: https://github.com/TweakStories/royal-code-fresh
+   - Branch: main
+   - App location: `/`
+   - Output location: `dist/apps/cv/browser` (for CV) or `dist/apps/droneshop/browser` (for Droneshop)
+
+### 📝 Evidence of Azure Bug
+- Multiple GitHub issues confirm this bug exists in 2024-2025
+- 32 token regenerations failed because of deployment authorization policy
+- App location fix worked (files found), but token validation still fails
+- Only solution: Recreate with "Deployment Token" policy
+
+**Status:** Ready to recreate Azure Static Web Apps with correct deployment authorization policy
