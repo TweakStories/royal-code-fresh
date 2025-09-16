@@ -39,8 +39,8 @@
           }
         ],
         "styles": [
-          "apps/droneshop/src/styles.css",
-          "libs/shared/styles/src/lib/theme.css"
+          "libs/shared/styles/src/lib/theme.css",
+          "apps/droneshop/src/styles.css"
         ]
       },
       "configurations": {
