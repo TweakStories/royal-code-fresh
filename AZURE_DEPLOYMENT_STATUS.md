@@ -113,3 +113,46 @@ Azure timing issue confirmed - identical to debug plan expectations. Both workfl
 - Check #12 completed - Claude Code monitoring faithfully as promised
 - Status unchanged: tokens still invalid, awaiting Azure recreation
 - RETRY TRIGGER: User reports Azure changes made - testing new deployment (07:09 AM)
+
+## 🔄 AZURE STATIC WEB APPS RECREATED (Current Status)
+
+### ✅ NEW AZURE STATIC WEB APPS CONFIRMED
+
+**HAPPY CLIFF (Droneshop):**
+- **URL:** https://happy-cliff-029217b03.1.azurestaticapps.net
+- **Status:** Waiting for deployment
+- **New Token:** `ecae980ec4a0f77f069ffc8a15599ed38f33a0032186a947a71ab1dc925a8d3301-39121bc9-902f-4180-9f74-2c11814e2e9a0032009029217b03`
+- **GitHub Secret:** `AZURE_STATIC_WEB_APPS_API_TOKEN_HAPPY_CLIFF_029217B03` ✅ UPDATED
+- **Workflow:** azure-static-web-apps-droneshop.yml
+
+**LEMON DUNE (CV):**
+- **URL:** https://lemon-dune-0779d1203.2.azurestaticapps.net
+- **Status:** Waiting for deployment
+- **New Token:** `2cba1b04758cdaf3130c53c8aeafeffdb42c26745f600e90db05ee29bf0e885702-14f6b3e8-0656-4bca-a434-e163bd3d8ff300306070779d1203`
+- **GitHub Secret:** `AZURE_STATIC_WEB_APPS_API_TOKEN_LEMON_DUNE_0779D1203` ✅ UPDATED
+- **Workflow:** azure-static-web-apps-cv.yml
+
+### 🎯 CRITICAL ANALYSIS: 32 KEYS GENERATED - ROOT CAUSE INVESTIGATION
+
+**Pattern Identified:**
+- User has generated 30+ keys across 8+ Static Web Apps
+- Repeated "invalid token" errors despite fresh token generation
+- This suggests a **systematic configuration issue**, not token expiry
+
+**Potential Root Causes:**
+1. **Workflow Secret Name Mismatch** - Secret names in GitHub vs workflow files
+2. **Azure Resource Group/Subscription Permissions** - API access restrictions
+3. **GitHub Actions Runner Region** - Regional Azure API connectivity
+4. **Azure Static Web Apps Service Issues** - Platform-level problems
+5. **Timing/Caching Issues** - Azure API token propagation delays
+
+### 🔍 CURRENT DEPLOYMENT TEST STATUS
+Testing with newly created Azure Static Web Apps and fresh tokens. If this attempt fails, the issue is **NOT token-related** and requires deeper Azure/GitHub configuration analysis.
+
+**Next Steps if Deployment Still Fails:**
+1. Verify GitHub Actions logs for exact error details
+2. Check Azure subscription permissions for Static Web Apps API
+3. Test deployment with different Azure region
+4. Review GitHub repository permissions and secrets access
+
+**Deployment trigger timestamp:** $(date) - Testing with newly created Static Web Apps
