@@ -156,3 +156,35 @@ Testing with newly created Azure Static Web Apps and fresh tokens. If this attem
 4. Review GitHub repository permissions and secrets access
 
 **Deployment trigger timestamp:** $(date) - Testing with newly created Static Web Apps
+
+## 🎯 ROOT CAUSE IDENTIFIED AND FIXED!
+
+### ✅ WORKING WORKFLOW ANALYSIS REVEALS THE REAL ISSUE
+
+**Working workflow from different repo:**
+```yaml
+app_location: "FE/royal-code/dist/apps/cv/browser"
+output_location: ""
+```
+
+**Our failing workflows (WRONG):**
+```yaml
+app_location: "/"
+output_location: "dist/apps/cv/browser"
+```
+
+### 🔧 CONFIGURATION FIX APPLIED
+
+**The problem was NOT the tokens** - it was **app_location vs output_location configuration!**
+
+Azure Static Web Apps expects:
+- `app_location`: Points to where the built files are located
+- `output_location`: Should be empty ("") when app_location points directly to built files
+
+**Fixed configuration:**
+```yaml
+app_location: "dist/apps/cv/browser"        # Points to built files
+output_location: ""                         # Empty - no further build needed
+```
+
+This explains why 32 tokens failed - the deployment tool couldn't find the app at the wrong location!
