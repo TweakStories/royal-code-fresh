@@ -40,8 +40,8 @@
           }
         ],
         "styles": [
-          "libs/shared/styles/src/lib/theme.css",
-          "apps/cv/src/styles.css"  
+          "apps/cv/src/styles.css",
+          "libs/shared/styles/src/lib/theme.css"
         ],
         "scripts": []
       },
