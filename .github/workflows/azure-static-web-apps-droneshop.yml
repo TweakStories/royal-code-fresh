@@ -58,7 +58,7 @@ jobs:
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
         with:
-          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_HAPPY_CLIFF_029217B03 }}
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_AMBITIOUS_ISLAND_0B47BF703 }}
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           action: "upload"
           skip_app_build: true
@@ -77,6 +77,6 @@ jobs:
         id: closepullrequest
         uses: Azure/static-web-apps-deploy@v1
         with:
-          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_HAPPY_CLIFF_029217B03 }}
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_AMBITIOUS_ISLAND_0B47BF703 }}
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           action: "close"
